@@ -17,6 +17,7 @@ these, [submit an issue](https://github.com/ihxyz/translations/issues/new) to re
 ### Base command system (all bots)
 
 - English (original language)
+- German
 
 ### QuizBot
 
