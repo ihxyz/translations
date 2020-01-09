@@ -5,9 +5,10 @@ generic.error: "Fehler"
 generic.thank-you: "Vielen Dank"
 
 # COMMAND MANAGER
+cmdm.prefix: "Der Präfix für diesen Server ist `{}`."
 cmdm.permission-denied: "Du hast keine Berechtigungen um den Befehl `{}` ausführen."  # {command}
 cmdm.invalid-usage: "Falsche Benutzung"
-cmdm.invalid-usage-detail: "Benutzen sie: {} {}"  # {command}, {usage}
+cmdm.invalid-usage-detail: "Benutzen sie: `{} {}`"  # {command}, {usage}
 cmdm.error: "Etwas ist mit dem Befehl schiefgegangen. Dieses Problem wurde gemeldet."
 cmdm.maintenance: "Kann den Befehl nicht ausführen: Der Bot ist im Wartungs-Modus."
 
@@ -31,6 +32,6 @@ cmd.vote.unavailable: "Es ist nicht möglich für diesen Bot zu stimmen."
 # diagnose
 cmd.diagnose.sent: "Ihr Bericht wurde den Entwicklern geschickt."
 # version
-cmd.version.message: "{} Version {} (DPE {}, DPY {})"  # {bot_name}, {bot_version}, {dpe_version}, {dpy_version}
+cmd.version.message: "{} Version `{}` (DPE `{}`, DPY `{}`)"  # {bot_name}, {bot_version}, {dpe_version}, {dpy_version}
 
-contributors: "Kartchampion05"
+contributors: "Kartchampion#6400"
