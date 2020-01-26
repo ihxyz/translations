@@ -5,7 +5,7 @@ generic.error: "Fehler"
 generic.thank-you: "Vielen Dank"
 
 # COMMAND MANAGER
-cmdm.prefix: "Der Präfix für diesen Server ist `{}`."
+cmdm.prefix: ""
 cmdm.permission-denied: "Du hast keine Berechtigungen um den Befehl `{}` ausführen."  # {command}
 cmdm.invalid-usage: "Falsche Benutzung"
 cmdm.invalid-usage-detail: "Benutzen sie: `{} {}`"  # {command}, {usage}
@@ -14,7 +14,7 @@ cmdm.maintenance: "Kann den Befehl nicht ausführen: Der Bot ist im Wartungs-Mod
 
 cmdm.bad-setup: "Sie haben vielleicht Schwierigkeiten mit dem `{}` Befehl."  # {command}
 cmdm.bad-setup.detail: "Dies ist wahrscheinlich weil der Bot die 'Nachrichten senden' oder 'Links einbetten' Berechtigungen in dem Kanal wo sie den Befehl benutzen nicht hat.  Stellen sie die Berechtigung von dem Bot korrekt und versuchen sie es nochmal."
-cmdm.bad-setup.extra: "Falls sie mehr Hilfe benötigen, treten sie unserem Hilfs-Server hier bei: {} "  # {invite}
+cmdm.bad-setup.extra: "Falls sie mehr Hilfe benötigen, treten sie unserem Hilfs-Server hier bei: {}."  # {invite}
 
 cmdm.perm-error.title: "Unzureichende Berechtigungen"
 cmdm.perm-error.detail: "Dem Bot fehlt in diesem Kanal die folgende Berechtigung: {}. Diese Berechtigung ist benötigt um den Befehl `{}` auszuführen."  # {perm}, {command}
@@ -34,4 +34,4 @@ cmd.diagnose.sent: "Ihr Bericht wurde den Entwicklern geschickt."
 # version
 cmd.version.message: "{} Version `{}` (DPE `{}`, DPY `{}`)"  # {bot_name}, {bot_version}, {dpe_version}, {dpy_version}
 
-contributors: "Kartchampion#6400"
+contributors: "Kartchampion05"

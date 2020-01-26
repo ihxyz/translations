@@ -1,0 +1,296 @@
+################################################################
+# BEFORE TRANSLATING: Make sure you have read and understand the information on the "Contributing" page and the notes below.
+# IMPORTANT NOTES:
+#  - Ensure all translations are surrounded by quotation marks (") as they currently are.
+#    If you are including a quotation mark in a message, type \ before it.
+#  - Do not edit the text before the ":". This is required for the bot to identify the messages.
+#  - Do not remove any "{}" in the messages. These are placeholders for values that the bot will insert.
+#    For example, the message "Quiz ID: {}" may become "Quiz ID: 123456" when it's displayed by the bot.
+#  - Do not remove or edit lines starting with "#". These do not need to be translated.
+#  - \n means new line. Please try to keep the newlines in the same place as they currently are to ensure messages are readable.
+#  - We use Discord's formatting codes in the messages. Please keep these as they are.
+#  - Do not translate command names in messages.
+# Support: https://www.ihxyz.dev/bots/support
+################################################################
+
+# === GENERIC ===
+premium-only: "QuizBot Premium exklusiv Feature."
+premium-only.learn-more: "[Erfahren sie hier mehr über QuizBot Premium.]({})"  # {premium_link}
+quiz.no-description: "*[Dieses Quiz hat keine Beschreibung.]*"
+quiz.editor-web: "Besuchen sie [hier]({}) um es zu bearbeiten."
+user.unavailable: "(user unavailable)"
+
+# === QUIZ EDITOR ===
+qe.standard.title: ""
+qe.standard.web-prompt: ""
+qe.standard.author: ""
+qe.standard.name: ""
+qe.standard.description: ""
+qe.standard.questions: ""
+qe.standard.questions.detail: ""
+qe.standard.questions.detail-maxed: ""
+qe.standard.answers: ""
+qe.standard.colour: ""
+qe.standard.colour.detail: ""
+qe.standard.tags: ""
+qe.standard.no-tags: ""
+qe.standard.finish: ""
+qe.standard.auto-save: ""
+qe.standard.footer: ""
+qe.question.title: ""
+qe.question.question: ""
+qe.question.question.not-set: ""
+qe.question.answers: ""
+qe.question.correct: ""
+qe.question.correct.detail: ""
+qe.question.time: ""
+qe.question.time.detail: ""
+qe.question.image: ""
+qe.question.no-image: ""
+qe.question.image.detail: ""
+qe.question.image.premium: ""
+qe.question.operations: ""
+qe.question.not-auto-save: ""
+
+# === HELP MESSAGE ===
+help.title: "[{}] QuizBot Hilfe"
+help.description: "[Webseite]({}) / [Hilfs-Server]({}) / [Abstimmen]({}) / [{} QuizBot Premium (NEU)]({})"  # {website}, {support}, {vote}, {premium_emote}, {premium_link}
+help.play: "Spiele ein Quiz mit der gegebenen ID. Benutzen sie 'random' als die ID um ein zufälliges Quiz zu spielen.\nBeispiel: `=play 123456`"
+help.stop: "Stoppt das Quiz dass in dem momentanen Kanal gespielt wird."
+help.create-quiz: "Kreiert ein Quiz mit dem gegebenen Namen und Beschreibung.\nBeispiel: `=create-quiz QuizBot;Dies ist ein Quiz.`"
+help.add-question: "Fügt einem Quiz eine Frage hinzu. \nBeispiel: `=add-question 123456 Welches Land hat Schwarz in ihrer Flagge?;15;Deutschland;England;USA;China`"
+help.remove-question: "Entfernt eine Frage von einem Quiz. \nBeispiel: `=remove-question 123456 Was ist 5 mal 2?`"
+help.edit-quiz: "Bearbeitet Name, Beschreibung, Stichwörter oder Farbe von einem Quiz. \nBeispiel: `=edit-quiz add-tag Episch`"
+help.delete-quiz: "Löscht ein Quiz. Sie können nur ihre eigenen Quizze löschen.\nBeispiel: `=delete-quiz 123456`"
+help.settings: "Sehen oder ändern Sie Einstellungen für ihren Server. Sie können die folgenden Einstellungen ändern: `language`, `prefix`."
+help.search: "Durchsucht die Quiz Datenbank nach Quizzen bezüglich ihren Such-Begriffen.\nBeispiel: `=search Allgemein wissen`"
+help.view: "Zeigt alle Information über ein Quiz mit der gegebenen ID.\nBeispiel: `=view 123456`"
+help.spreadsheet: "Verwandeln sie eine Tabelle in ein Quiz! Benutzen sie `=spreadsheet help` für mehr Information, oder schauen sie unser [offizelles YouTube Video](https://youtu.be/4bcpmbIlrPw). Für die Tabellen vorlage benutzen sie `=spreadsheet template`."
+help.profile: "Zeigt ihr Profile an. Sie können nur ihr eigenes Profil anzeigen."
+help.survey: "Gibt ihnen einen Link für eine Umfrage womit sie uns Feedback für den Bot geben können, und uns sagen können welches Feature sie als nächstes eingeführt haben wollen."
+help.changelog: ""
+help.featured: ""
+help.qe: ""
+help.footer: "Gefällt ihnen der Bot? Benutzen sie den Abstimmungs Link an der Spitze dieser Nachricht um den Bot unterstützen!"
+
+# === COMMANDS REUSABLE ===
+cmdr.invalid-id: "Ungültige ID"
+cmdr.invalid-id.nan: "Bitte spezifizieren sie eine gültige Nummer. \n Meinen sie `{}search {}`?"  # {prefix}, {query}
+cmdr.invalid-id.no-quiz: "Kein Quiz mit dieser ID konnte gefunden werden."
+cmdr.perm-denied: "Sie haben keine Befugnisse um dies zu machen."
+
+# === COMMANDS ===
+# FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
+
+# add-question
+cmd.add-question.usage: "Benutzen sie: `{}`"  # {usage}
+cmd.add-question.invalid-time: "Bitte spezifizieren sie eine gültige Zeit Dauer in Sekunden: `{}`"  # {usage}
+cmd.add-question.validation-error: "Interne Validierung gescheitert"
+cmd.add-question.validation-error.detail: "Etwas ist beim Aktualisieren des Quizzes {} schiefgegangen. Keine Änderungen wurden gespeichert. [Kontaktieren sie einen Administrator um dieses Problem zu beheben.]({})"  # {error}, {support_link}
+cmd.add-question.success: "Frage erfolgreich hinzugefügt."
+
+# convert-spreadsheet
+cmd.spreadsheet.not-attached: "Bitte hängen sie eine CSV Datei an ihre Nachricht an. Für Hilfe wie sie diesen Befehl verwenden, benutzen sie `{}spreadsheet help`."
+cmd.spreadsheet.success: "Quiz erfolgreich mit der ID `{}` gespeichert."
+cmd.spreadsheet.bad-file-format: "Nicht unterstütztes Datei Format. Bitte benutzen sie eine `.csv` Datei."
+
+cmd.spreadsheet.help.title: "Verwandeln sie Tabellen zu QuizBot Quizzen"
+cmd.spreadsheet.help.tutorial: "Schauen sie das [Offizielle YouTube Video](https://youtu.be/4bcpmbIlrPw) für eine Schritt für Schritt Anleitung wie sie Quizze aus Tabellen erstellen können. Oder, falls sie es bevorzugen, können sie auch die hier drunter gelisteten Instruktionen lesen."
+cmd.spreadsheet.help.step-1: "1) Stimmen sie für den Bot"
+cmd.spreadsheet.help.step-1.detail: "Bitte unterstützen sie den Bot [hier]({}) um Zugang zu diesem Feature zu bekommen. Dies ist 100% frei und hilft uns enorm. Notiz: für den Bot zu stimmen wird diese Feature für 48 Stunden vom Moment des abstimmens freischalten."
+cmd.spreadsheet.help.step-2: "2) Kopieren sie die Vorlage"
+cmd.spreadsheet.help.step-2.detail: "[Laden sie diese Google Sheets Datei]({}), dann gehen sie zu `Datei -> Kopie Erstellen`."
+cmd.spreadsheet.help.step-3: "3) Kreiere dein eigenes Quiz"
+cmd.spreadsheet.help.step-3.detail: "Folgen sie den Instruktionen in der Datei. Der Dateiname wird in den Quiznamen umgewandelt. Bitte beachten sie dass sie keine Quiz Beschreibung oder Stichwörter für das Quiz innerhalb der Tabelle einfügen können. Sie können diese aber immer noch, nachträglich mit Bot Befehlen oder über die Webseite hinzufügen."
+cmd.spreadsheet.help.step-4: "4) Speichern sie die Tabelle"
+cmd.spreadsheet.help.step-4.detail: "Wenn sie fertig sind das Quiz zubearbeiten gehen sie zu `Datei -> Herunterladen -> .CSV` und speichern sie die Datei irgendwo von wo sie sie später zu Discord hochladen können."
+cmd.spreadsheet.help.step-5: "5) Die Tabelle konvertieren"
+cmd.spreadsheet.help.step-5.detail: "Um ihre CSV Datei in ein Quiz zu finalisieren, gehen sie zu einem beliebigen Discord Kanal zu dem QuizBot Zugang hat und laden sie die CSV Datei, die sie vorhin gespeichert haben, hoch. **WICHTIG: Geben sie den Befehl `{}spreadsheet` ein bevor sie die Datei hochladen**"
+cmd.spreadsheet.help.step-6: "6) Nach dem Konvertieren"
+cmd.spreadsheet.help.step-6.detail: "Jetzt da ihr Quiz in der QuizBot Datenbank gespeichert ist, können sie es genau so wie jedes andere Quiz bearbeiten und spielen."
+
+cmd.spreadsheet.template.title: "Folgen Sie dem Link in dieser Nachricht um die Tabellen Vorlage um Quizze zu kreieren zu sehen. Machen Sie eine Kopie von dieser Datei und beginnen sie ihr Quiz zu bearbeiten!"
+cmd.spreadsheet.template.link: "[Google Sheets Link]({})"
+
+# create-quiz
+cmd.create-quiz.success: "Das Quiz wurde kreiert! Die ID ist {}."
+
+# delete-quiz
+cmd.delete-quiz.success: "Quiz `{}` erfolgreich gelöscht."
+
+# [2 subcommands omitted.]
+
+# leaderboard
+cmd.leaderboard.message: "Bestenliste"
+cmd.leaderboard.message.detail: "[Sehen Sie sich die öffentliche Bestenliste hier an.]({})"
+
+# play-quiz
+cmd.play-quiz.random.failed: "Nach {} versuchen, wurde kein Quiz gefunden? Bitte versuchen Sie es erneut."
+cmd.play-quiz.already-running: "In diesem Kanal lauft bereits ein Quiz. Bitte warten Sie bis es beendet ist und versuchen Sie es dann erneut."
+cmd.play-quiz.cannot-play: "Kann Quiz nicht starten"
+cmd.play-quiz.unplayable.detail: "Quiz validierung gescheitert. Fehler Melding: `{}`. \n\n[Kontaktieren sie einen Administrator mit der Quiz ID und Feher Meldung um dieses Problem zu beheben.]({})"
+cmd.play-quiz.nsfw: "Dieses Quiz ist als Nicht jugendfrei markiert. Es kann nur in Kanälen die als NSFW markiert sind gespielt werden."
+cmd.play-quiz.private: "Dieses Quiz ist Privat. Nur der Quiz Autor kann drauf zugreifen."
+cmd.play.quiz.servers: "Dieses Quiz kann nur in Servern gespielt werden, in denen der Autor ein Mitglied ist."
+cmd.play.quiz.servers-author-gone: "Der Autor dieses Quizzes ist nicht verfügbar. Quiz kann nicht gespielt werden."
+cmd.play-quiz.no-questions: "Dieses Quiz hat keine Fragen."
+cmd.play-quiz.competitive-denied: "{} Wettbewerbs-Modus ist nur für QuizBot Premium Mitglieder verfügbar. [Mehr Information über QuizBot Premium gibt es hier.]({})"
+
+# premium
+cmd.premium.message: "QuizBot Premium ist jetzt verfügbar!"
+cmd.premium.message.detail: "[Hier]({}) klicken für mehr Information."
+
+# profile
+cmd.profile.title: "Ihr Profil"
+cmd.profile.more-details: "Mehr Details [hier]({})"
+cmd.profile.total-points: "Gesamte Punkte"
+cmd.profile.monthly-points: "Monatliche Punkte"
+cmd.profile.upvoted: "Positiv bewertete Quiz IDs"
+cmd.profile.downvoted: "Negativ bewertete Quiz IDs"
+cmd.profile.premium: "{} QuizBot Premium"
+cmd.profile.premium-active: "Sie haben QuizBot Premium."
+cmd.profile.premium-not-active: "[Sie haben QuizBot Premium nicht! Klicken sie hier für mehr Information.]({})"
+
+# remove-question
+cmd.remove-question.not-found: "Frage nicht gefunden."
+
+# search
+cmd.search.no-results: "Leider konnten wir keine Quizze betreffend ihrer Such-Begriffe finden."
+cmd.search.results: "Wir konnten 1 Quiz betreffend ihrer Such-Begriffe finden!"
+cmd.search.results-plural: "Wir konnten {} Quizze betreffend ihrer Such-Begriffe finden!"
+cmd.search.requested-by: "Angefordert von {}."
+
+# settings
+cmd.settings.updated: "Einstellungen aktualisiert."
+cmd.settings.prefix.too-long: "Präfix kann nicht länger als 24 Charakter sein."
+cmd.settings.view.title: "Einstellungen für diesen Server"
+cmd.settings.view.prefix: "Präfix"
+cmd.settings.view.language: "Sprache"
+cmd.settings.language.not-found: "Sprache nicht gefunden"
+cmd.settings.language.not-found.detail: "Unterstützte Sprachen: \n{}"
+
+# stop
+cmd.stop.no-session: "Es gibt keine aktive Quiz Session in diesem Kanal."
+cmd.stop.success: "Quiz Session `{}` angehalten."
+cmd.stop.denied: "Sie haben keine Befugnisse um diese Quiz Session anzuhalten."
+
+# survey
+cmd.survey.message: "Helfen Sie QuizBot zu verbessern"
+cmd.survey.message.detail: "Teilen sie uns ihre Meinungen in unsere [User Umfrage]({}) mit."
+
+# view
+cmd.view.denied: "Sie haben keine Befugnisse um dieses Quiz anzuzeigen."
+cmd.view.nsfw: "Dieses Quiz ist als nicht jugendfrei markiert. Es kann nur in Kanälen die als NSFW markiert sind angezeigt werden."
+cmd.view.info: "Spiele: {} | Stimmen: {}"
+cmd.view.tags: " | Stichwörte: {}"
+cmd.view.overflow: "NOTIZ: Dies wird nur die ersten 25 Fragen anzeigen. Um mehr zu sehen, benutzen Sie `=view {} `"
+cmd.view.play: "Spiele dieses Quiz mit `{}play {}`."
+cmd.view.question: "{}) {} | _{} Sekunden_"
+cmd.view.answers: "Antworten: {}"
+
+cmd.qe.no-active: ""
+cmd.qe.question-only-sc: ""
+cmd.qe.quiz-only-sc: ""
+cmd.qe.already-editing-channel: ""
+cmd.qe.already-editing-quiz: ""
+cmd.qe.invalid-id: ""
+cmd.qe.not-found: ""
+cmd.qe.permission-denied: ""
+cmd.qe.nsfw: ""
+cmd.qe.no-id: ""
+cmd.qe.name.invalid-len: "Der Quiz Name ist zu lang oder zu kurz. Die Länge des Namens muss zwischen {} und {} Charakteren sein."
+cmd.qe.name.success: "Quiz Name erfolgreich geädert zu `{}`."
+cmd.qe.description.invalid-len: "Die Quiz Beschreibung ist zu lang. Es darf nicht länger als {} Charaktere sein."
+cmd.qe.description.success: "Quiz Beschreibung erfolgreich geändert."
+cmd.qe.colour.premium-only: ""
+cmd.qe.colour.not-found: ""
+cmd.qe.colour.success: "Quiz Farbe erfolgreich geändert."
+cmd.qe.add-tag.no-spaces: "Stichwörter können keine Leerzeichen enthalten."
+cmd.qe.add-tag.too-many: "Quizze können nicht mehr als `{}` Stichwörter haben."
+cmd.qe.add-tag.already-added: "Dass Stichwort `{}`ist in diesem Quiz bereits vorhanden."
+cmd.qe.add-tag.success: "Stichwort `{}` erfolgreich hinzugefügt."
+cmd.qe.del-tag.success: "Stichwort `{}` erfolgreich entfernt."
+cmd.qe.del-tag.not-added: "Dass Stichwort`{}` ist in diesem Quiz nicht vorhanden."
+cmd.qe.finish.success: ""
+cmd.qe.add-question.too-many: "Quizze können nicht mehr als {} Fragen haben."
+cmd.qe.edit-question.invalid-arg: ""
+cmd.qe.edit-question.none: ""
+cmd.qe.del-question.invalid-arg: ""
+cmd.qe.del-question.none: ""
+cmd.qe.del-question.success: "Frage erfolgreich entfernt."
+cmd.qe.question.invalid-len: "Bitte spezifizieren sie eine Frage mit maximal {} Charakteren."
+cmd.qe.question.success: ""
+cmd.qe.add-answers.invalid-count: "Fragen können maximal {} Antworten haben."
+cmd.qe.add-answers.min: "Antworten müssen aus mindestens {} Charakteren bestehen."
+cmd.qe.add-answers.max: "Antworten können aus maximal {} Charakteren bestehen."
+cmd.qe.add-answers.success: ""
+cmd.qe.del-answer.invalid-arg: ""
+cmd.qe.del-answer.none: ""
+cmd.qe.del-answer.success: ""
+cmd.qe.correct.invalid-arg: ""
+cmd.qe.correct.none: ""
+cmd.qe.correct.success: ""
+cmd.qe.time.invalid: ""
+cmd.qe.time.out-of-range: "Zeit kann nicht mehr als {} oder weniger als {} Sekunden sein."
+cmd.qe.time.success: ""
+cmd.qe.image.removed: ""
+cmd.qe.image.bad-domain: ""
+cmd.qe.image.success: ""
+cmd.qe.delete.success: "Frage erfolgreich entfernt."
+cmd.qe.save.no-question: ""
+cmd.qe.save.bad-answers: "Bitte spezifizieren Sie mindestens {} Antworten."
+cmd.qe.save.no-correct: ""
+cmd.qe.save.success: ""
+cmd.qe.cancel.success: ""
+
+cmd.featured.title: ""
+cmd.featured.description: ""
+cmd.featured.quiz-details: ""
+cmd.featured.footer: ""
+
+# [2 commands omitted.]
+
+# === SPREADSHEET CONVERSION ===
+spreadsheet.error: "Ihre Datei konnte nicht in ein Quiz umgewandelt werden. Benutzen Sie die offizielle Google Sheets Vorlage?"
+spreadsheet.error.file-format: "Datei Formatierung"
+spreadsheet.error.correct-answer: "Der korrekte Antworten-Index für Frage {} ist ungültig. Bitte spezifizieren sie eine Nummer."
+spreadsheet.error.time-allowed: "Die erlaubte Zeit für Frage {} ist ungültig. Bitte spezifizieren Sie eine Nummer zwischen {} und {}."
+spreadsheet.error.range: "Es muss zwischen {} und {} Charakter lang sein."
+spreadsheet.error.question-len: "Frage {} ist zu kurz oder zu lang."
+spreadsheet.error.answer-len: "Frage {}, Antwort {} ist zu kurz oder zu lang."
+spreadsheet.error.no-answers: "Frage {} benötigt mindestens 2 Antworten."
+spreadsheet.error.filename: "Der Dateiname kann nicht als Quiz Name benutzt werden da er zu lang oder zu kurz ist."
+# [3 messages omitted because of poor code design.]
+
+# === SESSIONS ===
+# TODO: Competitive session report needs to be converted.
+session.error: "Etwas ist schiefgegangen, darum wurde die Session beendet. Das Problem wurde gemeldet."
+
+session.competitive: "Wettbewerbs-Modus"
+session.competitive.join-note: "Reagieren Sie mit einem Emoji um diesem Quiz beizutreten. Sie können, nachdem diese Stufe vorbei ist, nicht mehr beitreten."
+session.competitive.dm-note: "Wettbewerbs-Modus: Um ihre Antwort abzugeben, senden Sie dem Bot eine Privatnachricht mit der Nummer der korrekten Antwort."
+session.competitive.joined: "Sie sind Quiz `{}` beigetreten (Session `{}`). Viel Glück!"
+session.competitive.answer.submitted: "Ihre Antwort wurde eingereicht."
+session.competitive.answer.invalid: "Ungültige Antwort. Bitte versuchen Sie es erneut."
+
+session.leaderboard: "Bestenliste"
+session.leaderboard.page: "Bestenliste Seite {} / {}"
+
+session.intro.starting: "Beginne Quiz"
+session.intro.starting-time: "Das Quiz wird in {} Sekunden beginnen."
+session.intro.quiz: "Quiz"
+session.intro.description: "Beschreibung"
+session.intro.questions: "Fragen"
+session.intro.footer: "Session ID: {} | Quiz ID: {}"
+
+session.conclusion.total-players: "Insgesamte Spieler"
+session.conclusion.vote-quiz: "Gefällt ihnen dieses Quiz? Stimmen Sie dafür mit den Reaktionen! | Quiz ID: {}"
+session.conclusion.vote-bot: "Gefällt ihnen der Bot?"
+session.conclusion.vote-bot.detail: "[Stimmen Sie für den Bot]({}) | [{} QuizBot Premium]({})"
+
+session.question.pos: "Frage {}"
+session.question.time-allowed: "Erlaubte Zeit: {} Sekunden"
+session.question.time-up: "Zeit vorbei!"
+session.question.awaiting-reactions: "Antworten werden gezeigt sobald alle Reaktionen bereit sind!"
+
+contributors: "Kartchampion#6400"

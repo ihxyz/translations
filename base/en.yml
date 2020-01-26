@@ -32,6 +32,6 @@ cmd.vote.unavailable: "Voting is not available for this bot."
 # diagnose
 cmd.diagnose.sent: "Your report has been sent to the developers."
 # version
-cmd.version.message: "{} version `{}` (DPE `{}`, DPY `{}`)"  # {bot_name}, {bot_version}, {dpe_version}, {dpy_version}
+cmd.version.message: "`{}` version `{}` (DPE `{}`, DPY `{}`)"  # {bot_name}, {bot_version}, {dpe_version}, {dpy_version}
 
 contributors: "ihxyz"
