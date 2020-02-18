@@ -211,7 +211,7 @@ cmd.qe.add-tag.already-added: "Dass Stichwort `{}`ist in diesem Quiz bereits vor
 cmd.qe.add-tag.success: "Stichwort `{}` erfolgreich hinzugefügt."
 cmd.qe.del-tag.success: "Stichwort `{}` erfolgreich entfernt."
 cmd.qe.del-tag.not-added: "Dass Stichwort`{}` ist in diesem Quiz nicht vorhanden."
-cmd.qe.finish.success: ""
+cmd.qe.finish.success: "QuizEditor beendet. Du kannst dieses Quiz mit dem Befehl `{}play {}` spielen."
 cmd.qe.add-question.too-many: "Quizze können nicht mehr als {} Fragen haben."
 cmd.qe.edit-question.invalid-arg: ""
 cmd.qe.edit-question.none: ""
@@ -247,6 +247,13 @@ cmd.featured.title: ""
 cmd.featured.description: ""
 cmd.featured.quiz-details: ""
 cmd.featured.footer: ""
+
+cmd.options.title: ""
+cmd.options.description: ""
+cmd.options.delete: ""
+cmd.options.no-leaderboards: ""
+cmd.options.no-answers: ""
+cmd.options.competitive: ""
 
 # [2 commands omitted.]
 

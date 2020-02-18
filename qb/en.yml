@@ -58,7 +58,7 @@ qe.question.not-auto-save: "Changes are not saved automatically."
 # === HELP MESSAGE ===
 help.title: "[{}] QuizBot Help"
 help.description: "[Website]({}) / [Support server]({}) / [Vote]({}) / [{} QuizBot Premium (NEW)]({})"  # {website}, {support}, {vote}, {premium_emote}, {premium_link}
-help.play: "Play a quiz with the specified ID. Use 'random' as the ID to play a random quiz. \nExample: `=play 123456`"
+help.play: "Play a quiz with the specified ID. Use 'random' as the ID to play a random quiz. \nExample: `=play 123456`\nYou can also specify certain session options. Use `=options` for more information."
 help.stop: "Stops the quiz running in the current channel."
 help.create-quiz: "Creates a quiz with the given name and description. \nExample: `=create-quiz QuizBot;This is a quiz.`"
 help.add-question: "Adds a question to a quiz. \nExample: `=add-question 123456 Which country has black in their flag?;15;Germany;England;USA;China`"
@@ -214,7 +214,7 @@ cmd.qe.add-tag.already-added: "Tag `{}` is already added to this quiz."
 cmd.qe.add-tag.success: "Tag `{}` added successfully."
 cmd.qe.del-tag.success: "Tag `{}` removed successfully."
 cmd.qe.del-tag.not-added: "The tag `{}` is not set for this quiz."
-cmd.qe.finish.success: "QuizEditor ended."
+cmd.qe.finish.success: "QuizEditor ended. You can play this quiz by running `{}play {}`."
 cmd.qe.add-question.too-many: "Quizzes cannot have more than {} questions."
 cmd.qe.edit-question.invalid-arg: "Please specify the position of the question you want to edit."
 cmd.qe.edit-question.none: "This quiz does not have a question #{}."
@@ -250,6 +250,13 @@ cmd.featured.title: "Featured quizzes"
 cmd.featured.description: "Official quizzes are marked with :white_check_mark:."
 cmd.featured.quiz-details: "{} | _{} questions_ | _{} plays_ | _{} votes_"
 cmd.featured.footer: "Play a quiz with {}play <id>"
+
+cmd.options.title: "Quiz session options"
+cmd.options.description: "To use an option when playing a quiz, type it after the quiz ID.\nE.g. `=play 123456 delete`"
+cmd.options.delete: "The bot will delete all session messages after the quiz is complete."
+cmd.options.no-leaderboards: "The bot will not show the leaderboards after each question, only at the end."
+cmd.options.no-answers: "The bot will not show the correct answer after each question finishes."
+cmd.options.competitive: "See [this page]({}) for more information on competitive mode."
 
 # [2 commands omitted.]
 
