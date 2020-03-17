@@ -254,6 +254,7 @@ cmd.options.description: ""
 cmd.options.delete: ""
 cmd.options.no-leaderboards: ""
 cmd.options.no-answers: ""
+cmd.options.simple-scoring: ""
 cmd.options.competitive: ""
 
 # [2 commands omitted.]
