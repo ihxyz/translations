@@ -249,13 +249,15 @@ cmd.featured.description: "Offizielle Quizze sind mit :white_check_mark: markier
 cmd.featured.quiz-details: "{} | _{} fragen_ | _{} spiele_ | _{} stimmen_"
 cmd.featured.footer: "Spielen sie ein Quiz mit {}play <id>"
 
-cmd.options.title: ""
-cmd.options.description: ""
-cmd.options.delete: ""
-cmd.options.no-leaderboards: ""
-cmd.options.no-answers: ""
-cmd.options.simple-scoring: ""
-cmd.options.competitive: ""
+cmd.options.title: "Quiz Session Optionen"
+cmd.options.description: "Um eine Option für ein Quiz zu activieren, schreib die Option nach der Quiz ID. \nz.B. `=play 123456 delete`"
+cmd.options.delete: "Der Bot wird alle Session Nachrichten löschen nachdem dass Quiz beendet ist."
+cmd.options.no-leaderboards: "Der Bot wird keine Bestenliste nach jeder Frage zeigen, nur am ende."
+cmd.options.no-answers: "Der Bot wird die korrekte Antwort nicht zeigen, nachdem jede Frage beendet ist."
+cmd.options.simple-scoring: "Bestenlisten werden basierent auf der anzahl korrekter Antworten generiert; z.B. 1 korrekte Antwort = 1 Punkt."
+cmd.options.shuffle: "Die reinfolge der Fragen wird gemischt."
+cmd.options.shuffle-answers: "Die reinfolge der Antworten für Fragen wird gemischt."
+cmd.options.competitive: "Siehe [diese Seite]({}) für mehr Information über Wettbewerbs-modus."
 
 # [2 commands omitted.]
 
