@@ -256,7 +256,7 @@ cmd.options.description: "To use an option when playing a quiz, type it after th
 cmd.options.delete: "The bot will delete all session messages after the quiz is complete."
 cmd.options.no-leaderboards: "The bot will not show the leaderboards after each question, only at the end."
 cmd.options.no-answers: "The bot will not show the correct answer after each question finishes."
-cmd.options.simple-scoring: "Leaderboards will be generated based on correct answers; i.e. 1 correct answer = 1 point."
+cmd.options.simple-scoring: "Leaderboards will be generated based on correct answers; i.e. 1 correct = 1 point."
 cmd.options.shuffle: "The order of questions will be shuffled."
 cmd.options.shuffle-answers: "The order of the answers for questions will be shuffled."
 cmd.options.competitive: "See [this page]({}) for more information on competitive mode."
