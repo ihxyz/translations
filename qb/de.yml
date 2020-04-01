@@ -183,10 +183,12 @@ cmd.survey.message.detail: "Teilen sie uns ihre Meinungen in unsere [User Umfrag
 cmd.view.denied: "Sie haben keine Befugnisse um dieses Quiz anzuzeigen."
 cmd.view.nsfw: "Dieses Quiz ist als nicht jugendfrei markiert. Es kann nur in Kanälen die als NSFW markiert sind angezeigt werden."
 cmd.view.info: "Spiele: {} | Stimmen: {}"
-cmd.view.tags: " | Stichwörte: {}"
-cmd.view.overflow: "NOTIZ: Dies wird nur die ersten 25 Fragen anzeigen. Um mehr zu sehen, benutzen Sie `=view {} `"
-cmd.view.play: "Spiele dieses Quiz mit `{}play {}`."
-cmd.view.question: "{}) {} | _{} Sekunden_"
+cmd.view.title: "**{}** von {}"  # {Quiz name, Quiz author}
+cmd.view.description: "**Quiz Beschreibung**"
+cmd.view.tags: "Quiz Stichwörter: {}"
+cmd.view.overflow: "NOTIZ: Dieser Befehl wird nur bis zu 25 Fragen anzeigen.\nUm eine speziefische Fragen Auswahl zu sehen, benutzen Sie `{0}view {1} <start>-<ende>` z.B. `{0}view {1} 2-8`"  # {Prefix, Quiz ID}
+cmd.view.play: "**Spiele dieses Quiz mit `{}play {}`**"
+cmd.view.question: "{}) {} | *{} Sekunden*"
 cmd.view.answers: "Antworten: {}"
 
 cmd.qe.no-active: "Es gibt keinen Aktiven QuizEditor in diesem Kanal."

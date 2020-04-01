@@ -185,10 +185,12 @@ cmd.survey.message.detail: "Give us your opinions in our [user survey]({})."
 cmd.view.denied: "You do not have permission to view this quiz."
 cmd.view.nsfw: "This quiz is marked as NSFW. It can only be viewed in channels marked NSFW."
 cmd.view.info: "Plays: {} | Votes: {}"
-cmd.view.tags: " | Tags: {}"
-cmd.view.overflow: "NOTE: This will only show the first 25 questions. To see more use `=view {} <first question>`"
-cmd.view.play: "Play this quiz using `{}play {}`."
-cmd.view.question: "{}) {} | _{} seconds_"
+cmd.view.title: "**{}** by {}"  # {Quiz name, Quiz author}
+cmd.view.description: "**Quiz description:**"
+cmd.view.tags: "Quiz tags: {}"
+cmd.view.overflow: "NOTE: This command will only show up to 25 questions.\nTo see a specific range of questions use `{0}view {1} <start>-<end>` e.g. `{0}view {1} 2-8`"  # {Prefix, Quiz ID}
+cmd.view.play: "**Play this quiz using `{}play {}`**"
+cmd.view.question: "{}) {} | *{} seconds*"
 cmd.view.answers: "Answers: {}"
 
 cmd.qe.no-active: "There is no active QuizEditor in this channel."
