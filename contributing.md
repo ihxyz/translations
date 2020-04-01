@@ -14,7 +14,7 @@ All our translation files are .yml files. These files may require a [special pro
 
 There is a lot of text in our bots. We understand that you might not have time to translate all of it.
 
-If you only have time to translate a bit of the bot, we would recommend you start with the text under the SESSIONS subheading, this is relevant to playing quizzes and is the most important function of QuizBot. If this is all ready completed then you can take a look at the "base" text as this is especially important for the entire command system.
+If you only have time to translate a bit of the bot, we would recommend you start with the text under the SESSIONS subheading, this is relevant to playing quizzes and is the most important function of QuizBot. If this is already completed then you can take a look at the "base" text as this is especially important for the entire command system.
 
 ## After translating
 
