@@ -10,14 +10,16 @@
 #  - \n means new line. Please try to keep the newlines in the same place as they currently are to ensure messages are readable.
 #  - We use Discord's formatting codes in the messages. Please keep these as they are.
 #  - Do not translate command names in messages.
+#  - Do not translate any of the following text: "QuizBot", "QuizBot Premium", "ihxyz".
 # Support: https://www.ihxyz.dev/bots/support
 ################################################################
 
 # === GENERIC ===
 premium-only: "QuizBot Premium exklusiv Feature."
 premium-only.learn-more: "[Erfahren sie hier mehr über QuizBot Premium.]({})"  # {premium_link}
+nan: "Bitte spezifizieren sie eine Nummer."
 quiz.no-description: "*[Dieses Quiz hat keine Beschreibung.]*"
-quiz.editor-web: "Besuchen sie [hier]({}) um es zu bearbeiten."
+quiz.editor-web: "Besuchen sie [diese Seite]({}) um es zu bearbeiten."
 user.unavailable: "(User nicht verfügbar)"
 
 # === QUIZ EDITOR ===
@@ -142,15 +144,8 @@ cmd.premium.message: "QuizBot Premium ist jetzt verfügbar!"
 cmd.premium.message.detail: "[Hier]({}) klicken für mehr Information."
 
 # profile
-cmd.profile.title: "Ihr Profil"
-cmd.profile.more-details: "Mehr Details [hier]({})"
-cmd.profile.total-points: "Gesamte Punkte"
-cmd.profile.monthly-points: "Monatliche Punkte"
-cmd.profile.upvoted: "Positiv bewertete Quiz IDs"
-cmd.profile.downvoted: "Negativ bewertete Quiz IDs"
-cmd.profile.premium: "{} QuizBot Premium"
-cmd.profile.premium-active: "Sie haben QuizBot Premium."
-cmd.profile.premium-not-active: "[Sie haben QuizBot Premium nicht! Klicken sie hier für mehr Information.]({})"
+cmd.profile.total-points: "Gesamte Punkte: {:,}"
+cmd.profile.monthly-points: "Monatliche Punkte: {:,}"
 
 # remove-question
 cmd.remove-question.not-found: "Frage nicht gefunden."
@@ -262,6 +257,28 @@ cmd.options.shuffle: "Die reinfolge der Fragen wird gemischt."
 cmd.options.shuffle-answers: "Die reinfolge der Antworten für Fragen wird gemischt."
 cmd.options.competitive: "Siehe [diese Seite]({}) für mehr Information über Wettbewerbs-modus."
 
+cmd.schedule.create.reached-limit: "Nutzer die nicht über QuizBot Premium verfügen können nicht mehr als {} Quiz-Zeitpläne haben."
+cmd.schedule.already-editing: "In diesem Kanal wird bereits ein Quiz-Zeitplan bearbeitet."
+cmd.schedule.create.reached-limit.detail: "Für mehr Quiz-Zeitpläne, versuch [QuizBot Premium]()."
+cmd.schedule.edit.not-found: "Quiz-Zeitplan nicht gefunden."
+cmd.schedule.not-editing: "Momentan bearbeitesst du kein Quiz-Zeitplan."
+cmd.schedule.interval.out-of-range: "Quiz-Zeitplan Intervall muss zwischen `{}` und `{}` liegen."
+cmd.schedule.interval.invalid: "Ungültiges Zeit Intervall. Für Hilfe siehe `{}help time`"
+cmd.schedule.channel.invalid: "Ungültiger Kanal."
+cmd.schedule.mode.invalid: "Ungültiger modus. Muss einer von `{}` sein."
+cmd.schedule.add.not-found: "Quiz nicht gefunden."
+cmd.schedule.add.denied: "Du hast unzureichente Berechtigungen um auf dieses Quiz zuzugreifen."
+cmd.schedule.add.max: "Du kannst nur bis zu {} Quizze pro Quiz-Zeitplan haben."
+cmd.schedule.remove.not-added: "Dieses Quiz ist nicht in diesem Quiz-Zeitplan."
+cmd.schedule.option.invalid: "Ungültige Quiz-Zeitplan Option."
+cmd.schedule.start.bad-format: "Die Startzeit muss in dem folgenden Format sein."
+cmd.schedule.repeats.max: "Quiz-Zeitpläne können sich nicht öfter als {} mal wiederholen."
+cmd.schedule.repeats.min: "Quiz-Zeitpläne müssen sich mindestens einmal wierdholen."
+cmd.schedule.repeats.premium-only: "Quiz-Zeitpläne die für immer laufen sind begrenzt auf QuizBot Premium Nutzer."
+cmd.schedule.repeats.invalid: "Konnte `{}` nicht für Anzahl von wiederholungen konvertieren."
+cmd.schedule.delete.success: "Quiz-Zeitplan gelöscht."
+cmd.schedule.save.success: "Quiz-Zeitplan gespeichert und aktualisiert. Es wird das näschte mal `{}` laufen."
+
 # [2 commands omitted.]
 
 # === SPREADSHEET CONVERSION ===
@@ -307,4 +324,4 @@ session.question.time-allowed: "Erlaubte Zeit: {} Sekunden"
 session.question.time-up: "Zeit vorbei!"
 session.question.awaiting-reactions: "Antworten werden gezeigt sobald alle Reaktionen bereit sind!"
 
-contributors: "Kartchampion05"
+contributors: "Kartchampion"
