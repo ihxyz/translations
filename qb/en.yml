@@ -11,13 +11,13 @@
 #  - We use Discord's formatting codes in the messages. Please keep these as they are.
 #  - Do not translate command names in messages.
 #  - Do not translate any of the following text: "QuizBot", "QuizBot Premium", "ihxyz".
-#  - Type your username here to confirm you have read these notes ->
 # Support: https://www.ihxyz.dev/bots/support
 ################################################################
 
 # === GENERIC ===
 premium-only: "QuizBot Premium only feature."
 premium-only.learn-more: "[Learn more about QuizBot Premium here.]({})"  # {premium_link}
+nan: "Please specify a number."
 quiz.no-description: "*[This quiz has no description]*"
 quiz.editor-web: "Go [here]({}) to edit it."
 user.unavailable: "(user unavailable)"
@@ -144,15 +144,8 @@ cmd.premium.message: "QuizBot Premium is now available!"
 cmd.premium.message.detail: "Click [here]({}) for more information."
 
 # profile
-cmd.profile.title: "Your profile"
-cmd.profile.more-details: "More details [here]({})"
-cmd.profile.total-points: "Total points"
-cmd.profile.monthly-points: "Monthly points"
-cmd.profile.upvoted: "Up-voted quiz IDs"
-cmd.profile.downvoted: "Down-voted quiz IDs"
-cmd.profile.premium: "{} QuizBot Premium"
-cmd.profile.premium-active: "You have QuizBot Premium."
-cmd.profile.premium-not-active: "[You don't have QuizBot Premium! Click here for more information.]({})"
+cmd.profile.total-points: "Total points: {:,}"
+cmd.profile.monthly-points: "Monthly points: {:,}"
 
 # remove-question
 cmd.remove-question.not-found: "Question not found."
@@ -263,6 +256,28 @@ cmd.options.simple-scoring: "Leaderboards will be generated based on correct ans
 cmd.options.shuffle: "The order of questions will be shuffled."
 cmd.options.shuffle-answers: "The order of the answers for questions will be shuffled."
 cmd.options.competitive: "See [this page]({}) for more information on competitive mode."
+
+cmd.schedule.create.reached-limit: "Non-premium members cannot have more than {} schedules."
+cmd.schedule.already-editing: "There is already a quiz schedule being edited in this channel."
+cmd.schedule.create.reached-limit.detail: "For more schedules, try [QuizBot Premium]()."
+cmd.schedule.edit.not-found: "Schedule not found."
+cmd.schedule.not-editing: "You are not editing a schedule."
+cmd.schedule.interval.out-of-range: "Schedule interval must be between `{}` and `{}`."
+cmd.schedule.interval.invalid: "Invalid time interval. For help, run `{}help time`."
+cmd.schedule.channel.invalid: "Invalid channel."
+cmd.schedule.mode.invalid: "Invalid mode. Must be one of `{}`."
+cmd.schedule.add.not-found: "Quiz not found."
+cmd.schedule.add.denied: "You don't have permission to access this quiz."
+cmd.schedule.add.max: "You can only have {} quizzes in one schedule."
+cmd.schedule.remove.not-added: "This quiz is not added to the schedule."
+cmd.schedule.option.invalid: "Invalid session option."
+cmd.schedule.start.bad-format: "The start time must be in the following format."
+cmd.schedule.repeats.max: "Schedules cannot repeat more than {} times."
+cmd.schedule.repeats.min: "Schedules must run at least once."
+cmd.schedule.repeats.premium-only: "Schedules which run forever are limited to QuizBot Premium members."
+cmd.schedule.repeats.invalid: "Failed to parse value `{}` for number of repeats."
+cmd.schedule.delete.success: "Schedule deleted."
+cmd.schedule.save.success: "Schedule saved and updated. It will next run `{}`."
 
 # [2 commands omitted.]
 
