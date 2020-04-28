@@ -30,7 +30,7 @@ qe.standard.name: "\U0001F3AE **Name** | Ändere den Namen mit `{}qe name <neuer
 qe.standard.description: "\U0001F4DD **Beschreibung** | Ändere die Beschreibung mit `{0}qe description <neue Beschreibung>`\nEntfernen sie die Beschreibung mit `{0}qe description remove`"
 qe.standard.questions: "\U0001F3B2 **Fragen:** {}/{}"
 qe.standard.questions.detail: "Benutzen sie `{0}qe add-question` um eine Frage hinzuzufügen\nBearbeiten sie eine Frage mit `{0}qe edit-question <Fragen Nummer>`\nEntfernen sie eine Frage mit `{0}qe del-question <Fragen Nummer>`"
-qe.standard.questions.detail-maxed: "Der QuizEditor kann nur bis zu 20 Fragen anzeigen. Wir emphelen dieses Quiz auf der [QuizBot Webseite]({}) zu bearbeiten. "
+qe.standard.questions.detail-maxed: "Der QuizEditor kann nur bis zu 18 Fragen anzeigen. Wir emphelen dieses Quiz auf der [QuizBot Webseite]({}) zu bearbeiten. "
 qe.standard.answers: "__Antwort Möglichkeiten:__ {}"
 qe.standard.colour: "\U0001F3A8 **Farbe: ** {} | Ändere die Farbe mit `{}qe colour <neue Farbe>`"
 qe.standard.colour.detail: "__Verfügbare Farben:__ {}"
