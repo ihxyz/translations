@@ -74,7 +74,7 @@ help.profile: "Zeigt ihr Profil an. Sie können nur ihr eigenes Profil anzeigen.
 help.changelog: "Sehen Sie sich die Detais von kürzlichen Bot Updates an."
 help.featured: "Sehen Sie eine Liste von ausgewälten Quizzen."
 help.qe: "Bearbeiten Sie ein Quiz mit der gegebenen ID. Du kannst Fragen, Name, Beschreibung, Farbe und Stichwörter bearbeiten."
-help.access-level: ""
+help.access-level: "Ändere die Befehl-Berechtigungen für deinen Server."
 help.footer: "Gefällt ihnen der Bot? Benutzen Sie den Abstimmungs-Link am Anfang dieser Nachricht um den Bot unterstützen!"
 
 # === COMMANDS REUSABLE ===
