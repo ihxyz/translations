@@ -82,6 +82,8 @@ cmdr.invalid-id: "Invalid ID"
 cmdr.invalid-id.nan: "Please specify a valid number. \nDid you mean `{}search {}`?"  # {prefix}, {query}
 cmdr.invalid-id.no-quiz: "No quiz with that ID could be found."
 cmdr.perm-denied: "You do not have permission to do this."
+cmdr.nsfw: "This command cannot be used in NSFW channels."
+cmdr.nsfw.detail: "QuizBot does not allow NSFW quizzes."
 
 # === COMMANDS ===
 # FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
@@ -313,6 +315,7 @@ session.competitive.answer.invalid: "Invalid answer. Please try again."
 session.leaderboard: "Leaderboard"
 session.leaderboard.page: "Leaderboard page {} / {}"
 
+session.intro.notification: "Scheduled quiz starting now!"
 session.intro.starting: "Starting quiz"
 session.intro.starting-time: "The quiz will start in {} seconds."
 session.intro.quiz: "Quiz"
