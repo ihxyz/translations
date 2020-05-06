@@ -284,6 +284,7 @@ cmd.schedule.repeats.max: "Quiz-Zeitpläne können sich nicht öfter als {} mal 
 cmd.schedule.repeats.min: "Quiz-Zeitpläne müssen sich mindestens einmal wierdholen."
 cmd.schedule.repeats.premium-only: "Quiz-Zeitpläne die für immer laufen sind begrenzt auf QuizBot Premium Nutzer."
 cmd.schedule.repeats.invalid: "Konnte `{}` nicht für Anzahl von wiederholungen konvertieren."
+cmd.schedule.notification.not-found: "Konnte die Rolle nicht finden. Bitte versuchen Sie es erneut."
 cmd.schedule.delete.success: "Quiz-Zeitplan gelöscht."
 cmd.schedule.save.success: "Quiz-Zeitplan gespeichert und aktualisiert. Es wird das näschte mal `{}` laufen."
 

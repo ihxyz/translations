@@ -284,6 +284,7 @@ cmd.schedule.repeats.max: "Schedules cannot repeat more than {} times."
 cmd.schedule.repeats.min: "Schedules must run at least once."
 cmd.schedule.repeats.premium-only: "Schedules which run forever are limited to QuizBot Premium members."
 cmd.schedule.repeats.invalid: "Failed to parse value `{}` for number of repeats."
+cmd.schedule.notification.not-found: "Could not find that role. Please try again."
 cmd.schedule.delete.success: "Schedule deleted."
 cmd.schedule.save.success: "Schedule saved and updated. It will next run `{}`."
 
