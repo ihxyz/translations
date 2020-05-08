@@ -131,7 +131,7 @@ cmd.leaderboard.message: "Leaderboards"
 cmd.leaderboard.message.detail: "[View the public leaderboards here.]({})"
 
 # play-quiz
-cmd.play-quiz.random.failed: "After {} attempts, no quiz was found? Please try again."
+cmd.play-quiz.random.failed: "We were unable to find a random quiz. Please try again later."
 cmd.play-quiz.already-running: "There is already a quiz running in this channel. Please wait for it to end and try again."
 cmd.play-quiz.cannot-play: "Cannot start quiz"
 cmd.play-quiz.unplayable.detail: "Quiz validation failed. Error detail: `{}`. \n\n[Contact an administrator with the quiz ID and error message to resolve this issue.]({})"

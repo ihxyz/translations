@@ -131,7 +131,7 @@ cmd.leaderboard.message: "Bestenliste"
 cmd.leaderboard.message.detail: "[Sehen Sie sich die öffentliche Bestenliste hier an.]({})"
 
 # play-quiz
-cmd.play-quiz.random.failed: "Nach {} versuchen, wurde kein Quiz gefunden? Bitte versuchen Sie es erneut."
+cmd.play-quiz.random.failed: "Wir konnten kein zufälliges Quiz finden. Bitte versuchen Sie es später noch einmal."
 cmd.play-quiz.already-running: "In diesem Kanal lauft bereits ein Quiz. Bitte warten Sie bis es beendet ist und versuchen Sie es dann erneut."
 cmd.play-quiz.cannot-play: "Kann Quiz nicht starten"
 cmd.play-quiz.unplayable.detail: "Quiz validierung gescheitert. Fehler Melding: `{}`. \n\n[Kontaktieren Sie einen Administrator mit der Quiz ID und Feher Meldung um dieses Problem zu beheben.]({})"
