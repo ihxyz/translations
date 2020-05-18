@@ -32,6 +32,8 @@ qe.standard.questions: "\U0001F3B2 **Fragen:** {}/{}"
 qe.standard.questions.detail: "Benutzen Sie `{0}qe add-question` um eine Frage hinzuzufügen\nBearbeiten Sie eine Frage mit `{0}qe edit-question <Fragen Nummer>`\nEntfernen Sie eine Frage mit `{0}qe del-question <Fragen Nummer>`"
 qe.standard.questions.detail-maxed: "Der QuizEditor kann nur bis zu 18 Fragen anzeigen. Wir emphelen dieses Quiz auf der [QuizBot Webseite]({}) zu bearbeiten. "
 qe.standard.answers: "__Antwort Möglichkeiten:__ {}"
+qe.standard.hex: "[Benutzerdefinierter Hex-Code]({})"
+qe.standard.extra-colours: "[Hol dir mehr Farben mit QuizBot Premium]({})"
 qe.standard.colour: "\U0001F3A8 **Farbe: ** {} | Ändere die Farbe mit `{}qe colour <neue Farbe>`"
 qe.standard.colour.detail: "__Verfügbare Farben:__ {}"
 qe.standard.tags: "\U0001F3F7 **Stichwörter** | Fügen Sie neue Stichwörter mit `{0}qe add-tag <neues Stichwort>` hinzu oder entfernen Sie ein Stichwort mit `{0}qe del-tag <Stichwort>`"
@@ -96,24 +98,22 @@ cmd.add-question.validation-error.detail: "Etwas ist beim Aktualisieren des Quiz
 cmd.add-question.success: "Frage erfolgreich hinzugefügt."
 
 # convert-spreadsheet
-cmd.spreadsheet.not-attached: "Bitte hängen Sie eine CSV Datei an ihre Nachricht an. Für Hilfe, wie Sie diesen Befehl verwenden, benutzen Sie `{}spreadsheet help`."
+cmd.spreadsheet.not-attached: "Bitte hängen Sie eine CSV Datei an ihre Nachricht an. \nFür Hilfe, wie Sie diesen Befehl verwenden, benutzen Sie `{}spreadsheet help`."
 cmd.spreadsheet.success: "Quiz erfolgreich mit der ID `{}` gespeichert."
 cmd.spreadsheet.bad-file-format: "Nicht unterstütztes Datei Format. Bitte benutzen Sie eine `.csv` Datei."
 
 cmd.spreadsheet.help.title: "Verwandeln Sie Tabellen zu QuizBot Quizzen"
 cmd.spreadsheet.help.tutorial: "Schauen Sie das [Offizielle YouTube Video](https://youtu.be/4bcpmbIlrPw) für eine Schritt für Schritt Anleitung wie Sie Quizze aus Tabellen erstellen können. Oder, falls Sie es bevorzugen, können Sie auch die hier drunter gelisteten Instruktionen lesen."
-cmd.spreadsheet.help.step-1: "1) Stimmen Sie für den Bot"
-cmd.spreadsheet.help.step-1.detail: "Bitte unterstützen Sie den Bot [hier]({}) um Zugang zu diesem Feature zu bekommen. Dies ist 100% frei und hilft uns enorm. Notiz: für den Bot zu stimmen wird diese Feature für 48 Stunden vom Moment des abstimmens freischalten."
-cmd.spreadsheet.help.step-2: "2) Kopieren Sie die Vorlage"
-cmd.spreadsheet.help.step-2.detail: "[Laden Sie diese Google Sheets Datei]({}), dann gehen Sie zu `Datei -> Kopie Erstellen`."
-cmd.spreadsheet.help.step-3: "3) Kreiere dein eigenes Quiz"
-cmd.spreadsheet.help.step-3.detail: "Folgen Sie den Instruktionen in der Datei. Der Dateiname wird in den Quiznamen umgewandelt. Bitte beachten Sie dass Sie keine Quiz Beschreibung oder Stichwörter für das Quiz innerhalb der Tabelle einfügen können. Sie können diese aber immer noch, nachträglich mit Bot Befehlen oder über die Webseite hinzufügen."
-cmd.spreadsheet.help.step-4: "4) Speichern Sie die Tabelle"
-cmd.spreadsheet.help.step-4.detail: "Wenn Sie fertig sind, das Quiz zu bearbeiten, gehen Sie zu `Datei -> Herunterladen -> .CSV` und speichern Sie die Datei irgendwo, von wo Sie sie später zu Discord hochladen können."
-cmd.spreadsheet.help.step-5: "5) Die Tabelle konvertieren"
-cmd.spreadsheet.help.step-5.detail: "Um ihre CSV Datei in ein Quiz zu finalisieren, gehen Sie zu einem beliebigen Discord Kanal zu dem QuizBot Zugang hat und laden Sie die CSV Datei, die sie vorhin gespeichert haben, hoch. **WICHTIG: Geben Sie den Befehl `{}spreadsheet` ein bevor , die Datei hochladen**"
-cmd.spreadsheet.help.step-6: "6) Nach dem Konvertieren"
-cmd.spreadsheet.help.step-6.detail: "Jetzt da ihr Quiz in der QuizBot Datenbank gespeichert ist, können Sie es genau so wie jedes andere Quiz bearbeiten und spielen."
+cmd.spreadsheet.help.step-1: "1) Kopieren Sie die Vorlage"
+cmd.spreadsheet.help.step-1.detail: "[Laden Sie diese Google Sheets Datei]({}), dann gehen Sie zu `Datei -> Kopie Erstellen`."
+cmd.spreadsheet.help.step-2: "2) Kreiere dein eigenes Quiz"
+cmd.spreadsheet.help.step-2.detail: "Folgen Sie den Instruktionen in der Datei. Der Dateiname wird in den Quiznamen umgewandelt. Bitte beachten Sie dass Sie keine Quiz Beschreibung oder Stichwörter für das Quiz innerhalb der Tabelle einfügen können. Sie können diese aber immer noch, nachträglich mit Bot Befehlen oder über die Webseite hinzufügen."
+cmd.spreadsheet.help.step-3: "3) Speichern Sie die Tabelle"
+cmd.spreadsheet.help.step-3.detail: "Wenn Sie fertig sind, das Quiz zu bearbeiten, gehen Sie zu `Datei -> Herunterladen -> .CSV` und speichern Sie die Datei irgendwo, von wo Sie sie später zu Discord hochladen können."
+cmd.spreadsheet.help.step-4: "4) Die Tabelle konvertieren"
+cmd.spreadsheet.help.step-4.detail: "Um ihre CSV Datei in ein Quiz zu finalisieren, gehen Sie zu einem beliebigen Discord Kanal zu dem QuizBot Zugang hat und laden Sie die CSV Datei, die sie vorhin gespeichert haben, hoch. **WICHTIG: Geben Sie den Befehl `{}spreadsheet` ein bevor , die Datei hochladen**"
+cmd.spreadsheet.help.step-5: "5) Nach dem Konvertieren"
+cmd.spreadsheet.help.step-5.detail: "Jetzt da ihr Quiz in der QuizBot Datenbank gespeichert ist, können Sie es genau so wie jedes andere Quiz bearbeiten und spielen."
 
 cmd.spreadsheet.template.title: "Folgen Sie dem Link in dieser Nachricht um die Tabellen Vorlage um Quizze zu kreieren zu sehen. Machen Sie eine Kopie von dieser Datei und beginnen sie ihr Quiz zu bearbeiten!"
 cmd.spreadsheet.template.link: "[Google Sheets Link]({})"
@@ -186,7 +186,7 @@ cmd.view.description: "**Quiz Beschreibung**"
 cmd.view.tags: "Quiz Stichwörter: {}"
 cmd.view.overflow: "NOTIZ: Dieser Befehl wird nur bis zu 25 Fragen anzeigen.\nUm eine speziefische Fragen Auswahl zu sehen, benutzen Sie `{0}view {1} <start>-<ende>` z.B. `{0}view {1} 2-8`"  # {Prefix, Quiz ID}
 cmd.view.play: "**Spiele dieses Quiz mit `{}play {}`**"
-cmd.view.question: "{}) {} | *{} Sekunden*"
+cmd.view.question: "{}) {} | *{} Sekunden* | *{} Punkte*"
 cmd.view.answers: "Antworten: {}"
 
 cmd.qe.no-active: "Es gibt keinen Aktiven QuizEditor in diesem Kanal."
@@ -295,12 +295,17 @@ spreadsheet.error: "Ihre Datei konnte nicht in ein Quiz umgewandelt werden. Benu
 spreadsheet.error.file-format: "Datei Formatierung"
 spreadsheet.error.correct-answer: "Der korrekte Antworten-Index für Frage {} ist ungültig. Bitte spezifizieren Sie eine Nummer."
 spreadsheet.error.time-allowed: "Die erlaubte Zeit für Frage {} ist ungültig. Bitte spezifizieren Sie eine Nummer zwischen {} und {}."
+spreadsheet.error.points: "Dir Punkte die für Frage {} vergeben werden sind ungültig. Bitte geben sie eine Nummer zwischen {} und {} für minimum und maximum Punkte an."
+spreadsheet.error.domain: "Die URL für das Bild von Frage {} ist ungültig. Die Domain muss eine der folgenden sein: {}."
 spreadsheet.error.range: "Es muss zwischen {} und {} Charakter lang sein."
 spreadsheet.error.question-len: "Frage {} ist zu kurz oder zu lang."
 spreadsheet.error.answer-len: "Frage {}, Antwort {} ist zu kurz oder zu lang."
 spreadsheet.error.no-answers: "Frage {} benötigt mindestens 2 Antworten."
 spreadsheet.error.filename: "Der Dateiname kann nicht als Quiz Name benutzt werden da er zu lang oder zu kurz ist."
-# [3 messages omitted because of poor code design.]
+
+spreadsheet.failed.title: "Quiz konnte nicht kreiert werden."
+spreadsheet.failed.detail: "Der folgende Text konnte nicht umgewandelt werden: `{}`"
+spreadsheet.failed.footer: "Error Nachricht: {} | Frage Nummer: {}"
 
 # === SESSIONS ===
 # TODO: Competitive session report needs to be converted.
@@ -331,6 +336,7 @@ session.conclusion.vote-bot.detail: "[Stimmen Sie für den Bot]({}) | [{} QuizBo
 
 session.question.pos: "Frage {}"
 session.question.time-allowed: "Erlaubte Zeit: {} Sekunden"
+session.question.points: "Die korrekte Antwort verleiht {} Punkte"
 session.question.time-up: "Zeit vorbei!"
 session.question.awaiting-reactions: "Antworten werden gezeigt sobald alle Reaktionen bereit sind!"
 
