@@ -83,9 +83,11 @@ help.footer: "Gefällt ihnen der Bot? Benutzen Sie den Abstimmungs-Link am Anfan
 cmdr.invalid-id: "Ungültige ID"
 cmdr.invalid-id.nan: "Bitte spezifizieren Sie eine gültige Nummer. \n Meinen Sie `{}search {}`?"  # {prefix}, {query}
 cmdr.invalid-id.no-quiz: "Kein Quiz mit dieser ID konnte gefunden werden."
+cmdr.invalid-id.no-session: ""
 cmdr.perm-denied: "Sie haben keine Befugnisse um dies zu machen."
 cmdr.nsfw: "Dieser Command kann nicht in NSFW Kanälen verwendet werden."
 cmdr.nsfw.detail: "QuizBot verbietet NSFW Quizze."
+cmdr.no-session: ""
 
 # === COMMANDS ===
 # FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
@@ -169,9 +171,7 @@ cmd.settings.language.not-found: "Sprache nicht gefunden"
 cmd.settings.language.not-found.detail: "Unterstützte Sprachen: \n{}"
 
 # stop
-cmd.stop.no-session: "Es gibt keine aktive Quiz Session in diesem Kanal."
 cmd.stop.success: "Quiz Session `{}` angehalten."
-cmd.stop.denied: "Sie haben keine Befugnisse um diese Quiz Session anzuhalten."
 
 # survey
 cmd.survey.message: "Helfen Sie QuizBot zu verbessern"
@@ -288,6 +288,10 @@ cmd.schedule.notification.not-found: "Konnte die Rolle nicht finden. Bitte versu
 cmd.schedule.delete.success: "Quiz-Zeitplan gelöscht."
 cmd.schedule.save.success: "Quiz-Zeitplan gespeichert und aktualisiert. Es wird das näschte mal `{}` laufen."
 
+cmd.pause.paused: ""
+cmd.pause.resumed: ""
+cmd.pause.bad-state: ""
+
 # [2 commands omitted.]
 
 # === SPREADSHEET CONVERSION ===
@@ -295,7 +299,7 @@ spreadsheet.error: "Ihre Datei konnte nicht in ein Quiz umgewandelt werden. Benu
 spreadsheet.error.file-format: "Datei Formatierung"
 spreadsheet.error.correct-answer: "Der korrekte Antworten-Index für Frage {} ist ungültig. Bitte spezifizieren Sie eine Nummer."
 spreadsheet.error.time-allowed: "Die erlaubte Zeit für Frage {} ist ungültig. Bitte spezifizieren Sie eine Nummer zwischen {} und {}."
-spreadsheet.error.points: "Dir Punkte die für Frage {} vergeben werden sind ungültig. Bitte geben sie eine Nummer zwischen {} und {} für minimum und maximum Punkte an."
+spreadsheet.error.points: "Die Punkte die für Frage {} vergeben werden sind ungültig. Bitte geben sie eine Nummer zwischen {} und {} für minimum und maximum Punkte an."
 spreadsheet.error.domain: "Die URL für das Bild von Frage {} ist ungültig. Die Domain muss eine der folgenden sein: {}."
 spreadsheet.error.range: "Es muss zwischen {} und {} Charakter lang sein."
 spreadsheet.error.question-len: "Frage {} ist zu kurz oder zu lang."
