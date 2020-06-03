@@ -76,6 +76,7 @@ help.profile: "Zeigt ihr Profil an. Sie können nur ihr eigenes Profil anzeigen.
 help.changelog: "Sehen Sie sich die Detais von kürzlichen Bot Updates an."
 help.featured: "Sehen Sie eine Liste von ausgewälten Quizzen."
 help.qe: "Bearbeiten Sie ein Quiz mit der gegebenen ID. Du kannst Fragen, Name, Beschreibung, Farbe und Stichwörter bearbeiten."
+help.pause: "Pausieren oder fahren sie mit einem Quiz fort."
 help.access-level: "Ändere die Befehl-Berechtigungen für deinen Server."
 help.footer: "Gefällt ihnen der Bot? Benutzen Sie den Abstimmungs-Link am Anfang dieser Nachricht um den Bot unterstützen!"
 
@@ -301,10 +302,13 @@ spreadsheet.error.correct-answer: "Der korrekte Antworten-Index für Frage {} is
 spreadsheet.error.time-allowed: "Die erlaubte Zeit für Frage {} ist ungültig. Bitte spezifizieren Sie eine Nummer zwischen {} und {}."
 spreadsheet.error.points: "Die Punkte die für Frage {} vergeben werden sind ungültig. Bitte geben sie eine Nummer zwischen {} und {} für minimum und maximum Punkte an."
 spreadsheet.error.domain: "Die URL für das Bild von Frage {} ist ungültig. Die Domain muss eine der folgenden sein: {}."
+spreadsheet.error.premium: "Frage {} hat ein Feature das nur für QuizBot Premium Benutzer verfügbar ist. \nMehr Information über Premium gibt es hier: {}."
 spreadsheet.error.range: "Es muss zwischen {} und {} Charakter lang sein."
 spreadsheet.error.question-len: "Frage {} ist zu kurz oder zu lang."
 spreadsheet.error.answer-len: "Frage {}, Antwort {} ist zu kurz oder zu lang."
 spreadsheet.error.no-answers: "Frage {} benötigt mindestens 2 Antworten."
+spreadsheet.error.question-count: "Dass Quiz hat zu viele Fragen. \nDie maximale anzahl an Fragen ist {}."
+spreadsheet.error.question-count.premium: "Mit QuizBot Premium können sie die anzahl an Fragen erhöhen auf {}. \nMehr Information hier: {}."
 spreadsheet.error.filename: "Der Dateiname kann nicht als Quiz Name benutzt werden da er zu lang oder zu kurz ist."
 
 spreadsheet.failed.title: "Quiz konnte nicht kreiert werden."
