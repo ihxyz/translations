@@ -121,6 +121,10 @@ cmd.spreadsheet.help.step-5.detail: "Jetzt da ihr Quiz in der QuizBot Datenbank 
 cmd.spreadsheet.template.title: "Folgen Sie dem Link in dieser Nachricht um die Tabellen Vorlage um Quizze zu kreieren zu sehen. Machen Sie eine Kopie von dieser Datei und beginnen sie ihr Quiz zu bearbeiten!"
 cmd.spreadsheet.template.link: "[Google Sheets Link]({})"
 
+# copy
+cmd.copy.perm-denied: "Dieses Quiz kann nicht kopiert werden weil es nicht öffentlich ist."
+cmd.copy.success: "Quiz erfolgreich kopiert. Die neue ID ist {}."
+
 # create-quiz
 cmd.create-quiz.success: "Das Quiz wurde kreiert! Die ID ist {}."
 
