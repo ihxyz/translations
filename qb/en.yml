@@ -72,6 +72,7 @@ help.settings: "View or change settings for your server. You can change the foll
 help.search: "Searches the quiz database for quizzes relating to your search term. \nExample: `=search Trivia`"
 help.view: "View all the information about a quiz with the given ID. \nExample: `=view 123456`"
 help.spreadsheet: "Convert a spreadsheet to a quiz! See `=spreadsheet help` for more information, or watch our [official YouTube tutorial](https://youtu.be/4bcpmbIlrPw). For the spreadsheet template see `=spreadsheet template`."
+help.schedule: "Schedule quizzes to run regularly at certain intervals. Please note that this is currently in experimental release. For more information check our official support server."
 help.profile: "View your profile. You can only view your own profile."
 help.changelog: "View recent updates to the bot."
 help.featured: "View a list of public featured quizzes."
