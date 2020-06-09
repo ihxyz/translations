@@ -269,7 +269,7 @@ cmd.options.competitive: "See [this page]({}) for more information on competitiv
 
 cmd.schedule.create.reached-limit: "Non-premium members cannot have more than {} schedules."
 cmd.schedule.already-editing: "There is already a quiz schedule being edited in this channel."
-cmd.schedule.create.reached-limit.detail: "For more schedules, try [QuizBot Premium]()."
+cmd.schedule.create.reached-limit.detail: "For more schedules, try [QuizBot Premium]({})."
 cmd.schedule.edit.not-found: "Schedule not found."
 cmd.schedule.not-editing: "You are not editing a schedule."
 cmd.schedule.interval.out-of-range: "Schedule interval must be between `{}` and `{}`."

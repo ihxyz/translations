@@ -269,7 +269,7 @@ cmd.options.competitive: "Siehe [diese Seite]({}) für mehr Information über We
 
 cmd.schedule.create.reached-limit: "Nutzer die nicht über QuizBot Premium verfügen können nicht mehr als {} Quiz-Zeitpläne haben."
 cmd.schedule.already-editing: "In diesem Kanal wird bereits ein Quiz-Zeitplan bearbeitet."
-cmd.schedule.create.reached-limit.detail: "Für mehr Quiz-Zeitpläne, versuch [QuizBot Premium]()."
+cmd.schedule.create.reached-limit.detail: "Für mehr Quiz-Zeitpläne, versuch [QuizBot Premium]({})."
 cmd.schedule.edit.not-found: "Quiz-Zeitplan nicht gefunden."
 cmd.schedule.not-editing: "Momentan bearbeitesst du kein Quiz-Zeitplan."
 cmd.schedule.interval.out-of-range: "Quiz-Zeitplan Intervall muss zwischen `{}` und `{}` liegen."
