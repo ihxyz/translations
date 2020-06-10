@@ -70,7 +70,7 @@ help.create-quiz: "Kreiert ein Quiz mit dem gegebenen Namen und Beschreibung.\nB
 help.delete-quiz: "Löscht ein Quiz. Sie können nur ihre eigenen Quizze löschen.\nBeispiel: `=delete-quiz 123456`"
 help.settings: "Sehen oder ändern Sie Einstellungen für Ihren Server. Sie können die folgenden Einstellungen ändern: `language`, `prefix`."
 help.search: "Durchsucht die Quiz-Datenbank nach Quizzen bezüglich ihrer Such-Begriffen.\nBeispiel: `=search Allgemein wissen`"
-help.view: "Zeigt alle Information über ein Quiz mit der gegebenen ID.\nBeispiel: `=view 123456`"
+help.view: "Zeigt alle Information über ein Quiz mit der gegebenen ID. Bei deinen eigenen Quizzen kannst du `correct` nach dem Befehl angeben um die korrekten Antowrten zu zeigen. \nBeispiel: `=view 123456`"
 help.spreadsheet: "Verwandeln Sie eine Tabelle in ein Quiz! Benutzen Sie `=spreadsheet help` für mehr Information, oder schauen sie unser [offizelles YouTube Video](https://youtu.be/4bcpmbIlrPw). Für die Tabellen vorlage benutzen sie `=spreadsheet template`."
 help.schedule: "Kreiere ein Zeitplan für Quizze um sie automatisch an bestimmten Zeiten zu starten. Achtung: Dieses Feature ist momentan noch experimentel. Für mehr Information, checken sie unseren Offiziellen Support Server."
 help.profile: "Zeigt ihr Profil an. Sie können nur ihr eigenes Profil anzeigen."
