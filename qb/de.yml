@@ -91,6 +91,7 @@ cmdr.nsfw: "Dieser Command kann nicht in NSFW Kanälen verwendet werden."
 cmdr.nsfw.detail: "QuizBot verbietet NSFW Quizze."
 cmdr.no-session: "In diesem Kanal lauft momentan keine Session."
 cmdr.update-scheduled: "Ein Bot Update ist geplant. Bitte versuchen Sie es in {} Minuten nochmal."
+cmdr.maintenance-mode: "Der Bot ist momentan in Wartungsmodus."
 
 # === COMMANDS ===
 # FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
