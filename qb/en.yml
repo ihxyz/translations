@@ -90,7 +90,6 @@ cmdr.perm-denied: "You do not have permission to do this."
 cmdr.nsfw: "This command cannot be used in NSFW channels."
 cmdr.nsfw.detail: "QuizBot does not allow NSFW quizzes."
 cmdr.no-session: "There is no session running in this channel."
-cmdr.update-scheduled: "There is a bot update scheduled. Please try again in {} minutes."
 
 # === COMMANDS ===
 # FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
@@ -157,12 +156,6 @@ cmd.profile.monthly-points: "Monthly points: {:,}"
 
 # remove-question
 cmd.remove-question.not-found: "Question not found."
-
-# search
-cmd.search.no-results: "Sorry! We couldn't find any quizzes matching your search."
-cmd.search.results: "We found 1 quiz relating to your search!"
-cmd.search.results-plural: "We found {} quizzes relating to your search!"
-cmd.search.requested-by: "Requested by {}."
 
 # settings
 cmd.settings.updated: "Settings updated."
@@ -253,10 +246,19 @@ cmd.qe.save.no-correct: "Please set a correct answer."
 cmd.qe.save.success: "Question saved successfully."
 cmd.qe.cancel.success: "Changes discarded."
 
-cmd.featured.title: "Featured quizzes"
-cmd.featured.description: "Official quizzes are marked with :white_check_mark:."
-cmd.featured.quiz-details: "{} | _{} questions_ | _{} plays_ | _{} votes_"
-cmd.featured.footer: "Play a quiz with {}play <id>"
+cmd.featured.categories.title: "Featured Quizzes"
+cmd.featured.categories.description: "Featured quizzes are popular, high-quality public quizzes that are perfect for casual games or learning more about a topic."
+cmd.featured.categories.hint: "Run `{}featured {}` for a list."
+cmd.featured.category.title: "{} Quizzes"
+cmd.featured.category.browse: "Browse all featured quizzes with `{}featured`!"
+cmd.featured.category.truncated: "Only {} quizzes are shown at a time! Use the reactions below to see the next page."
+cmd.featured.category.empty: "**There are no quizzes in this category yet!** Check again later..."
+
+cmd.featured.play-quiz: "Use `{}play <id>` to play a quiz."
+cmd.featured.no-results: "Sorry! We couldn't find any quizzes matching your search. \nTry `{}featured` to show a list of featured quizzes."
+cmd.featured.results: "We found 1 quiz relating to your search!"
+cmd.featured.results-plural: "We found {} quizzes relating to your search!"
+cmd.featured.requested-by: "Requested by {}. Page {}/{}."
 
 cmd.options.title: "Quiz session options"
 cmd.options.description: "To use an option when playing a quiz, type it after the quiz ID.\nE.g. `=play 123456 delete`"
