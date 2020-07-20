@@ -89,7 +89,8 @@ cmdr.invalid-id.no-session: ""
 cmdr.perm-denied: "Sie haben keine Befugnisse um dies zu machen."
 cmdr.nsfw: "Dieser Command kann nicht in NSFW Kanälen verwendet werden."
 cmdr.nsfw.detail: "QuizBot verbietet NSFW Quizze."
-cmdr.no-session: ""
+cmdr.no-session: "In diesem Kanal lauft momentan keine Session."
+cmdr.update-scheduled: "Ein Bot Update ist geplant. Bitte versuchen Sie es in {} Minuten nochmal."
 
 # === COMMANDS ===
 # FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
@@ -137,7 +138,7 @@ cmd.leaderboard.message.detail: "[Sehen Sie sich die öffentliche Bestenliste hi
 # play-quiz
 cmd.play-quiz.random.failed: "Wir konnten kein zufälliges Quiz finden. Bitte versuchen Sie es später noch einmal."
 cmd.play-quiz.already-running: "In diesem Kanal lauft bereits ein Quiz. Bitte warten Sie bis es beendet ist und versuchen Sie es dann erneut."
-cmd.play-quiz.cannot-play: "Kann Quiz nicht starten"
+cmd.play-quiz.cannot-play: "Quiz kann nicht gestartet werden."
 cmd.play-quiz.unplayable.detail: "Quiz validierung gescheitert. Fehler Melding: `{}`. \n\n[Kontaktieren Sie einen Administrator mit der Quiz ID und Feher Meldung um dieses Problem zu beheben.]({})"
 cmd.play-quiz.nsfw: "Dieses Quiz ist als Nicht jugendfrei markiert. Es kann nur in Kanälen die als NSFW markiert sind gespielt werden."
 cmd.play-quiz.private: "Dieses Quiz ist Privat. Nur der Quiz Autor kann drauf zugreifen."

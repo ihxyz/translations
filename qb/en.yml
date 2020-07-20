@@ -90,6 +90,7 @@ cmdr.perm-denied: "You do not have permission to do this."
 cmdr.nsfw: "This command cannot be used in NSFW channels."
 cmdr.nsfw.detail: "QuizBot does not allow NSFW quizzes."
 cmdr.no-session: "There is no session running in this channel."
+cmdr.update-scheduled: "There is a bot update scheduled. Please try again in {} minutes."
 
 # === COMMANDS ===
 # FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
