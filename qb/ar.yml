@@ -1,0 +1,358 @@
+################################################################
+# BEFORE TRANSLATING: Make sure you have read and understand the information on the "Contributing" page and the notes below.
+# IMPORTANT NOTES:
+#  - Ensure all translations are surrounded by quotation marks (") as they currently are.
+#    If you are including a quotation mark in a message, type \ before it.
+#  - Do not edit the text before the ":". This is required for the bot to identify the messages.
+#  - Do not remove any "{}" in the messages. These are placeholders for values that the bot will insert.
+#    For example, the message "Quiz ID: {}" may become "Quiz ID: 123456" when it's displayed by the bot.
+#  - Do not remove or edit lines starting with "#". These do not need to be translated.
+#  - \n means new line. Please try to keep the newlines in the same place as they currently are to ensure messages are readable.
+#  - We use Discord's formatting codes in the messages. Please keep these as they are.
+#  - Do not translate command names in messages.
+#  - Do not translate any of the following text: "QuizBot", "QuizBot Premium", "ihxyz".
+# Support: https://www.ihxyz.dev/bots/support
+################################################################
+
+# === GENERIC ===
+premium-only: "QuizBot Premium only feature."
+premium-only.learn-more: "[Learn more about QuizBot Premium here.]({})"  # {premium_link}
+nan: "Please specify a number."
+quiz.no-description: "*[This quiz has no description]*"
+quiz.editor-web: "Go [here]({}) to edit it."
+user.unavailable: "(user unavailable)"
+
+# === QUIZ EDITOR ===
+qe.standard.title: "Editing quiz: {}"
+qe.standard.web-prompt: "\U0001F517 [You can also edit your quiz on the online interface.]({})"
+qe.standard.author: "QuizEditor"
+qe.standard.name: "\U0001F3AE **Name** | Change with `{}qe name <new name>`"
+qe.standard.description: "\U0001F4DD **Description** | Change with `{0}qe description <new description>`\nRemove the description with `{0}qe description remove`"
+qe.standard.questions: "\U0001F3B2 **Questions:** {}/{}"
+qe.standard.questions.detail: "Add a question with `{0}qe add-question`\nEdit a question with `{0}qe edit-question <question number>`\nRemove a question with `{0}qe del-question <question number>`"
+qe.standard.questions.detail-maxed: "The QuizEditor can only display up to 18 questions. We recommend editing this quiz on our [web interface]({})."
+qe.standard.answers: "__Answers:__ {}"
+qe.standard.hex: "[Custom hex code]({})"
+qe.standard.extra-colours: "[Get access to more colours with QuizBot Premium]({})"
+qe.standard.colour: "\U0001F3A8 **Colour:** {} | Change with `{}qe colour <new colour>`"
+qe.standard.colour.detail: "__Available colours:__ {}"
+qe.standard.tags: "\U0001F3F7 **Tags** | Add or remove tags with `{0}qe add-tag <new tag>` or `{0}qe del-tag <tag>`"
+qe.standard.no-tags: "*[This quiz has no tags]*"
+qe.standard.finish: "\u2705 Finish editing with `{}qe finish`\nThis message will be deleted after 5 minutes of inactivity."
+qe.standard.auto-save: "Changes are saved automatically."
+qe.standard.footer: "Quiz created on: {} | Upvotes: {} | Plays: {}"
+
+qe.question.title: "Editing quiz: {} | Question #{}"
+qe.question.question: "\u2753 **Question** | Change with `{}qe question <question>`"
+qe.question.question.not-set: "*[Not set]*"
+qe.question.answers: "\U0001F4CA **Answers:** {}/{}\nAdd new answers with `{}qe add-answer <answer1;answer2...>`\nRemove answers with `{}qe del-answer <answer number>`"
+qe.question.correct: "\u2705 The correct answer is displayed in **bold**."
+qe.question.correct.detail: "Change with `{}qe correct <answer number>`"
+qe.question.min: "**Minimum points awarded:** {}"
+qe.question.min.detail: "Change with `{}qe min <points>`"
+qe.question.max: "**Maximum points awarded:** {}"
+qe.question.max.detail: "Change with `{}qe max <points>`"
+qe.question.time: "\u23F1 **Time allowed:** {} seconds"
+qe.question.time.detail: "Change with `{}qe time <time allowed>`"
+qe.question.image: "**Image URL:** {}"
+qe.question.no-image: "*[No Image]*"
+qe.question.image.detail: "Update with `{}qe image <image URL>`\nUse `remove` as the URL to remove the image\nSupported domains: `{}`"
+qe.question.image.premium: "Want images in all your quizzes? [Get QuizBot Premium]({})"
+qe.question.operations: "Save this question with `{0}qe save`\nDelete this question with `{0}qe delete`\nCancel all changes with `{0}qe cancel`"
+qe.question.not-auto-save: "Changes are not saved automatically."
+
+# === HELP MESSAGE ===
+help.title: "[{}] QuizBot Help"
+help.description: "[Website]({}) / [Support server]({}) / [Vote]({}) / [{} QuizBot Premium (NEW)]({})"  # {website}, {support}, {vote}, {premium_emote}, {premium_link}
+help.play: "Play a quiz with the specified ID. Use 'random' as the ID to play a random quiz. \nExample: `=play 123456`\nYou can also specify certain session options. Use `=options` for more information."
+help.stop: "Stops the quiz running in the current channel."
+help.create-quiz: "Creates a quiz with the given name and description. \nExample: `=create-quiz QuizBot;This is a quiz.`"
+help.delete-quiz: "Deletes a quiz. You can only delete your own quizzes. \nExample: `=delete-quiz 123456`"
+help.settings: "View or change settings for your server. You can change the following settings: `language`, `prefix`."
+help.search: "Searches the quiz database for quizzes relating to your search term. \nExample: `=search Trivia`"
+help.view: "View all the information about a quiz with the given ID. On your own quizzes you can add `correct` after the command to show which answers are correct. \nExample: `=view 123456`"
+help.spreadsheet: "Convert a spreadsheet to a quiz! See `=spreadsheet help` for more information, or watch our [official YouTube tutorial](https://youtu.be/4bcpmbIlrPw). For the spreadsheet template see `=spreadsheet template`."
+help.schedule: "Schedule quizzes to run regularly at certain intervals. Please note that this is currently in experimental release. For more information check our official support server."
+help.profile: "View your profile. You can only view your own profile."
+help.changelog: "View recent updates to the bot."
+help.featured: "View a list of public featured quizzes."
+help.qe: "Edit a quiz with the given ID. You can edit questions, name, description, colour and tags."
+help.pause: "Pause or resume a quiz session."
+help.access-level: "Modify command access levels for your server."
+help.footer: "Enjoy the bot? Use the vote link at the top of this message to support it!"
+
+# === COMMANDS REUSABLE ===
+cmdr.invalid-id: "Invalid ID"
+cmdr.invalid-id.nan: "Please specify a valid number. \nDid you mean `{}search {}`?"  # {prefix}, {query}
+cmdr.invalid-id.no-quiz: "No quiz with that ID could be found."
+cmdr.invalid-id.no-session: "No session with that ID could be found."
+cmdr.perm-denied: "You do not have permission to do this."
+cmdr.nsfw: "This command cannot be used in NSFW channels."
+cmdr.nsfw.detail: "QuizBot does not allow NSFW quizzes."
+cmdr.no-session: "There is no session running in this channel."
+cmdr.update-scheduled: "There is a bot update scheduled. Please try again in {} minutes."
+cmdr.maintenance-mode: "The bot is currently in maintenance mode."
+
+# === COMMANDS ===
+# FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
+
+# add-question
+cmd.add-question.usage: "Usage: `{}`"  # {usage}
+cmd.add-question.invalid-time: "Please specify a valid time in seconds: `{}`"  # {usage}
+cmd.add-question.validation-error: "Internal validation error"
+cmd.add-question.validation-error.detail: "Something went wrong when updating this quiz: {}. No changes have been saved. [Contact an administrator to resolve this issue.]({})"  # {error}, {support_link}
+cmd.add-question.success: "Question added successfully."
+
+# convert-spreadsheet
+cmd.spreadsheet.not-attached: "Please attach one CSV file to the message. \nFor help on how to use this command, see `{}spreadsheet help`."
+cmd.spreadsheet.success: "Quiz saved successfully with ID `{}`."
+cmd.spreadsheet.bad-file-format: "Unsupported file format. Please use a `.csv` file."
+
+cmd.spreadsheet.help.title: "Converting spreadsheets to QuizBot quizzes"
+cmd.spreadsheet.help.tutorial: "Watch the [official YouTube video](https://youtu.be/4bcpmbIlrPw) for a step-by-step walkthrough of how to create quizzes with spreadsheets. Alternatively, you can read and follow the instructions outlined below."
+cmd.spreadsheet.help.step-1: "1) Copy the template"
+cmd.spreadsheet.help.step-1.detail: "[Load this Google Sheets file]({}), then go to `File -> Make a copy`."
+cmd.spreadsheet.help.step-2: "2) Make your own quiz"
+cmd.spreadsheet.help.step-2.detail: "Follow all the instructions outlined in the file. The filename will be converted to the quiz name. Please note that you cannot enter a quiz description or any tags for your quiz within the spreadsheet. You will still be able to add these with bot commands or the web interface."
+cmd.spreadsheet.help.step-3: "3) Save the spreadsheet"
+cmd.spreadsheet.help.step-3.detail: "Once you are finished editing your spreadsheet go to `File -> Download -> .CSV` and save the file somewhere from where you can upload it to Discord later."
+cmd.spreadsheet.help.step-4: "4) Converting the spreadsheet"
+cmd.spreadsheet.help.step-4.detail: "To finalise your CSV file into a quiz go to any Discord channel which QuizBot has access to and upload the CSV file which you saved earlier. **IMPORTANT: Enter the  command `{}spreadsheet` into the comment section when uploading the file.**"
+cmd.spreadsheet.help.step-5: "5) After converting"
+cmd.spreadsheet.help.step-5.detail: "Now that your quiz is saved in the QuizBot database you can edit and play the quiz in the same way you would with any other quiz."
+
+cmd.spreadsheet.template.title: "Follow the below link to see the spreadsheet template for creating quizzes. Make a copy of the file and start editing."
+cmd.spreadsheet.template.link: "[Google sheets link]({})"
+
+# create-quiz
+cmd.create-quiz.success: "Quiz created! Its ID is {}."
+
+# delete-quiz
+cmd.delete-quiz.success: "Quiz `{}` successfully deleted."
+
+# [2 subcommands omitted.]
+
+# leaderboard
+cmd.leaderboard.message: "Leaderboards"
+cmd.leaderboard.message.detail: "[View the public leaderboards here.]({})"
+
+# play-quiz
+cmd.play-quiz.random.failed: "We were unable to find a random quiz. Please try again later."
+cmd.play-quiz.already-running: "There is already a quiz running in this channel. Please wait for it to end and try again."
+cmd.play-quiz.cannot-play: "Cannot start quiz"
+cmd.play-quiz.maintenance: "The "
+cmd.play-quiz.unplayable.detail: "Quiz validation failed. Error detail: `{}`. \n\n[Contact an administrator with the quiz ID and error message to resolve this issue.]({})"
+cmd.play-quiz.nsfw: "This quiz is marked as NSFW. It can only be started in channels marked NSFW."
+cmd.play-quiz.private: "This quiz is private. It can only be accessed by its author."
+cmd.play.quiz.servers: "This quiz can only be played in the same servers its author is in."
+cmd.play.quiz.servers-author-gone: "This quiz's author is unavailable. Cannot play quiz."
+cmd.play-quiz.no-questions: "This quiz does not have any questions."
+cmd.play-quiz.competitive-denied: "{} Competitive mode is only available to premium members. [Learn more about premium here.]({})"
+
+# premium
+cmd.premium.message: "QuizBot Premium is now available!"
+cmd.premium.message.detail: "Click [here]({}) for more information."
+
+# profile
+cmd.profile.total-points: "Total points: {:,}"
+cmd.profile.monthly-points: "Monthly points: {:,}"
+
+# remove-question
+cmd.remove-question.not-found: "Question not found."
+
+# settings
+cmd.settings.updated: "Settings updated."
+cmd.settings.prefix.too-long: "Prefix cannot be longer than 24 characters."
+cmd.settings.view.title: "Settings for this guild"
+cmd.settings.view.prefix: "Prefix"
+cmd.settings.view.language: "Language"
+cmd.settings.language.not-found: "Language not found"
+cmd.settings.language.not-found.detail: "Supported languages: \n{}"
+
+# stop
+cmd.stop.success: "Quiz session `{}` stopped."
+
+# survey
+cmd.survey.message: "Help improve QuizBot"
+cmd.survey.message.detail: "Give us your opinions in our [user survey]({})."
+
+# view
+cmd.view.denied: "You do not have permission to view this quiz."
+cmd.view.nsfw: "This quiz is marked as NSFW. It can only be viewed in channels marked NSFW."
+cmd.view.info: "Plays: {} | Votes: {}"
+cmd.view.title: "**{}** by {}"  # {Quiz name, Quiz author}
+cmd.view.description: "**Quiz description:**"
+cmd.view.tags: "Quiz tags: {}"
+cmd.view.overflow: "NOTE: This command will only show up to 25 questions.\nTo see a specific range of questions use `{0}view {1} <start>-<end>` e.g. `{0}view {1} 2-8`"  # {Prefix, Quiz ID}
+cmd.view.play: "**Play this quiz using `{}play {}`**"
+cmd.view.question: "{}) {} | *{} seconds* | *{} points*"
+cmd.view.answers: "Answers: {}"
+
+cmd.qe.no-active: "There is no active QuizEditor in this channel."
+cmd.qe.question-only-sc: "This subcommand is only enabled when editing a question."
+cmd.qe.quiz-only-sc: "This subcommand is disabled when editing questions. Please save or delete this question first."
+cmd.qe.already-editing-channel: "There is already a quiz being edited in this channel."
+cmd.qe.already-editing-quiz: "This quiz is already being edited in another channel."
+cmd.qe.invalid-id: "Please specify a quiz ID that consists only of numbers."
+cmd.qe.not-found: "Could not find a quiz with that ID. Please try again."
+cmd.qe.permission-denied: "You can only edit your own quizzes."
+cmd.qe.nsfw: "This quiz is marked as NSFW. It can only be edited in NSFW channels."
+cmd.qe.no-id: "Please specify a quiz ID."
+cmd.qe.name.invalid-len: "Quiz name is too long or too short. It must be between {} and {} characters."
+cmd.qe.name.success: "Quiz name successfully changed to `{}`."
+cmd.qe.description.invalid-len: "Quiz description is too long. It must be at most {} characters."
+cmd.qe.description.success: "Quiz description successfully changed."
+cmd.qe.colour.premium-only: "That colour is only available to QuizBot Premium members."
+cmd.qe.colour.not-found: "Could not find the colour `{}`."
+cmd.qe.colour.success: "Quiz colour successfully changed."
+cmd.qe.add-tag.no-spaces: "Tags cannot contain spaces."
+cmd.qe.add-tag.too-many: "Quizzes cannot have more than {} tags."
+cmd.qe.add-tag.already-added: "Tag `{}` is already added to this quiz."
+cmd.qe.add-tag.success: "Tag `{}` added successfully."
+cmd.qe.del-tag.success: "Tag `{}` removed successfully."
+cmd.qe.del-tag.not-added: "The tag `{}` is not set for this quiz."
+cmd.qe.finish.success: "QuizEditor ended. You can play this quiz by running `{}play {}`."
+cmd.qe.add-question.too-many: "Quizzes cannot have more than {} questions."
+cmd.qe.add-question.too-many.premium: "Premium users can have up to {} questions per quiz."
+cmd.qe.edit-question.invalid-arg: "Please specify the position of the question you want to edit."
+cmd.qe.edit-question.none: "This quiz does not have a question #{}."
+cmd.qe.del-question.invalid-arg: "Please specify the position of the question you want to delete."
+cmd.qe.del-question.none: "This quiz does not have a question #{}."
+cmd.qe.del-question.success: "Question successfully removed."
+cmd.qe.question.invalid-len: "Please specify a question with at most {} characters."
+cmd.qe.question.success: "Question changed successfully."
+cmd.qe.add-answers.invalid-count: "Questions can have no more than {} answers."
+cmd.qe.add-answers.min: "Answers must be at least {} character(s)."
+cmd.qe.add-answers.max: "Answers can be at most {} characters."
+cmd.qe.add-answers.success: "Answer(s) added successfully."
+cmd.qe.del-answer.invalid-arg: "Please specify the position of the answer you want to delete."
+cmd.qe.del-answer.none: "This question does not have an answer #{}."
+cmd.qe.del-answer.success: "Answer successfully removed."
+cmd.qe.correct.invalid-arg: "Please specify the position of the answer you want to mark as correct."
+cmd.qe.correct.none: "This question does not have an answer #{}."
+cmd.qe.correct.success: "Correct answer updated to `{}`."
+cmd.qe.points.invalid: "Please specify a valid score."
+cmd.qe.points.out-of-range: "Please specify a score between {} and {}."
+cmd.qe.points.success: "Points successfully updated. \nPlayers are now awarded between {} and {} points."
+cmd.qe.min.too-large: "Min score must be smaller than or equal to max score"
+cmd.qe.max.too-small: "Max score must be greater than or equal to min score"
+cmd.qe.time.invalid: "Please specify a valid time in seconds."
+cmd.qe.time.out-of-range: "Time cannot be more than {} or less than {} seconds."
+cmd.qe.time.success: "Time allowed updated to {} seconds."
+cmd.qe.image.removed: "Image removed successfully."
+cmd.qe.image.bad-domain: "Unrecognised domain. The domain needs to be one of the following: `{}`."
+cmd.qe.image.success: "Image URL updated successfully."
+cmd.qe.delete.success: "Question successfully removed."
+cmd.qe.save.no-question: "Please specify a question."
+cmd.qe.save.bad-answers: "Please specify at least {} answers."
+cmd.qe.save.no-correct: "Please set a correct answer."
+cmd.qe.save.success: "Question saved successfully."
+cmd.qe.cancel.success: "Changes discarded."
+
+cmd.featured.categories.title: "Featured Quizzes"
+cmd.featured.categories.description: "Featured quizzes are popular, high-quality public quizzes that are perfect for casual games or learning more about a topic."
+cmd.featured.categories.hint: "Run `{}featured {}` for a list."
+cmd.featured.category.title: "{} Quizzes"
+cmd.featured.category.browse: "Browse all featured quizzes with `{}featured`!"
+cmd.featured.category.truncated: "Only {} quizzes are shown at a time! Use the reactions below to see the next page."
+cmd.featured.category.empty: "**There are no quizzes in this category yet!** Check again later..."
+
+cmd.featured.play-quiz: "Use `{}play <id>` to play a quiz."
+cmd.featured.no-results: "Sorry! We couldn't find any quizzes matching your search. \nTry `{}featured` to show a list of featured quizzes."
+cmd.featured.results: "We found 1 quiz relating to your search!"
+cmd.featured.results-plural: "We found {} quizzes relating to your search!"
+cmd.featured.requested-by: "Requested by {}. Page {}/{}."
+
+cmd.options.title: "Quiz session options"
+cmd.options.description: "To use an option when playing a quiz, type it after the quiz ID.\nE.g. `=play 123456 delete`"
+cmd.options.delete: "The bot will delete all session messages after the quiz is complete."
+cmd.options.no-leaderboards: "The bot will not show the leaderboards after each question, only at the end."
+cmd.options.no-answers: "The bot will not show the correct answer after each question finishes."
+cmd.options.simple-scoring: "Leaderboards will be generated based on correct answers; i.e. 1 correct = 1 point."
+cmd.options.shuffle: "The order of questions will be shuffled."
+cmd.options.shuffle-answers: "The order of the answers for questions will be shuffled."
+cmd.options.competitive: "See [this page]({}) for more information on competitive mode."
+
+cmd.schedule.create.reached-limit: "Non-premium members cannot have more than {} schedules."
+cmd.schedule.already-editing: "There is already a quiz schedule being edited in this channel."
+cmd.schedule.create.reached-limit.detail: "For more schedules, try [QuizBot Premium]({})."
+cmd.schedule.edit.not-found: "Schedule not found."
+cmd.schedule.not-editing: "You are not editing a schedule."
+cmd.schedule.interval.out-of-range: "Schedule interval must be between `{}` and `{}`."
+cmd.schedule.interval.invalid: "Invalid time interval. For help, run `{}help time`."
+cmd.schedule.channel.invalid: "Invalid channel."
+cmd.schedule.mode.invalid: "Invalid mode. Must be one of `{}`."
+cmd.schedule.add.not-found: "Quiz not found."
+cmd.schedule.add.denied: "You don't have permission to access this quiz."
+cmd.schedule.add.max: "You can only have {} quizzes in one schedule."
+cmd.schedule.remove.not-added: "This quiz is not added to the schedule."
+cmd.schedule.option.invalid: "Invalid session option."
+cmd.schedule.start.bad-format: "The start time must be in the following format."
+cmd.schedule.repeats.max: "Schedules cannot repeat more than {} times."
+cmd.schedule.repeats.min: "Schedules must run at least once."
+cmd.schedule.repeats.premium-only: "Schedules which run forever are limited to QuizBot Premium members."
+cmd.schedule.repeats.invalid: "Failed to parse value `{}` for number of repeats."
+cmd.schedule.notification.not-found: "Could not find that role. Please try again."
+cmd.schedule.delete.success: "Schedule deleted."
+cmd.schedule.save.success: "Schedule saved and updated. It will next run `{}`."
+
+cmd.pause.paused: "Paused the session. You can resume it with `{}resume`."
+cmd.pause.resumed: "Resumed the session."
+cmd.pause.bad-state: "You cannot pause a session during a question. Wait until the question has ended and try again."
+
+# [2 commands omitted.]
+
+# === SPREADSHEET CONVERSION ===
+spreadsheet.error: "Your file could not be converted into a quiz. Are you using the official Google Sheets template?"
+spreadsheet.error.file-format: "File format"
+spreadsheet.error.correct-answer: "The correct answer index for question {} is not valid. Please specify a number."
+spreadsheet.error.time-allowed: "The time allowed for question {} is not valid. Please specify a number between {} and {}."
+spreadsheet.error.points: "The points awarded for question {} are not valid. Please specify a number between {} and {} for both min and max points."
+spreadsheet.error.domain: "The image URL for question {} is invalid. The domain must be one of the following: {}."
+spreadsheet.error.premium: "Question {} uses a feature which is only available to QuizBot Premium users. \nFind out more about premium here: {}."
+spreadsheet.error.range: "It must be between {} and {} characters."
+spreadsheet.error.question-len: "Question {} is too short or too long."
+spreadsheet.error.answer-len: "Question {}, answer {} is too short or too long."
+spreadsheet.error.no-answers: "Question {} needs at least 2 answers."
+spreadsheet.error.question-count: "Your quiz has too many questions. \nThe maximum number of questions allowed is {}."
+spreadsheet.error.question-count.premium: "You can raise the question limit to {} with QuizBot Premium. \nMore information here: {}."
+spreadsheet.error.filename: "The filename cannot be used as it is too long or too short."
+
+spreadsheet.failed.title: "Failed to create quiz"
+spreadsheet.failed.detail: "The following text couldn't be converted: `{}`"
+spreadsheet.failed.footer: "Error message: {} | Question Number: {}"
+
+# === SESSIONS ===
+# TODO: Competitive session report needs to be converted.
+session.error: "Something went wrong, so this session was ended. This issue has been reported."
+
+session.competitive: "COMPETITIVE MODE"
+session.competitive.join-note: "React below to join this quiz. You cannot join after this stage has ended."
+session.competitive.dm-note: "COMPETITIVE MODE: To submit your answer, DM the bot with its number."
+session.competitive.joined: "You have joined quiz `{}` (session `{}`). Good luck!"
+session.competitive.answer.submitted: "Your answer has been submitted."
+session.competitive.answer.invalid: "Invalid answer. Please try again."
+
+session.leaderboard: "Leaderboard"
+session.leaderboard.page: "Leaderboard page {} / {}"
+
+session.intro.notification: "Scheduled quiz starting now!"
+session.intro.starting: "Starting quiz"
+session.intro.starting-time: "The quiz will start in {} seconds."
+session.intro.quiz: "Quiz"
+session.intro.description: "Description"
+session.intro.questions: "Questions"
+session.intro.footer: "Session ID: {} | Quiz ID: {}"
+
+session.conclusion.total-players: "Total players"
+session.conclusion.vote-quiz: "Enjoy this quiz? Vote for it with the reactions! | Quiz ID: {}"
+session.conclusion.vote-bot: "Enjoying the bot?"
+session.conclusion.vote-bot.detail: "[Vote for the bot]({}) | [{} QuizBot Premium]({})"
+
+session.question.pos: "Question {}"
+session.question.time-allowed: "Time allowed: {} seconds"
+session.question.points: "The correct answer awards {} points"
+session.question.time-up: "Time's up!"
+session.question.awaiting-reactions: "Answers will be revealed once all reactions are ready!"
+
+contributors: "ihxyz"
