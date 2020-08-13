@@ -1,0 +1,147 @@
+################################################################
+# BEFORE TRANSLATING: Make sure you have read and understand the information on the "Contributing" page and the notes below.
+# IMPORTANT NOTES:
+#  - Ensure all translations are surrounded by quotation marks (") as they currently are.
+#    If you are including a quotation mark in a message, type \ before it.
+#  - Do not edit the text before the ":". This is required for the bot to identify the messages.
+#  - Do not remove any "{}" in the messages. These are placeholders for values that the bot will insert.
+#    For example, the message "Poll ID: {}" may become "Poll ID: 123456" when it's displayed by the bot.
+#  - Do not remove or edit lines starting with "#". These do not need to be translated.
+#  - \n means new line. Please try to keep the newlines in the same place as they currently are to ensure messages are readable.
+#  - We use Discord's formatting codes in the messages. Please keep these as they are.
+#  - Do not translate command names in messages.
+#  - Do not translate any of the following text: "PollBot Advanced", "ihxyz".
+#  - Type your username here to confirm you have read these notes ->
+# Support: https://www.ihxyz.dev/bots/support
+################################################################
+
+# === POLLS ===
+poll.available-responses: "Available responses"
+poll.timed-footer: "ID: {} | Ends"
+poll.closed: "Poll closed!"
+poll.closed.detail: "Any reactions added or removed here will not affect the result."
+
+# === HELP ===
+help.title: "[EN] PollBot Advanced Help"
+help.links: '[Support server]({} "Join our support server for help with the bot.")'
+help.poll: "Creates a simple yes/no poll. Only requires a question."
+help.poll-custom: "Creates a poll with custom answers. Separate the question and answers with a semicolon (;)."
+help.timed: "Makes a poll timed. Usage is the same as the normal commands, but you must specify the time first."
+help.apc: "Create an interface which can be used to create polls more seamlessly."
+help.results: "Displays the results for the specified poll ID."
+help.close: "Marks the specified poll ID as closed. Note the results command will no longer work after closing a poll."
+help.settings: "Change the settings for your server. Type `{}settings help` for more information."
+help.survey: "Get a link to a survey to give us feedback for the bot and tell us which features you want to be introduced next."
+help.footer: "**Enjoy the bot?**"
+help.footer.detail: '[Click here to support it!]({} "Vote for the bot.")'
+
+# === APC ===
+apc.none: "None"
+apc.title: "You are creating a poll with the Advanced Poll Creator."
+apc.description: "**To send this poll, use `{}ap send`.**"
+apc.footer: "This message will be deleted after 120 seconds of inactivity."
+apc.question: "\u270F Poll question: "
+apc.question.detail: "Change with `{}ap question <new question>`"
+apc.type.standard: "\U0001F4CA Poll type: Standard Poll"
+apc.type.custom: "\U0001F4CA Poll type: Custom Poll"
+apc.type.detail: "To change use `{}ap type`"
+apc.answers.standard: "\U0001F4C4 Answers: Yes, No"
+apc.answers.standard.detail: "To change this please change poll type."
+apc.answers.custom: "\U0001F4C4 Answers: "
+apc.answers.custom.detail: "To add use `{}ap add-answer <answer>` \nTo remove an answer use `{}ap del-answer <answer position>` \nTo see all answers use `{}ap all-answers`"
+apc.timed.no: "\u23F1 Timed poll: no"
+apc.timed.yes: "\u23F1 Timed poll: yes"
+apc.timed.detail: "Toggle with `{}ap timed`"
+apc.duration: "\u23F2 Poll duration: "
+apc.duration.detail: "Change with `{}ap time <duration>`"
+apc.target: "\U0001F4E8 Target Channel: "
+apc.target.detail: "To change use `{}ap channel <channel name>` \nTo create this poll use `{}ap send` | Link to channel: <#{}>"
+apc.colour.unlocked: "To change use `{0}ap colour <colour>`\nTo see all available colours use `{0}ap palette`"
+apc.colour.locked: "Custom poll colour is a {} PBA Premium feature. Unlock it by supporting us [here]({})"
+apc.cancel: "\U0001F6AB Cancel creation"
+apc.cancel.detail: "To cancel this poll creation use `{}ap cancel`"
+apc.all-answers: "These are the current answers for this poll."
+apc.all-answers.detail: "To add new answers use the command `{}ap add-answer <answer>` \nTo remove the last answer use `{}ap del-answer`"
+apc.all-answers.footer: "You can resend the advanced poll settings embed using '{}ap'"
+
+# === RESULTS ===
+results: "Poll results"
+results.failed: "Failed to get results for the poll. Maybe its message is missing, or the bot cannot access it?"
+results.none: "No results. Nobody voted on the poll."
+results.most-popular: "Most popular response: {}"
+results.most-popular-plural: "Most popular responses: {}"
+results.bot-vote: "Enjoy the bot? [Click here to support it!]({})"
+results.total-votes: "**Total votes: {}**"
+results.response-detail: "{} vote ({}%)"
+results.response-detail-plural: "{} votes ({}%)"
+results.close-hint: "Use {}close to close this poll."
+
+# === COMMANDS REUSABLE ===
+cmdr.no-poll: "Could not find poll."
+cmdr.poll.perm-denied: "You do not have permission to access this poll."
+cmdr.poll.invalid-question: "Your question is either too long or too short. It must be between {} and {} characters."
+cmdr.poll.invalid-time: "Failed to parse time interval `{}`. For help, run `{}help time`."
+cmdr.poll.bad-range-time: "Please specify a positive time duration between 1 minute and {} days."
+cmdr.poll.min-responses: "Polls must have at least {} responses."
+cmdr.poll.max-responses: "Polls cannot have more than {} responses."
+cmdr.poll.max-combined-responses: "The combined length of your responses is too long. It must be below {} characters. It's currently {} characters."
+cmdr.poll.access-level-gone: "Your server's access level is set to a deleted role."
+cmdr.poll.access-level-gone.detail: "Please ask a server administrator to change this with the command `{}settings access-level`."
+
+# === COMMANDS ===
+cmd.advanced-poll.denied: "You can only edit, view or close your own APCs."
+cmd.advanced-poll.no-apc: "There is no APC running in this channel."
+cmd.advanced-poll.bot-perm-error: "The bot requires the `{}` permission in the target channel."
+cmd.advanced-poll.question.invalid: "Please specify a question."
+cmd.advanced-poll.question.success: "Poll question updated successfully."
+cmd.advanced-poll.type.success: "Poll type updated successfully."
+cmd.advanced-poll.add-answer.invalid: "Please specify an answer."
+cmd.advanced-poll.add-answer.success: "Answer added successfully."
+cmd.advanced-poll.del-answer.none: "Cannot remove an answer as the question has none."
+cmd.advanced-poll.del-answer.not-found: "Cannot find answer at position {}. To remove the last answer use `{}ap del-answer`"
+cmd.advanced-poll.del-answer.standard: "Cannot remove an answer from a standard poll. Please change to a custom poll to modify answers."
+cmd.advanced-poll.del-answer.success: "Answer `{}` was removed successfully."
+cmd.advanced-poll.timed.enable: "Poll is now timed."
+cmd.advanced-poll.timed.disable: "Poll is no longer timed."
+cmd.advanced-poll.time.invalid: "Please specify a time."
+cmd.advanced-poll.time.success: "Poll duration set."
+cmd.advanced-poll.channel.invalid: "Please specify a channel."
+cmd.advanced-poll.channel.not-found: "Channel not found: `{}`."
+cmd.advanced-poll.channel.perm-error: "You can only specify channels where you have the `{}` permission."
+cmd.advanced-poll.channel.success: "Channel updated."
+cmd.advanced-poll.colour.premium: "Custom poll colours are only available for premium members."
+cmd.advanced-poll.colour.premium.detail: "You can unlock the feature by supporting us [here]({})."
+cmd.advanced-poll.colour.not-found: "Could not find colour `{}`"
+cmd.advanced-poll.colour.success: "Colour updated"
+cmd.advanced-poll.palette.title: "\U0001F3A8 Available colours"
+cmd.advanced-poll.cancel.success: "Poll cancelled."
+cmd.advanced-poll.send.no-question: "Please specify a question for the poll."
+cmd.advanced-poll.send.success: "The poll has been created in the target channel."
+
+cmd.close.success: "Poll closed."
+
+cmd.settings.updated: "Settings updated."
+cmd.settings.language.not-found: "Language not found"
+cmd.settings.language.not-found.detail: "Supported languages: \n{}"
+cmd.settings.multivote.invalid: "Please specify `on` or `off`."
+cmd.settings.access-level.no-mentions: "Please tag a role, `everyone`, `manage messages` or `admins`."
+cmd.settings.access-level.success: "Settings updated successfully."
+cmd.settings.prefix.too-long: "Prefixes cannot be longer than 24 characters."
+cmd.settings.prefix.success: "Settings updated. Your server's prefix is now `{}`."
+cmd.settings.help.title: "Settings help"
+cmd.settings.help.detail: "Change a setting with `{}settings <setting> <value>`."
+cmd.settings.help.access-level: "The permissions required to create a poll. Can either be a role, 'manage messages', 'admins' or just 'everyone'. Note that the bot uses **the order** of the roles to check role-based permissions."
+cmd.settings.help.prefix: "The server's command prefix. It's currently `{}`."
+cmd.settings.help.language: "The server's language."
+cmd.settings.help.multivote: "If users can vote more than once on a poll. Must be either 'on' or 'off'."
+cmd.settings.view.prefix: "Prefix"
+cmd.settings.view.multivote: "Multivote"
+cmd.settings.view.language: "Language"
+cmd.settings.view.access-level: "Access level"
+cmd.settings.view.access-level.role: "Role: {} and above"
+cmd.settings.view.footer: "See {}settings help to see how to change these settings."
+
+cmd.survey.message: "Help us improve PollBot Advanced"
+cmd.survey.detail: "Give us your opinions in our [user survey]({})."
+
+contributors: ""

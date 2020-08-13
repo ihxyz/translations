@@ -71,4 +71,4 @@ cmd.access-level.set.updated: "تم تحديث مستوى وصول الامر `{
 cmd.access-level.reset.success-all: "إعادة تعيين مستوى الوصول لجميع الأوامر."
 cmd.access-level.reset.success: "اعادة تعيين مستوى الوصول لـ `{}`."
 
-contributors: ""
+contributors: "im0x"
