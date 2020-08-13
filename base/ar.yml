@@ -1,74 +1,74 @@
 # GENERIC
-generic.failed: "Failed"
-generic.success: "Success"
-generic.error: "Error"
-generic.thank-you: "Thank you"
+generic.failed: "فشل"
+generic.success: "تم بنجاح"
+generic.error: "هناك خطأ"
+generic.thank-you: "شكراً لك"
 
 # COMMAND MANAGER
-cmdm.prefix: "The prefix for this server is `{}`."
-cmdm.permission-denied: "You are not allowed to run the command `{}`."  # {command}
-cmdm.invalid-usage: "Invalid usage"
-cmdm.invalid-usage-detail: "Use: `{} {}`"  # {command}, {usage}
-cmdm.error: "Something went wrong with this command. This issue has been reported."
-cmdm.maintenance: "Cannot run command: bot is in maintenance mode."
+cmdm.prefix: "الاختصار في هذا السيرفر هو `{}`."
+cmdm.permission-denied: "غير مسموح لك بتشغيل هذا الامر `{}`."  # {command}
+cmdm.invalid-usage: "استخدام خاطئ"
+cmdm.invalid-usage-detail: "استخدم: `{} {}`"  # {command}, {usage}
+cmdm.error: "حدث خطأ ما في هذا الامر. تم الأبلاغ عن المشكلة."
+cmdm.maintenance: "لا يمكن تشغيل الامر: البوت في وضع الصيانة."
 
-cmdm.bad-setup: "You might be having issues with the `{}` command."  # {command}
-cmdm.bad-setup.detail: "This is most likely because the bot is missing the send messages or embed links permission in the channel you are using the command in. Set the bot's permissions correctly and try again."
-cmdm.bad-setup.extra: "If you need extra help, join the support server at {}."  # {invite}
+cmdm.bad-setup: "قد تواجه مشكلة مع `{}` command."  # {command}
+cmdm.bad-setup.detail: "هذا على الأرجح لأن الروبوت يفتقد إذن إرسال الرسائل أو تضمين الروابط في القناة التي تستخدم الأمر فيها. قم بتعيين أذونات الروبوت بشكل صحيح وحاول مرة أخرى."
+cmdm.bad-setup.extra: "اذا كنت بحاجة للمساعدة, انضم الى سيرفر الدعم هنا {}."  # {invite}
 
-cmdm.perm-error.title: "Insufficient permissions"
-cmdm.perm-error.detail: "The bot is missing the following permission in this channel: {}. This permission is required to run the command `{}`."  # {perm}, {command}
-cmdm.perm-error.detail-plural: "The bot is missing the following permissions in this channel: {}. These permissions are required to run the command `{}`."  # {perms}, {command}
-cmdm.perm-error.support: "Need help with permissions?"
-cmdm.perm-error.support-detail: "[See this article from Discord for support]({}) or [join our support server]({})."  # {link1}, {link2}
+cmdm.perm-error.title: "اذونات غير كافية"
+cmdm.perm-error.detail: "يفتقد الروبوت إلى الإذن التالي في هذه القناة: {}. هذا الاذن المطلوب لتشغيل هذا الامر `{}`."  # {perm}, {command}
+cmdm.perm-error.detail-plural: "يفتقد الروبوت الاذن التالي في هذه القناة: {}. هذا الاذن المطلوب لتشغيل هذا الامر `{}`."  # {perms}, {command}
+cmdm.perm-error.support: "هل تحتاج الى مساعدة مع الاذونات؟"
+cmdm.perm-error.support-detail: "[راجع هذه المقالة من دسكورد للحصول على الدعم]({}) او [انضم الى سيرفر الدعم]({})."  # {link1}, {link2}
 
-cmdm.sal.disabled: "This command has been disabled in this server by an administrator."
-cmdm.sal.permission: "Guild access level requires you to have permission `{}`."
-cmdm.sal.role: "You need the role `{}` or higher to use this command."
-cmdm.sal.role.footer: "This is controlled by your server administrators."
-cmdm.sal.invalid-role: "The server administrators have set this command's access level to an invalid role."
-cmdm.sal.invalid-role.detail: "Please ask them to fix this issue by running the `settings` command."
-cmdm.sal.invalid: "Invalid server access level for this command."
-cmdm.sal.invalid.detail: "Please check your server settings."
+cmdm.sal.disabled: "تم تعطيل هذا الأمر في هذا السيرفر من قبل المسؤول."
+cmdm.sal.permission: "يتطلب مستوى الوصول إلى النقابة للحصول على إذن `{}`."
+cmdm.sal.role: "انت بحاجة الى رتبة `{}` او اعلى لأستعمال هذا الامر."
+cmdm.sal.role.footer: "متحكم به من خلال المسؤول في هذا السيرفر."
+cmdm.sal.invalid-role: "قام مسؤولو السيرفر بتعيين مستوى وصول لهذا الأمر إلى رتبة غير صالحة."
+cmdm.sal.invalid-role.detail: "يرجى مطالبتهم بإصلاح هذه المشكلة عن طريق الامر `settings`."
+cmdm.sal.invalid: "مستوى السيرفر غير صالح لهذا الأمر."
+cmdm.sal.invalid.detail: "الرجاء التحقق من اعدادات السيرفر."
 
-antispam.blacklisted.title: "Your guild is blacklisted."
-antispam.blacklisted.detail: "Due to spam, command execution is disabled. You must wait at least 1 hour to continue."
+antispam.blacklisted.title: "نقابتك مدرجة في القائمة السوداء."
+antispam.blacklisted.detail: "بسبب بريد عشوائي, تنفيذ الامر معطل. يجب عليك الانتظار ساعة واحد على الاقل للاستمرار."
 
 # COMMANDS
 
 # add
-cmd.add.message: "Invite the bot with this link."
+cmd.add.message: "قم بدعوة الروبوت من خلال هذا الرابط."
 # vote
-cmd.vote.message: "Vote here to support the bot."
-cmd.vote.unavailable: "Voting is not available for this bot."
+cmd.vote.message: "صوت هنا لدعم الروبوت."
+cmd.vote.unavailable: "التصويت غير متاح لهذا الروبوت."
 # diagnose
-cmd.diagnose.sent: "Your report has been sent to the developers."
+cmd.diagnose.sent: "تم إرسال تقريرك إلى المطورين."
 # version
-cmd.version.message: "{} version `{}` (DPE `{}`, DPY `{}`)"  # {bot_name}, {bot_version}, {dpe_version}, {dpy_version}
+cmd.version.message: "{} نسخة `{}` (DPE `{}`, DPY `{}`)"  # {bot_name}, {bot_version}, {dpe_version}, {dpy_version}
 # settings
-cmd.settings.updated: "Settings updated."
-cmd.settings.prefix.too-long: "Prefix cannot be longer than 24 characters."
-cmd.settings.view.title: "Settings for this guild"
-cmd.settings.view.prefix: "Prefix"
-cmd.settings.view.language: "Language"
-cmd.settings.view.footer: "Change a setting with `{}settings <name> <value>`."
-cmd.settings.language.not-found: "Language not found"
-cmd.settings.language.not-found.detail: "Supported languages: \n{}"
+cmd.settings.updated: "تم تحديث الاعدادت."
+cmd.settings.prefix.too-long: "الاختصار لا يمكن ان يكون اكثر من 24 حرف."
+cmd.settings.view.title: "اعدادات هذه النقابة"
+cmd.settings.view.prefix: "اختصار"
+cmd.settings.view.language: "لغة"
+cmd.settings.view.footer: "تغيير الاعدادات من خلال استخدام `{}settings <name> <value>`."
+cmd.settings.language.not-found: "اللغة غير موجودة"
+cmd.settings.language.not-found.detail: "اللغات المعتمدة: \n{}"
 # access-level
-cmd.access-level.view.title: "Command access level configuration"
-cmd.access-level.view.description: "This server has access levels set for {} commands. \nSet a command access level with `{}access-level set` \nReset a command access level with `{}access-level reset`"
-cmd.access-level.view.invalid-role: "_[INVALID ROLE - PLEASE RECONFIGURE]_"
+cmd.access-level.view.title: "تكوين مستوى وصول للأوامر"
+cmd.access-level.view.description: "هذا الخادم لديه مستويات وصول محددة لـ {} اوامر. \nقم بتعيين مستوى وصول للأوامر باستخدام `{}access-level set` \nإعادة تعيين مستوى وصول للأمر باستخدام `{}access-level reset`"
+cmd.access-level.view.invalid-role: "_[رتبة غير صالحة - يرجى اعادة تكوين]_"
 cmd.access-level.view.role: "Role: {}"
-cmd.access-level.view.permission: "Permission: {}"
+cmd.access-level.view.permission: "اذونات: {}"
 
-cmd.access-level.set.invalid-role: "Invalid role mention."
-cmd.access-level.set.invalid-permission: "Invalid permission: `{}`."
-cmd.access-level.set.invalid-al: "Invalid access level."
-cmd.access-level.set.command-not-found: "Command not found: `{}`"
-cmd.access-level.set.locked: "The access level for command `{}` cannot be changed."
-cmd.access-level.set.updated: "Updated command access level to `{}` for {} command(s)."
+cmd.access-level.set.invalid-role: "ذكر رتبة غير صالحة."
+cmd.access-level.set.invalid-permission: "إذن غير صالح: `{}`."
+cmd.access-level.set.invalid-al: "مستوى الوصول غير صالح."
+cmd.access-level.set.command-not-found: "لم يتم العثور على الامر: `{}`"
+cmd.access-level.set.locked: "مستوى الوصول لهذا الامر `{}` لا يمكن تغييره."
+cmd.access-level.set.updated: "تم تحديث مستوى وصول الامر `{}` الى {} امر(s)."
 
-cmd.access-level.reset.success-all: "Reset access level for all commands."
-cmd.access-level.reset.success: "Reset access level for `{}`."
+cmd.access-level.reset.success-all: "إعادة تعيين مستوى الوصول لجميع الأوامر."
+cmd.access-level.reset.success: "اعادة تعيين مستوى الوصول لـ `{}`."
 
 contributors: ""
