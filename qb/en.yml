@@ -82,6 +82,16 @@ help.pause: "Pause or resume a quiz session."
 help.access-level: "Modify command access levels for your server."
 help.footer: "Enjoy the bot? Use the vote link at the top of this message to support it!"
 
+# === SHOP ===
+shop.title: "Welcome to the QuizBot Item Shop. Here you can find items which level up your profile or add a unique touch to your quizzes."
+shop.description: "You can buy items with the QuizBot currency {0}. \n{0} is earned simply by playing quizzes or having your quizzes played. \nYou currently have {0}`{1}`"  # currency emote, Q$ balance
+shop.author: "QuizBot Shop"
+shop.footer: "Navigate to a different item category with the emotes below"
+shop.help.title: "This is the help page for the QuizBot item shop."
+shop.help.description: "Here you can find resources on how to buy new items to level up your QuizBot experience."
+shop.none: "There are currently no items available in this category."
+shop.none.detail: "Please check back later."
+
 # === COMMANDS REUSABLE ===
 cmdr.invalid-id: "Invalid ID"
 cmdr.invalid-id.nan: "Please specify a valid number. \nDid you mean `{}search {}`?"  # {prefix}, {query}
@@ -145,7 +155,7 @@ cmd.leaderboard.message.detail: "[View the public leaderboards here.]({})"
 cmd.play-quiz.random.failed: "We were unable to find a random quiz. Please try again later."
 cmd.play-quiz.already-running: "There is already a quiz running in this channel. Please wait for it to end and try again."
 cmd.play-quiz.cannot-play: "Cannot start quiz"
-cmd.play-quiz.maintenance: "The "
+cmd.play-quiz.maintenance: "The bot is currently in maintenance mode."
 cmd.play-quiz.unplayable.detail: "Quiz validation failed. Error detail: `{}`. \n\n[Contact an administrator with the quiz ID and error message to resolve this issue.]({})"
 cmd.play-quiz.nsfw: "This quiz is marked as NSFW. It can only be started in channels marked NSFW."
 cmd.play-quiz.private: "This quiz is private. It can only be accessed by its author."

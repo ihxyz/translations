@@ -82,6 +82,16 @@ help.pause: "Pausieren oder fahren sie mit einem Quiz fort."
 help.access-level: "Ändere die Befehl-Berechtigungen für deinen Server."
 help.footer: "Gefällt ihnen der Bot? Benutzen Sie den Abstimmungs-Link am Anfang dieser Nachricht um den Bot unterstützen!"
 
+# === SHOP ===
+shop.title: "Welcome to the QuizBot Item Shop. Here you can find items which level up your profile or add a unique touch to your quizzes."
+shop.description: "You can buy items with the QuizBot currency {0}. \n{0} is earned simply by playing quizzes or having your quizzes played. \nYou currently have {0}`{1}`"  # currency emote, Q$ balance
+shop.author: "QuizBot Shop"
+shop.footer: "Navigate to a different item category with the emotes below"
+shop.help.title: "This is the help page for the QuizBot item shop."
+shop.help.description: "Here you can find resources on how to buy new items to level up your QuizBot experience."
+shop.none: "There are currently no items available in this category."
+shop.none.detail: "Please check back later."
+
 # === COMMANDS REUSABLE ===
 cmdr.invalid-id: "Ungültige ID"
 cmdr.invalid-id.nan: "Bitte spezifizieren Sie eine gültige Nummer. \n Meinen Sie `{}search {}`?"  # {prefix}, {query}
@@ -145,6 +155,7 @@ cmd.leaderboard.message.detail: "[Sehen Sie sich die öffentliche Bestenliste hi
 cmd.play-quiz.random.failed: "Wir konnten kein zufälliges Quiz finden. Bitte versuchen Sie es später noch einmal."
 cmd.play-quiz.already-running: "In diesem Kanal lauft bereits ein Quiz. Bitte warten Sie bis es beendet ist und versuchen Sie es dann erneut."
 cmd.play-quiz.cannot-play: "Quiz kann nicht gestartet werden."
+cmd.play-quiz.maintenance: "Der Bot ist momentan im Wartungs-Modus"
 cmd.play-quiz.unplayable.detail: "Quiz validierung gescheitert. Fehler Melding: `{}`. \n\n[Kontaktieren Sie einen Administrator mit der Quiz ID und Feher Meldung um dieses Problem zu beheben.]({})"
 cmd.play-quiz.nsfw: "Dieses Quiz ist als Nicht jugendfrei markiert. Es kann nur in Kanälen die als NSFW markiert sind gespielt werden."
 cmd.play-quiz.private: "Dieses Quiz ist Privat. Nur der Quiz Autor kann drauf zugreifen."
