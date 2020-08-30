@@ -325,6 +325,7 @@ spreadsheet.failed.footer: "رسالة خطأ: {} | رقم السؤال: {}"
 # === SESSIONS ===
 # TODO: Competitive session report needs to be converted.
 session.error: "حدث خطأ ما ، لذلك تم إنهاء هذه الجلسة.  تم الإبلاغ عن هذه المشكلة."
+session.error.message-deleted: ""
 
 session.competitive: "وضع التنافسي"
 session.competitive.join-note: "رد أدناه للانضمام إلى هذا الاختبار.  لا يمكنك الانضمام بعد انتهاء هذه المرحلة."

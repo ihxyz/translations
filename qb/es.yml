@@ -325,6 +325,7 @@ spreadsheet.failed.footer: "Error message: {} | Question Number: {}"
 # === SESSIONS ===
 # TODO: Competitive session report needs to be converted.
 session.error: "Something went wrong, so this session was ended. This issue has been reported."
+session.error.message-deleted: ""
 
 session.competitive: "COMPETITIVE MODE"
 session.competitive.join-note: "React below to join this quiz. You cannot join after this stage has ended."
