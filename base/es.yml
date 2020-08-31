@@ -71,4 +71,4 @@ cmd.access-level.set.updated: "Updated command access level to `{}` for {} comma
 cmd.access-level.reset.success-all: "Reset access level for all commands."
 cmd.access-level.reset.success: "Reset access level for `{}`."
 
-contributors: "ihxyz"
+contributors: ""

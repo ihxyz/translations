@@ -5,7 +5,7 @@ generic.error: "Fehler"
 generic.thank-you: "Vielen Dank"
 
 # COMMAND MANAGER
-cmdm.prefix: ""
+cmdm.prefix: "Der Befehl-Prefix für diesen Server ist `{}`"
 cmdm.permission-denied: "Du hast keine Berechtigungen um den Befehl `{}` ausführen."  # {command}
 cmdm.invalid-usage: "Falsche Benutzung"
 cmdm.invalid-usage-detail: "Benutzen sie: `{} {}`"  # {command}, {usage}

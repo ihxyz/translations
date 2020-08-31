@@ -71,7 +71,6 @@ help.delete-quiz: "Deletes a quiz. You can only delete your own quizzes. \nExamp
 help.settings: "View or change settings for your server. You can change the following settings: `language`, `prefix`."
 help.search: "Searches the quiz database for quizzes relating to your search term. \nExample: `=search Trivia`"
 help.view: "View all the information about a quiz with the given ID. On your own quizzes you can add `correct` after the command to show which answers are correct. \nExample: `=view 123456`"
-help.copy: "Copy a quiz with the given ID to alter it or work from it as a template. \nExample: `=copy 123456`"
 help.spreadsheet: "Convert a spreadsheet to a quiz! See `=spreadsheet help` for more information, or watch our [official YouTube tutorial](https://youtu.be/4bcpmbIlrPw). For the spreadsheet template see `=spreadsheet template`."
 help.schedule: "Schedule quizzes to run regularly at certain intervals. Please note that this is currently in experimental release. For more information check our official support server."
 help.profile: "View your profile. You can only view your own profile."
@@ -81,16 +80,6 @@ help.qe: "Edit a quiz with the given ID. You can edit questions, name, descripti
 help.pause: "Pause or resume a quiz session."
 help.access-level: "Modify command access levels for your server."
 help.footer: "Enjoy the bot? Use the vote link at the top of this message to support it!"
-
-# === SHOP ===
-shop.title: "Welcome to the QuizBot Item Shop. Here you can find items which level up your profile or add a unique touch to your quizzes."
-shop.description: "You can buy items with the QuizBot currency {0}. \n{0} is earned simply by playing quizzes or having your quizzes played. \nYou currently have {0}`{1}`"  # currency emote, Q$ balance
-shop.author: "QuizBot Shop"
-shop.footer: "Navigate to a different item category with the emotes below"
-shop.help.title: "This is the help page for the QuizBot item shop."
-shop.help.description: "Here you can find resources on how to buy new items to level up your QuizBot experience."
-shop.none: "There are currently no items available in this category."
-shop.none.detail: "Please check back later."
 
 # === COMMANDS REUSABLE ===
 cmdr.invalid-id: "Invalid ID"
@@ -135,10 +124,6 @@ cmd.spreadsheet.help.step-5.detail: "Now that your quiz is saved in the QuizBot 
 cmd.spreadsheet.template.title: "Follow the below link to see the spreadsheet template for creating quizzes. Make a copy of the file and start editing."
 cmd.spreadsheet.template.link: "[Google sheets link]({})"
 
-# copy
-cmd.copy.perm-denied: "This quiz cannot be copied as it is not public."
-cmd.copy.success: "Quiz copied successfully. Its new ID is {}."
-
 # create-quiz
 cmd.create-quiz.success: "Quiz created! Its ID is {}."
 
@@ -155,7 +140,7 @@ cmd.leaderboard.message.detail: "[View the public leaderboards here.]({})"
 cmd.play-quiz.random.failed: "We were unable to find a random quiz. Please try again later."
 cmd.play-quiz.already-running: "There is already a quiz running in this channel. Please wait for it to end and try again."
 cmd.play-quiz.cannot-play: "Cannot start quiz"
-cmd.play-quiz.maintenance: "The bot is currently in maintenance mode."
+cmd.play-quiz.maintenance: "The "
 cmd.play-quiz.unplayable.detail: "Quiz validation failed. Error detail: `{}`. \n\n[Contact an administrator with the quiz ID and error message to resolve this issue.]({})"
 cmd.play-quiz.nsfw: "This quiz is marked as NSFW. It can only be started in channels marked NSFW."
 cmd.play-quiz.private: "This quiz is private. It can only be accessed by its author."
@@ -340,7 +325,7 @@ spreadsheet.failed.footer: "Error message: {} | Question Number: {}"
 # === SESSIONS ===
 # TODO: Competitive session report needs to be converted.
 session.error: "Something went wrong, so this session was ended. This issue has been reported."
-session.error.message-deleted: "A question message was deleted. The quiz cannot continue.\nPlease check no other bots are deleting QuizBot's messages."
+session.error.message-deleted: ""
 
 session.competitive: "COMPETITIVE MODE"
 session.competitive.join-note: "React below to join this quiz. You cannot join after this stage has ended."
@@ -371,4 +356,4 @@ session.question.points: "The correct answer awards {} points"
 session.question.time-up: "Time's up!"
 session.question.awaiting-reactions: "Answers will be revealed once all reactions are ready!"
 
-contributors: "ihxyz"
+contributors: ""

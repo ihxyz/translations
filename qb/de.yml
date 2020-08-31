@@ -340,6 +340,7 @@ spreadsheet.failed.footer: "Error Nachricht: {} | Frage Nummer: {}"
 # === SESSIONS ===
 # TODO: Competitive session report needs to be converted.
 session.error: "Etwas ist schiefgegangen, darum wurde die Session beendet. Das Problem wurde gemeldet."
+session.error.message-deleted: ""
 
 session.competitive: "Wettbewerbs-Modus"
 session.competitive.join-note: "Reagieren Sie mit einem Emoji um diesem Quiz beizutreten. Sie können, nachdem diese Stufe vorbei ist, nicht mehr beitreten."

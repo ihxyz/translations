@@ -18,11 +18,13 @@ these, [submit an issue](https://github.com/ihxyz/translations/issues/new) to re
 
 - English (original language)
 - German
+- Arabic
 
 ### QuizBot
 
 - English (original language)
 - German
+- Arabic
 
 ### PollBot Advanced
 
