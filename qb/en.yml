@@ -170,6 +170,8 @@ cmd.premium.message: "QuizBot Premium is now available!"
 cmd.premium.message.detail: "Click [here]({}) for more information."
 
 # profile
+cmd.profile.title: "Your Profile"
+cmd.profile.view-online: "[View online]({})"
 cmd.profile.total-points: "Total points: {:,}"
 cmd.profile.monthly-points: "Monthly points: {:,}"
 
