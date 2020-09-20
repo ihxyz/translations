@@ -304,6 +304,7 @@ cmd.pause.bad-state: ""
 # === SPREADSHEET CONVERSION ===
 spreadsheet.error: "Ihre Datei konnte nicht in ein Quiz umgewandelt werden. Benutzen Sie die offizielle Google Sheets Vorlage?"
 spreadsheet.error.file-format: "Datei Formatierung"
+spreadsheet.error.bad-character: ""
 spreadsheet.error.correct-answer: "Der korrekte Antworten-Index für Frage {} ist ungültig. Bitte spezifizieren Sie eine Nummer."
 spreadsheet.error.time-allowed: "Die erlaubte Zeit für Frage {} ist ungültig. Bitte spezifizieren Sie eine Nummer zwischen {} und {}."
 spreadsheet.error.points: "Die Punkte die für Frage {} vergeben werden sind ungültig. Bitte geben sie eine Nummer zwischen {} und {} für minimum und maximum Punkte an."

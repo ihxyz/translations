@@ -305,6 +305,7 @@ cmd.pause.bad-state: "You cannot pause a session during a question. Wait until t
 # === SPREADSHEET CONVERSION ===
 spreadsheet.error: "Your file could not be converted into a quiz. Are you using the official Google Sheets template?"
 spreadsheet.error.file-format: "File format"
+spreadsheet.error.bad-character: ""
 spreadsheet.error.correct-answer: "The correct answer index for question {} is not valid. Please specify a number."
 spreadsheet.error.time-allowed: "The time allowed for question {} is not valid. Please specify a number between {} and {}."
 spreadsheet.error.points: "The points awarded for question {} are not valid. Please specify a number between {} and {} for both min and max points."
