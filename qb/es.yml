@@ -96,6 +96,10 @@ cmdr.maintenance-mode: "The bot is currently in maintenance mode."
 # === COMMANDS ===
 # FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
 
+# permcheck
+cmd.permcheck.title: ""
+cmd.permcheck.description: ""
+
 # add-question
 cmd.add-question.usage: "Usage: `{}`"  # {usage}
 cmd.add-question.invalid-time: "Please specify a valid time in seconds: `{}`"  # {usage}

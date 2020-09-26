@@ -96,6 +96,10 @@ cmdr.maintenance-mode: "الروبوت حاليا في وضع الصيانة."
 # === COMMANDS ===
 # FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
 
+# permcheck
+cmd.permcheck.title: ""
+cmd.permcheck.description: ""
+
 # add-question
 cmd.add-question.usage: "إستعمال: `{}`"  # {usage}
 cmd.add-question.invalid-time: "الرجاء تحديد وقت صالح بالثواني: `{}`"  # {usage}

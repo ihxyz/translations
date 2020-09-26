@@ -96,6 +96,10 @@ cmdr.maintenance-mode: "The bot is currently in maintenance mode."
 # === COMMANDS ===
 # FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
 
+# permcheck
+cmd.permcheck.title: "Your permission setup in this channel is correct!"
+cmd.permcheck.description: "You should be ready to use all QuizBot commands here."
+
 # add-question
 cmd.add-question.usage: "Usage: `{}`"  # {usage}
 cmd.add-question.invalid-time: "Please specify a valid time in seconds: `{}`"  # {usage}
