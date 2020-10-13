@@ -88,15 +88,18 @@ shop.title: "Welcome to the QuizBot Item Shop. Here you can find items which lev
 shop.description: "You can buy items with the QuizBot currency {0}. \n{0} is earned simply by playing quizzes or having your quizzes played. \nYou currently have {0}`{1}`"  # currency emote, Q$ balance
 shop.author: "QuizBot Shop"
 shop.footer.main: "Navigate to a different item category with the emotes below"
-shop.footer.item: "Cycle through the items in this category with the arrow emotes below"
+shop.footer.items: "Cycle through the items in this category with the arrow emotes below"
 shop.help.title: "This is the help page for the QuizBot item shop."
 shop.help.description: "Here you can find resources on how to buy new items to level up your QuizBot experience."
 shop.available-items: "Amount of items available in this category: {}"
 shop.available-items.detail: "Check back later for new items!"  # {item_count}
 shop.available-items.none: "There are currently no items available in this category."
 shop.available-items.none.detail: "Please check back later."
+shop.items.owned: "You already own this item."
 shop.items.redeems: "This item can only be redeemed a limit amount of times in total."
 shop.items.redeems.detail: "There are only __**{}**__ redeems left before this item disappears forever. Get it before it's gone!"
+shop.items.cant-purchase: "You cannot purchase this item, you do not meet all the requirements."
+shop.items.purchased: "{} Item successfully purchased! Go to your inventory to equip it."  # {checkmark emote}
 
 # === COMMANDS REUSABLE ===
 cmdr.invalid-id: "Invalid ID"
