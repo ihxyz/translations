@@ -98,8 +98,17 @@ shop.available-items.none.detail: "Please check back later."
 shop.items.owned: "You already own this item."
 shop.items.redeems: "This item can only be redeemed a limit amount of times in total."
 shop.items.redeems.detail: "There are only __**{}**__ redeems left before this item disappears forever. Get it before it's gone!"
+shop.items.expiry: "This item is only available for a limited amount of time!"
+shop.items.expiry.detail: "It will disappear in {}"
+shop.items.restrictions: "{} You do not meet all the restrictions for this item."  # {error_emote}
+shop.items.restrictions.min-xp: "You need to be at least XP level {}."
+shop.items.restrictions.other-items: "You need to also own these other items to purchase this item: \n{}."
 shop.items.cant-purchase: "You cannot purchase this item, you do not meet all the requirements."
 shop.items.purchased: "{} Item successfully purchased! Go to your inventory to equip it."  # {checkmark emote}
+shop.items.expiry.months: "{} month(s), "
+shop.items.expiry.days: "{} day(s), "
+shop.items.expiry.hours: "{} hour(s) and "
+shop.items.expiry.minutes: "{} minutes(s)"
 
 # === COMMANDS REUSABLE ===
 cmdr.invalid-id: "Invalid ID"
