@@ -85,10 +85,12 @@ help.footer: "Enjoy the bot? Use the vote link at the top of this message to sup
 # === SHOP ===
 shop.disabled: "The shop is currently disabled."
 shop.title: "Welcome to the QuizBot Item Shop. Here you can find items which level up your profile or add a unique touch to your quizzes."
-shop.description: "You can buy items with the QuizBot currency {0}. \n{0} is earned simply by playing quizzes or having your quizzes played. \nYou currently have {0}`{1}`"  # currency emote, Q$ balance
+shop.description: "You can buy items with the QuizBot currency {0}. \n{0} is earned by playing quizzes or having your quizzes played. \nYou currently have {0}`{1}`"  # currency emote, Q$ balance
 shop.author: "QuizBot Shop"
 shop.footer.main: "Navigate to a different item category with the emotes below"
 shop.footer.items: "Cycle through the items in this category with the arrow emotes below"
+shop.home.categories: "Below are the available item categories"
+shop.home.categories.detail: "React with the corresponding emote to see the items in a category."
 shop.help.title: "This is the help page for the QuizBot item shop."
 shop.help.description: "Here you can find resources on how to buy new items to level up your QuizBot experience."
 shop.available-items: "Amount of items available in this category: {}"
@@ -101,8 +103,10 @@ shop.items.redeems.detail: "There are only __**{}**__ redeems left before this i
 shop.items.expiry: "This item is only available for a limited amount of time!"
 shop.items.expiry.detail: "It will disappear in {}"
 shop.items.restrictions: "{} You do not meet all the restrictions for this item."  # {error_emote}
+shop.items.restrictions.access-level: "You need a higher permission level."
 shop.items.restrictions.min-xp: "You need to be at least XP level {}."
 shop.items.restrictions.other-items: "You need to also own these other items to purchase this item: \n{}."
+shop.items.low-currency: "You don't have enough {} to purchase this item."
 shop.items.cant-purchase: "You cannot purchase this item, you do not meet all the requirements."
 shop.items.purchased: "{} Item successfully purchased! Go to your inventory to equip it."  # {checkmark emote}
 shop.items.expiry.months: "{} month(s), "
