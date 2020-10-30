@@ -15,7 +15,7 @@
 ################################################################
 
 # === GENERIC ===
-premium-only: "QuizBot Premium only feature."
+premium-only: "Fonctionnalité réservée uniquement aux adhérents QuizBot Premium."
 premium-only.learn-more: "[Learn more about QuizBot Premium here.]({})"  # {premium_link}
 nan: "Please specify a number."
 quiz.no-description: "*[This quiz has no description]*"
