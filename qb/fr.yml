@@ -15,16 +15,16 @@
 ################################################################
 
 # === GENERIC ===
-premium-only: "QuizBot Premium only feature."
-premium-only.learn-more: "[Learn more about QuizBot Premium here.]({})"  # {premium_link}
-nan: "Please specify a number."
-quiz.no-description: "*[This quiz has no description]*"
-quiz.editor-web: "Go [here]({}) to edit it."
-user.unavailable: "(user unavailable)"
+premium-only: "Fonctionnalité réservée aux adhérents du programme QuizBot Premium."
+premium-only.learn-more: "[Cliquez ici pour en apprendre davantage sur le programme QuizBot Premium.]({})"  # {premium_link}
+nan: "Veuillez préciser un nombre."
+quiz.no-description: "*[Ce quiz n'a pas de description.]*"
+quiz.editor-web: "Cliquez [ici]({}) pour éditer."
+user.unavailable: "(utilisateur indisponible)"
 
 # === QUIZ EDITOR ===
-qe.standard.title: "Editing quiz: {}"
-qe.standard.web-prompt: "\U0001F517 [You can also edit your quiz on the online interface.]({})"
+qe.standard.title: "Modifier le quiz : {}"
+qe.standard.web-prompt: "\U0001F517 [Vous pouvez aussi modifier le quiz sur l'interface du site.]({})"
 qe.standard.author: "QuizEditor"
 qe.standard.name: "\U0001F3AE **Name** | Change with `{}qe name <new name>`"
 qe.standard.description: "\U0001F4DD **Description** | Change with `{0}qe description <new description>`\nRemove the description with `{0}qe description remove`"
@@ -329,36 +329,36 @@ spreadsheet.failed.footer: "Error message: {} | Question Number: {}"
 
 # === SESSIONS ===
 # TODO: Competitive session report needs to be converted.
-session.error: "Something went wrong, so this session was ended. This issue has been reported."
-session.error.message-deleted: "A question message was deleted. The quiz cannot continue.\nPlease check no other bots are deleting QuizBot's messages."
+session.error: "Une erreur est survenue, la session s'est terminée. Le problème a été signalé."
+session.error.message-deleted: "Une question a été supprimée. Le quiz ne peut pas se poursuivre.\nVérifiez que d'autres bots ne suppriment pas les messages de QuizBot."
 
-session.competitive: "COMPETITIVE MODE"
-session.competitive.join-note: "React below to join this quiz. You cannot join after this stage has ended."
-session.competitive.dm-note: "COMPETITIVE MODE: To submit your answer, DM the bot with its number."
-session.competitive.joined: "You have joined quiz `{}` (session `{}`). Good luck!"
-session.competitive.answer.submitted: "Your answer has been submitted."
-session.competitive.answer.invalid: "Invalid answer. Please try again."
+session.competitive: "MODE COMPÉTITIF"
+session.competitive.join-note: "Réagissez ci-dessous pour rejoindre le quiz. Vous ne pourrez plus rejoindre le quiz ensuite."
+session.competitive.dm-note: "MODE COMPÉTITIF : Pour soumettre une réponse, envoyez un message privé au bot avec le numéro de la réponse."
+session.competitive.joined: "Vous avez rejoint le quiz `{}` (session `{}`). Bonne chance !"
+session.competitive.answer.submitted: "Votre réponse a été prise en compte."
+session.competitive.answer.invalid: "Réponse invalide. Veuillez ré-essayer."
 
-session.leaderboard: "Leaderboard"
-session.leaderboard.page: "Leaderboard page {} / {}"
+session.leaderboard: "Classement"
+session.leaderboard.page: "Classement page {} / {}"
 
-session.intro.notification: "Scheduled quiz starting now!"
-session.intro.starting: "Starting quiz"
-session.intro.starting-time: "The quiz will start in {} seconds."
+session.intro.notification: "Le quiz démarre maintenant !"
+session.intro.starting: "Le quiz va démarrer !"
+session.intro.starting-time: "Le quiz va démarrer dans {} secondes."
 session.intro.quiz: "Quiz"
 session.intro.description: "Description"
 session.intro.questions: "Questions"
-session.intro.footer: "Session ID: {} | Quiz ID: {}"
+session.intro.footer: "ID de la Session : {} | ID du Quiz : {}"
 
-session.conclusion.total-players: "Total players"
-session.conclusion.vote-quiz: "Enjoy this quiz? Vote for it with the reactions! | Quiz ID: {}"
-session.conclusion.vote-bot: "Enjoying the bot?"
-session.conclusion.vote-bot.detail: "[Vote for the bot]({}) | [{} QuizBot Premium]({})"
+session.conclusion.total-players: "Nombre total de joueurs"
+session.conclusion.vote-quiz: "Vous avez apprécié ce quiz ? Votez pour lui avec les réactions ! | ID du Quiz : {}"
+session.conclusion.vote-bot: "Vous aimez notre bot ?"
+session.conclusion.vote-bot.detail: "[Votez pour le bot]({}) | [{} QuizBot Premium]({})"
 
 session.question.pos: "Question {}"
-session.question.time-allowed: "Time allowed: {} seconds"
-session.question.points: "The correct answer awards {} points"
-session.question.time-up: "Time's up!"
-session.question.awaiting-reactions: "Answers will be revealed once all reactions are ready!"
+session.question.time-allowed: "Durée de la question : {} secondes"
+session.question.points: "La bonne réponse rapporte {} points"
+session.question.time-up: "Temps écoulé !"
+session.question.awaiting-reactions: "Les choix de réponses seront révélés une fois les réactions prêtes !"
 
 contributors: "ihxyz"
