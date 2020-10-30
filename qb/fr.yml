@@ -82,14 +82,14 @@ help.access-level: "Modify command access levels for your server."
 help.footer: "Enjoy the bot? Use the vote link at the top of this message to support it!"
 
 # === COMMANDS REUSABLE ===
-cmdr.invalid-id: "Invalid ID"
-cmdr.invalid-id.nan: "Please specify a valid number. \nDid you mean `{}search {}`?"  # {prefix}, {query}
-cmdr.invalid-id.no-quiz: "No quiz with that ID could be found."
-cmdr.invalid-id.no-session: "No session with that ID could be found."
-cmdr.perm-denied: "You do not have permission to do this."
-cmdr.nsfw: "This command cannot be used in NSFW channels."
-cmdr.nsfw.detail: "QuizBot does not allow NSFW quizzes."
-cmdr.no-session: "There is no session running in this channel."
+cmdr.invalid-id: "ID invalide"
+cmdr.invalid-id.nan: "Veuillez préciser un nombre valide. \nVouliez-vous dire `{}search {}`?"  # {prefix}, {query}
+cmdr.invalid-id.no-quiz: "Aucun quiz avec cet ID n'a été trouvé."
+cmdr.invalid-id.no-session: "Aucune session avec cet ID n'a été trouvé."
+cmdr.perm-denied: "Vous n'avez pas la permission de faire ceci."
+cmdr.nsfw: "Cette commande ne peut pas être utilisée dans les salons NSFW."
+cmdr.nsfw.detail: "QuizBot n'autorise pas les quiz NSFW."
+cmdr.no-session: "Il n'y a aucune session en cours sur ce salon."
 cmdr.update-scheduled: "There is a bot update scheduled. Please try again in {} minutes."
 cmdr.maintenance-mode: "The bot is currently in maintenance mode."
 
