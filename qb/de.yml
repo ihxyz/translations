@@ -108,6 +108,10 @@ cmdr.maintenance-mode: "Der Bot ist momentan in Wartungsmodus."
 # === COMMANDS ===
 # FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
 
+# permcheck
+cmd.permcheck.title: ""
+cmd.permcheck.description: ""
+
 # add-question
 cmd.add-question.usage: "Benutzen Sie: `{}`"  # {usage}
 cmd.add-question.invalid-time: "Bitte spezifizieren Sie eine gültige Zeit Dauer in Sekunden: `{}`"  # {usage}
@@ -160,8 +164,8 @@ cmd.play-quiz.maintenance: "Der Bot ist momentan im Wartungs-Modus"
 cmd.play-quiz.unplayable.detail: "Quiz validierung gescheitert. Fehler Melding: `{}`. \n\n[Kontaktieren Sie einen Administrator mit der Quiz ID und Feher Meldung um dieses Problem zu beheben.]({})"
 cmd.play-quiz.nsfw: "Dieses Quiz ist als Nicht jugendfrei markiert. Es kann nur in Kanälen die als NSFW markiert sind gespielt werden."
 cmd.play-quiz.private: "Dieses Quiz ist Privat. Nur der Quiz Autor kann drauf zugreifen."
-cmd.play.quiz.servers: "Dieses Quiz kann nur in Servern gespielt werden, in denen der Autor ein Mitglied ist."
-cmd.play.quiz.servers-author-gone: "Der Autor dieses Quizzes ist nicht verfügbar. Quiz kann nicht gespielt werden."
+cmd.play-quiz.servers: "Dieses Quiz kann nur in Servern gespielt werden, in denen der Autor ein Mitglied ist."
+cmd.play-quiz.servers-author-gone: "Der Autor dieses Quizzes ist nicht verfügbar. Quiz kann nicht gespielt werden."
 cmd.play-quiz.no-questions: "Dieses Quiz hat keine Fragen."
 cmd.play-quiz.competitive-denied: "{} Wettbewerbs-Modus ist nur für QuizBot Premium Mitglieder verfügbar. [Mehr Information über QuizBot Premium gibt es hier.]({})"
 
@@ -323,6 +327,7 @@ cmd.pause.bad-state: ""
 # === SPREADSHEET CONVERSION ===
 spreadsheet.error: "Ihre Datei konnte nicht in ein Quiz umgewandelt werden. Benutzen Sie die offizielle Google Sheets Vorlage?"
 spreadsheet.error.file-format: "Datei Formatierung"
+spreadsheet.error.bad-character: ""
 spreadsheet.error.correct-answer: "Der korrekte Antworten-Index für Frage {} ist ungültig. Bitte spezifizieren Sie eine Nummer."
 spreadsheet.error.time-allowed: "Die erlaubte Zeit für Frage {} ist ungültig. Bitte spezifizieren Sie eine Nummer zwischen {} und {}."
 spreadsheet.error.points: "Die Punkte die für Frage {} vergeben werden sind ungültig. Bitte geben sie eine Nummer zwischen {} und {} für minimum und maximum Punkte an."

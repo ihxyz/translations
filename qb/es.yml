@@ -96,6 +96,10 @@ cmdr.maintenance-mode: "The bot is currently in maintenance mode."
 # === COMMANDS ===
 # FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
 
+# permcheck
+cmd.permcheck.title: ""
+cmd.permcheck.description: ""
+
 # add-question
 cmd.add-question.usage: "Usage: `{}`"  # {usage}
 cmd.add-question.invalid-time: "Please specify a valid time in seconds: `{}`"  # {usage}
@@ -144,8 +148,8 @@ cmd.play-quiz.maintenance: "The "
 cmd.play-quiz.unplayable.detail: "Quiz validation failed. Error detail: `{}`. \n\n[Contact an administrator with the quiz ID and error message to resolve this issue.]({})"
 cmd.play-quiz.nsfw: "This quiz is marked as NSFW. It can only be started in channels marked NSFW."
 cmd.play-quiz.private: "This quiz is private. It can only be accessed by its author."
-cmd.play.quiz.servers: "This quiz can only be played in the same servers its author is in."
-cmd.play.quiz.servers-author-gone: "This quiz's author is unavailable. Cannot play quiz."
+cmd.play-quiz.servers: "This quiz can only be played in the same servers its author is in."
+cmd.play-quiz.servers-author-gone: "This quiz's author is unavailable. Cannot play quiz."
 cmd.play-quiz.no-questions: "This quiz does not have any questions."
 cmd.play-quiz.competitive-denied: "{} Competitive mode is only available to premium members. [Learn more about premium here.]({})"
 
@@ -307,6 +311,7 @@ cmd.pause.bad-state: "You cannot pause a session during a question. Wait until t
 # === SPREADSHEET CONVERSION ===
 spreadsheet.error: "Your file could not be converted into a quiz. Are you using the official Google Sheets template?"
 spreadsheet.error.file-format: "File format"
+spreadsheet.error.bad-character: ""
 spreadsheet.error.correct-answer: "The correct answer index for question {} is not valid. Please specify a number."
 spreadsheet.error.time-allowed: "The time allowed for question {} is not valid. Please specify a number between {} and {}."
 spreadsheet.error.points: "The points awarded for question {} are not valid. Please specify a number between {} and {} for both min and max points."
