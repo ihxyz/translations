@@ -129,6 +129,11 @@ cmdr.maintenance-mode: "The bot is currently in maintenance mode."
 # === COMMANDS ===
 # FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
 
+# equip
+cmd.equip.item-not-found: "Could not find that item."
+cmd.equip.item-not-found.detail: "Please check you've specified a valid item type and number."
+cmd.equip.success: "Set your {} to _{}_."
+
 # permcheck
 cmd.permcheck.title: "Your permission setup in this channel is correct!"
 cmd.permcheck.description: "You should be ready to use all QuizBot commands here."
@@ -399,5 +404,9 @@ session.question.time-allowed: "Time allowed: {} seconds"
 session.question.points: "The correct answer awards {} points"
 session.question.time-up: "Time's up!"
 session.question.awaiting-reactions: "Answers will be revealed once all reactions are ready!"
+
+inventory.no-items: "_You haven't purchased any items of this type!\nRun `{}shop` to find some items._\n"
+inventory.selected: "**{} (SELECTED)**"
+inventory.equip-hint: "\n**Equip an item with `{}equip {} <number>`.**"
 
 contributors: "ihxyz"
