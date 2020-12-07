@@ -71,6 +71,7 @@ help.delete-quiz: "Deletes a quiz. You can only delete your own quizzes. \nExamp
 help.settings: "View or change settings for your server. You can change the following settings: `language`, `prefix`."
 help.search: "Searches the quiz database for quizzes relating to your search term. \nExample: `=search Trivia`"
 help.view: "View all the information about a quiz with the given ID. On your own quizzes you can add `correct` after the command to show which answers are correct. \nExample: `=view 123456`"
+help.leaderboard: "Create a leaderboard to keep track of the best players in your server! You can get a quick leaderboard of your best all-time players or set up automatically updating leaderboards for certain time periods."
 help.copy: "Copy a quiz with the given ID to alter it or work from it as a template. \nExample: `=copy 123456`"
 help.spreadsheet: "Convert a spreadsheet to a quiz! See `=spreadsheet help` for more information, or watch our [official YouTube tutorial](https://youtu.be/4bcpmbIlrPw). For the spreadsheet template see `=spreadsheet template`."
 help.schedule: "Schedule quizzes to run regularly at certain intervals. Please note that this is currently in experimental release. For more information check our official support server."
@@ -113,6 +114,14 @@ shop.items.expiry.months: "{} month(s), "
 shop.items.expiry.days: "{} day(s), "
 shop.items.expiry.hours: "{} hour(s) and "
 shop.items.expiry.minutes: "{} minutes(s)"
+
+# === LEADERBOARD ===
+leaderboard.none: "No entries found for this time period.\n"
+leaderboard.forever: "Forever"
+leaderboard.never: "Never"
+leaderboard.start: "Start: {} | "
+leaderboard.end: "End: {}"
+leaderboard.finished: "FINISHED"
 
 # === COMMANDS REUSABLE ===
 cmdr.invalid-id: "Invalid ID"
@@ -178,9 +187,9 @@ cmd.delete-quiz.success: "Quiz `{}` successfully deleted."
 
 # [2 subcommands omitted.]
 
-# leaderboard
-cmd.leaderboard.message: "Leaderboards"
-cmd.leaderboard.message.detail: "[View the public leaderboards here.]({})"
+# public-leaderboard
+cmd.public-leaderboard.message: "Leaderboards"
+cmd.public-leaderboard.message.detail: "[View the public leaderboards here.]({})"
 
 # play-quiz
 cmd.play-quiz.random.failed: "We were unable to find a random quiz. Please try again later."
@@ -236,6 +245,7 @@ cmd.view.play: "**Play this quiz using `{}play {}`**"
 cmd.view.question: "{}) {} | *{} seconds* | *{} points*"
 cmd.view.answers: "Answers: {}"
 
+# quizeditor
 cmd.qe.no-active: "There is no active QuizEditor in this channel."
 cmd.qe.question-only-sc: "This subcommand is only enabled when editing a question."
 cmd.qe.quiz-only-sc: "This subcommand is disabled when editing questions. Please save or delete this question first."
@@ -297,6 +307,31 @@ cmd.qe.save.no-correct: "Please set a correct answer."
 cmd.qe.save.success: "Question saved successfully."
 cmd.qe.cancel.success: "Changes discarded."
 
+# leaderboard
+cmd.leaderboard.premium: "{} [QuizBot Premium Feature]({})\n"
+cmd.leaderboard.title: "QuizBot Server Leaderboards"
+cmd.leaderboard.description: "__**What are leaderboards?**__\nYou can create leaderboards in your server to track who has scored the most total points during certain durations. You can have up to {} automatically updating leaderboards per server. You can create the leaderboards by running the command in the `Code block`. Take a look at the leaderboard types below:"
+cmd.leaderboard.simple: "Simple Leaderboards"
+cmd.leaderboard.simple.info: "Generate a leaderboard showing everyone's all time points across your server. Does not automatically update. `=leaderboard simple`"
+cmd.leaderboard.standard: "Weekly, Monthly & All Time Leaderboards"
+cmd.leaderboard.standard.info: "Leaderboards which show who has scored the most points in your server in the past week, month or in total. Automatically updates after every quiz and resets at the end of the time period! `=leaderboard new weekly/monthly/all-time`"
+cmd.leaderboard.custom: "Custom Leaderboards"
+cmd.leaderboard.custom.info: "A leaderboard which can be set to start and optionally end at any given date. Automatically updates after every quiz. `=leaderboard new custom ...` (You must provide a `start` and optionally an `end` time, see below)"
+cmd.leaderboard.advanced: "Providing advanced settings"
+cmd.leaderboard.advanced.info: "You can control exactly how you want your leaderboard to look by setting up advanced settings. Please note that this is only available for the QuizBot Premium leaderboard types. You can specify these by giving the setting followed by a colon `:` and then the value. If you want to specify multiple different settings, separate each setting with a semicolon `;`. For multiple values (where applicable) separate the values by commas `,`. The available settings are `start`, `end` (only for custom leaderboard), `user` (only sessions started by these users are counted) and `channel` (only sessions in these channels are counted) Example:\n`=leaderboard new custom start: 2021-09-30; channels: #general, #quiz`"
+cmd.leaderboard.new.premium: "Automatic leaderboards require QuizBot Premium."
+cmd.leaderboard.new.premium.detail: "Find out more about premium [here]({}).\nWith an active premium subscription you can create up to {} leaderboards per server, across up to {} different servers."
+cmd.leaderboard.new.lb-limit: "This server has reached the maximum amount of automatic leaderboards. Please delete a leaderboard before creating a new one."
+cmd.leaderboard.new.server-limit: "You can only create automatic leaderboards in 2 different servers."
+cmd.leaderboard.new.no-start: "You need to specify a valid leaderboard type or provide a start date in the form `start:YYYY-MM-DD`."
+cmd.leaderboard.new.invalid-time: "Invalid start or end date format. Please make sure to give the date in the form `YYYY-MM-DD`"
+cmd.leaderboard.new.no-user: "Couldn't find user `{}`"
+cmd.leaderboard.new.no-user.detail: "Make sure to mention the user, e.g. <@558996910581612545>"
+cmd.leaderboard.new.no-channel: "Couldn't find channel `{}`"
+cmd.leaderboard.delete.none: "Couldn't find leaderboard."
+cmd.leaderboard.delete.success: "Successfully deleted leaderboard."
+
+# featured
 cmd.featured.categories.title: "Featured Quizzes"
 cmd.featured.categories.description: "Featured quizzes are popular, high-quality public quizzes that are perfect for casual games or learning more about a topic."
 cmd.featured.categories.hint: "Run `{}featured {}` for a list."
@@ -311,6 +346,7 @@ cmd.featured.results: "We found 1 quiz relating to your search!"
 cmd.featured.results-plural: "We found {} quizzes relating to your search!"
 cmd.featured.requested-by: "Requested by {}. Page {}/{}."
 
+# options
 cmd.options.title: "Quiz session options"
 cmd.options.description: "To use an option when playing a quiz, type it after the quiz ID.\nE.g. `=play 123456 delete`"
 cmd.options.delete: "The bot will delete all session messages after the quiz is complete."
@@ -321,6 +357,7 @@ cmd.options.shuffle: "The order of questions will be shuffled."
 cmd.options.shuffle-answers: "The order of the answers for questions will be shuffled."
 cmd.options.competitive: "See [this page]({}) for more information on competitive mode."
 
+# schedule
 cmd.schedule.create.reached-limit: "Non-premium members cannot have more than {} schedules."
 cmd.schedule.already-editing: "There is already a quiz schedule being edited in this channel."
 cmd.schedule.create.reached-limit.detail: "For more schedules, try [QuizBot Premium]({})."
@@ -344,6 +381,7 @@ cmd.schedule.notification.not-found: "Could not find that role. Please try again
 cmd.schedule.delete.success: "Schedule deleted."
 cmd.schedule.save.success: "Schedule saved and updated. It will next run `{}`."
 
+# pause
 cmd.pause.paused: "Paused the session. You can resume it with `{}resume`."
 cmd.pause.resumed: "Resumed the session."
 cmd.pause.bad-state: "You cannot pause a session during a question. Wait until the question has ended and try again."
