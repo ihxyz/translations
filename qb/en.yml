@@ -142,6 +142,7 @@ cmdr.maintenance-mode: "The bot is currently in maintenance mode."
 cmd.equip.item-not-found: "Could not find that item."
 cmd.equip.item-not-found.detail: "Please check you've specified a valid item type and number."
 cmd.equip.success: "Set your {} to _{}_."
+cmd.equip.success-unequip: "Removed the item from the _{}_ slot."
 
 # permcheck
 cmd.permcheck.title: "Your permission setup in this channel is correct!"
