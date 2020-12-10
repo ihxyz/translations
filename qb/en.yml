@@ -446,6 +446,6 @@ session.question.awaiting-reactions: "Answers will be revealed once all reaction
 
 inventory.no-items: "_You haven't purchased any items of this type!\nRun `{}shop` to find some items._\n"
 inventory.selected: "**{} (SELECTED)**"
-inventory.equip-hint: "\n**Equip an item with `{}equip {} <number>`.**"
+inventory.equip-hint: "\n**Equip an item with `{}equip {} <number>`.**\nUnequip an item with `{}equip {} none`."
 
 contributors: "ihxyz"
