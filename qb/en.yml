@@ -86,7 +86,7 @@ help.footer: "Enjoy the bot? Use the vote link at the top of this message to sup
 # === SHOP ===
 shop.disabled: "The shop is currently disabled."
 shop.title: "Welcome to the QuizBot Item Shop. Here you can find items which level up your profile or add a unique touch to your quizzes."
-shop.description: "You can buy items with the QuizBot currency {0}. \n{0} is earned by playing quizzes or having your quizzes played. \nYou currently have {0}`{1}`"  # currency emote, Q$ balance
+shop.description: "You can buy items with the QuizBot currency {0}. \n{0} is earned by playing quizzes or having your quizzes played. \nYou currently have {1}"  # currency emote, Q$ balance
 shop.author: "QuizBot Shop"
 shop.footer.main: "Navigate to a different item category with the emotes below"
 shop.footer.items: "Cycle through the items in this category with the arrow emotes below"
