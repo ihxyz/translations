@@ -122,6 +122,7 @@ leaderboard.never: "Never"
 leaderboard.start: "Start: {} | "
 leaderboard.end: "End: {}"
 leaderboard.finished: "FINISHED"
+leaderboard.deleted: "DELETED"
 
 # === COMMANDS REUSABLE ===
 cmdr.invalid-id: "Invalid ID"
