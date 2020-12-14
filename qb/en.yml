@@ -109,7 +109,7 @@ shop.items.restrictions.min-xp: "You need to be at least XP level {}."
 shop.items.restrictions.other-items: "You need to also own these other items to purchase this item: \n{}."
 shop.items.low-currency: "You don't have enough {} to purchase this item."
 shop.items.cant-purchase: "You cannot purchase this item. You do not meet all the requirements."
-shop.items.purchased: "{} Item successfully purchased! Go to your inventory to equip it."  # {checkmark emote}
+shop.items.purchased: "{} Item successfully purchased! Go to your inventory to equip it with `{}inventory`."  # {checkmark emote}, {prefix}
 shop.items.expiry.months: "{} month(s), "
 shop.items.expiry.days: "{} day(s), "
 shop.items.expiry.hours: "{} hour(s) and "
