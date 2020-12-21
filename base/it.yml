@@ -4,17 +4,6 @@ generic.success: "Success"
 generic.error: "Error"
 generic.thank-you: "Thank you"
 
-generic.duration.month: "month"
-generic.duration.months: "months"
-generic.duration.day: "day"
-generic.duration.days: "days"
-generic.duration.hour: "hour"
-generic.duration.hours: "hours"
-generic.duration.minute: "minute"
-generic.duration.minutes: "minutes"
-generic.duration.second: "second"
-generic.duration.seconds: "seconds"
-
 # COMMAND MANAGER
 cmdm.prefix: "The prefix for this server is `{}`"
 cmdm.permission-denied: "You are not allowed to run the command `{}`."  # {command}
