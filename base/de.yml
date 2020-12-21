@@ -4,6 +4,15 @@ generic.success: "Erfolg"
 generic.error: "Fehler"
 generic.thank-you: "Vielen Dank"
 
+generic.duration.month: ""
+generic.duration.months: ""
+generic.duration.day: ""
+generic.duration.days: ""
+generic.duration.hour: ""
+generic.duration.hours: ""
+generic.duration.minute: ""
+generic.duration.minutes: ""
+
 # COMMAND MANAGER
 cmdm.prefix: "Der Befehl-Prefix für diesen Server ist `{}`"
 cmdm.permission-denied: "Du hast keine Berechtigungen um den Befehl `{}` ausführen."  # {command}

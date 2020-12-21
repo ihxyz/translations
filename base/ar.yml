@@ -4,6 +4,15 @@ generic.success: "تم بنجاح"
 generic.error: "هناك خطأ"
 generic.thank-you: "شكراً لك"
 
+generic.duration.month: ""
+generic.duration.months: ""
+generic.duration.day: ""
+generic.duration.days: ""
+generic.duration.hour: ""
+generic.duration.hours: ""
+generic.duration.minute: ""
+generic.duration.minutes: ""
+
 # COMMAND MANAGER
 cmdm.prefix: "الاختصار في هذا السيرفر هو `{}`."
 cmdm.permission-denied: "غير مسموح لك بتشغيل هذا الامر `{}`."  # {command}
