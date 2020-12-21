@@ -211,7 +211,7 @@ cmd.premium.message: "QuizBot Premium is now available!"
 cmd.premium.message.detail: "Click [here]({}) for more information."
 
 # profile
-cmd.profile.title: "Your Profile"
+cmd.profile.title: "{}'s Profile"
 cmd.profile.view-online: "[View online]({})"
 cmd.profile.level: "Level {}"
 cmd.profile.no-data: "There is no data stored for that user."
