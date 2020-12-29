@@ -443,6 +443,8 @@ session.question.points: "The correct answer awards {} points"
 session.question.time-up: "Time's up!"
 session.question.awaiting-reactions: "Answers will be revealed once all reactions are ready!"
 
+session.inactive: "The quiz session was stopped as there were no players."
+
 inventory.no-items: "_You haven't purchased any items of this type!\nRun `{}shop` to find some items._\n"
 inventory.selected: "**{} (SELECTED)**"
 inventory.equip-hint: "\n**Equip an item with `{0}equip {1} <number>`.**\nUnequip an item with `{0}equip {1} none`."
