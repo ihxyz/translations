@@ -20,12 +20,14 @@ Below is a list of all translated languages. If you have found an error in any o
 - English (`en`, original language)
 - German (`de`)
 - Arabic (`ar`)
+- French (`fr`)
 
 ### QuizBot
 
 - English (`en`, original language)
 - German (`de`)
 - Arabic (`ar`)
+- French (`fr`)
 
 ### PollBot Advanced
 
@@ -37,7 +39,6 @@ Here is a list of languages that have been requested for either bot.
 If you are able to translate any of the below, see the [contributing page](contributing.md) to learn how to submit your translations.
 
 - Spanish (`es`)
-- French (`fr`)
 
 ## Support
 
