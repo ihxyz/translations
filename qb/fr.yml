@@ -90,7 +90,7 @@ cmdr.perm-denied: "Vous n'avez pas la permission de faire ceci."
 cmdr.nsfw: "Cette commande ne peut pas être utilisée dans les salons NSFW."
 cmdr.nsfw.detail: "QuizBot n'autorise pas les quiz NSFW."
 cmdr.no-session: "Il n'y a aucune session en cours sur ce salon."
-cmdr.update-planifié: "Une mise à jour du bot est programmée. Veuillez réessayer dans {} minutes."
+cmdr.update-scheduled: "Une mise à jour du bot est programmée. Veuillez réessayer dans {} minutes."
 cmdr.maintenance-mode: "Le bot est actuellement en mode maintenance."
 
 # === COMMANDS ===
@@ -108,7 +108,7 @@ cmd.add-question.validation-error.detail: "Une erreur s'est produite lors de la 
 cmd.add-question.success: "Question ajoutée avec succès."
 
 # convert-spreadsheet
-cmd.spreadsheet.not-attachment: "Veuillez joindre un fichier CSV au message. \nPour obtenir de l'aide sur l'utilisation de cette commande, consultez `{}spreadsheet help`."
+cmd.spreadsheet.not-attached: "Veuillez joindre un fichier CSV au message. \nPour obtenir de l'aide sur l'utilisation de cette commande, consultez `{}spreadsheet help`."
 cmd.spreadsheet.success: "Quiz enregistré avec succès avec l'ID `{}`."
 cmd.spreadsheet.bad-file-format: "Format de fichier non pris en charge. Veuillez utiliser un fichier `.csv`."
 
@@ -151,7 +151,7 @@ cmd.play-quiz.private: "Ce quiz est privé. Il est accessible uniquement par son
 cmd.play-quiz.servers: "Ce quiz ne peut être joué que sur les mêmes serveurs que son auteur."
 cmd.play-quiz.servers-author-gone: "L'auteur de ce quiz n'est pas disponible. Impossible de jouer au quiz."
 cmd.play-quiz.no-questions: "Ce quiz n'a pas de questions."
-cmd.play-quiz.competitive-refusé: "{} Le mode Compétitif n'est disponible que pour les membres premium. [En savoir plus sur premium ici.]({})"
+cmd.play-quiz.competitive-denied: "{} Le mode Compétitif n'est disponible que pour les membres premium. [En savoir plus sur premium ici.]({})"
 
 # premium
 cmd.premium.message: "QuizBot Premium est maintenant disponible !"
@@ -207,11 +207,11 @@ cmd.view.answers: "Answers: {}"
 cmd.qe.no-active: "Il n'y a pas de QuizEditor actif dans ce canal."
 cmd.qe.question-only-sc: "Cette sous-commande n'est activée que lors de l'édition d'une question."
 cmd.qe.quiz-only-sc: "Cette sous-commande est désactivée lors de l'édition de questions. Veuillez d'abord enregistrer ou supprimer cette question."
-cmd.qe.already-editor-channel: "Il y a déjà un quiz en cours d'édition dans ce canal."
-cmd.qe.already-editor-quiz: "Ce quiz est déjà en cours d'édition dans un autre canal."
+cmd.qe.already-editing-channel: "Il y a déjà un quiz en cours d'édition dans ce canal."
+cmd.qe.already-editing-quiz: "Ce quiz est déjà en cours d'édition dans un autre canal."
 cmd.qe.invalid-id: "Veuillez spécifier un ID de quiz composé uniquement de chiffres."
 cmd.qe.not-found: "Impossible de trouver un quiz avec cet ID. Veuillez réessayer."
-cmd.qe.permission-refusée: "Vous ne pouvez modifier que vos propres quiz."
+cmd.qe.permission-denied: "Vous ne pouvez modifier que vos propres quiz."
 cmd.qe.nsfw: "Ce quiz est marqué comme NSFW. Il ne peut être édité que dans les canaux NSFW."
 cmd.qe.no-id: "Veuillez spécifier un ID de quiz."
 cmd.qe.name.invalid-len: "Le nom du quiz est trop long ou trop court. Il doit être compris entre {} et {} caractères."
@@ -270,7 +270,7 @@ cmd.featured.categories.title: "Quiz en vedette"
 cmd.featured.categories.description: "Les quiz présentés sont des quiz publics populaires de haute qualité, parfaits pour les jeux occasionnels ou pour en savoir plus sur un sujet."
 cmd.featured.categories.hint: "Exécutez `{}featured {}` pour une liste."
 cmd.featured.category.title: "{} Quiz"
-cmd.featured.category.browse: "Parcourir tous les quiz en vedette avec `{}featured {}` ! "
+cmd.featured.category.browse: "Parcourir tous les quiz en vedette avec `{}featured` ! "
 cmd.featured.category.truncated: "Seuls {} quiz sont affichés à la fois ! Utilisez les réactions ci-dessous pour voir la page suivante."
 cmd.featured.category.empty: "**Il n'y a pas encore de quiz dans cette catégorie!** Revenez plus tard ..."
 
@@ -291,10 +291,10 @@ cmd.options.shuffle-answers: "L'ordre des réponses aux questions sera mélangé
 cmd.options.competitive: "Voir [cette page]({}) pour plus d'informations sur le mode compétitif."
 
 cmd.schedule.create.reached-limit: "Les membres non premium ne peuvent pas avoir plus de {} planifications."
-cmd.schedule.already-edit: "Il y a déjà une planification de quiz en cours de modification dans cette chaîne."
+cmd.schedule.already-editing: "Il y a déjà une planification de quiz en cours de modification dans cette chaîne."
 cmd.schedule.create.reached-limit.detail: "Pour plus de planifications, essayez [QuizBot Premium]({})."
 cmd.schedule.edit.not-found: "Planification introuvable."
-cmd.schedule.not-edit: "Vous n'êtes pas en train de modifier une planification."
+cmd.schedule.not-editing: "Vous n'êtes pas en train de modifier une planification."
 cmd.schedule.interval.out-of-range: "L'intervalle de planification doit être compris entre `{}` et `{}`."
 cmd.schedule.interval.invalid: "Intervalle de temps non valide. Pour obtenir de l'aide, exécutez `{} help time`."
 cmd.schedule.channel.invalid: "Canal non valide."
