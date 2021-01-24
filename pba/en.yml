@@ -39,6 +39,8 @@ help.results: "Displays the results for the specified poll ID."
 help.close: "Marks the specified poll ID as closed. Note the results command will no longer work after closing a poll."
 help.settings: "Change the settings for your server. Type `{}settings help` for more information."
 help.survey: "Get a link to a survey to give us feedback for the bot and tell us which features you want to be introduced next."
+help.arguments-hint: "**Command arguments**"
+help.arguments-hint.detail: "`<>` represents required arguments. `()` represents optional arguments.\nYou do not need to include these when running a command."
 help.footer: "**Enjoy the bot?**"
 help.footer.detail: '[Click here to support it!]({} "Vote for the bot.")'
 
