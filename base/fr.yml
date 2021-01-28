@@ -1,6 +1,4 @@
 antispam.blacklisted.detail: "En raison du spam, l'exécution de la commande est désactivée. Vous devez attendre au moins 1 heure pour continuer."
-antispam.blacklisted.detail: "En raison du spam, l'exécution de la commande est désactivée. Vous devez attendre au moins 1 heure pour continuer."
-antispam.blacklisted.title: "Votre guilde est sur liste noire."
 antispam.blacklisted.title: "Votre guilde est sur liste noire."
 cmd.access-level.reset.success: "Réinitialiser le niveau d'accès pour `{}`."
 cmd.access-level.reset.success-all: "Réinitialiser le niveau d'accès pour toutes les commandes."
