@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for file in "$@"
+do
+	(grep "^\w" "$file" | sort -t':' -s -k1,1) > "$file.tmp"
+	mv "$file.tmp" "$file"
+	echo "sorted keys: $file"
+done

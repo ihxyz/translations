@@ -1,0 +1,13 @@
+#!/bin/sh
+
+for file in "$@"
+do
+	yq v "$file"
+	if [ $? -eq 1 ]
+	then
+		echo "\e[0;31mfailed: $file\e[0m"
+	else
+		echo "\e[0;32mpassed: $file\e[0m"
+	fi
+done
+

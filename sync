@@ -1,0 +1,25 @@
+#!/bin/sh
+
+if [ -z "$1" ]
+then
+	echo "usage: sync BASEFILE"
+	exit 1
+fi
+
+TARGET="$1"
+TARGET_FILE=$(basename "$TARGET")
+TARGET_DIRECTORY=$(dirname "$TARGET")
+
+TEMPLATE="$TARGET_FILE.tmp"
+
+yq w "$TARGET" "**" "" > "$TEMPLATE"
+
+FILES="$TARGET_DIRECTORY/*.yml"
+
+for file in $FILES
+do
+	echo "synchronising: $file..."
+	yq m -i "$file" "$TEMPLATE"
+done
+
+rm -f "$TEMPLATE"
