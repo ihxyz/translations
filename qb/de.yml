@@ -14,15 +14,13 @@
 # Support: https://www.ihxyz.dev/bots/support
 ################################################################
 
-# === GENERIC ===
 premium-only: "QuizBot Premium exklusiv Feature."
-premium-only.learn-more: "[Erfahren Sie hier mehr über QuizBot Premium.]({})"  # {premium_link}
+premium-only.learn-more: "[Erfahren Sie hier mehr über QuizBot Premium.]({})"  
 nan: "Bitte geben Sie eine Nummer an."
 quiz.no-description: "*[Dieses Quiz hat keine Beschreibung.]*"
 quiz.editor-web: "Besuchen Sie [diese Seite]({}) um es zu bearbeiten."
 user.unavailable: "(User nicht verfügbar)"
 
-# === QUIZ EDITOR ===
 qe.standard.title: "Quiz {} wird bearbeitet"
 qe.standard.web-prompt: "\U0001F517 [Sie können Ihr Quiz auch auf der QuizBot Webseite bearbeiten.]({})"
 qe.standard.author: "QuizEditor"
@@ -61,9 +59,8 @@ qe.question.image.premium: "Willst du Bilder in allen deiner Quizze? [Hol dir Qu
 qe.question.operations: "Speichere diese Frage mit `{0}qe save`\nLösche diese Frage mit `{0}qe delete`\nVerwerfe alle änderungen mit `{0}qe cancel`"
 qe.question.not-auto-save: "Änderungen werden nicht automatisch gespeichert."
 
-# === HELP MESSAGE ===
 help.title: "[{}] QuizBot Hilfe"
-help.description: "[Webseite]({}) / [Hilfs-Server]({}) / [Abstimmen]({}) / [{} QuizBot Premium (NEU)]({})"  # {website}, {support}, {vote}, {premium_emote}, {premium_link}
+help.description: "[Webseite]({}) / [Hilfs-Server]({}) / [Abstimmen]({}) / [{} QuizBot Premium (NEU)]({})"  
 help.play: "Spielen Sie ein Quiz mit der gegebenen ID. Benutzen Sie 'random' als die ID, um ein zufälliges Quiz zu spielen.\nBeispiel: `=play 123456`"
 help.stop: "Stoppt das Quiz, das im aktuellen Kanal gespielt wird."
 help.create-quiz: "Kreiert ein Quiz mit dem gegebenen Namen und Beschreibung.\nBeispiel: `=create-quiz QuizBot;Dies ist ein Quiz.`"
@@ -82,10 +79,9 @@ help.pause: "Pausieren oder fahren sie mit einem Quiz fort."
 help.access-level: "Ändere die Befehl-Berechtigungen für deinen Server."
 help.footer: "Gefällt ihnen der Bot? Benutzen Sie den Abstimmungs-Link am Anfang dieser Nachricht um den Bot unterstützen!"
 
-# === SHOP ===
 shop.disabled: "The shop is currently disabled."
 shop.title: "Welcome to the QuizBot Item Shop. Here you can find items which level up your profile or add a unique touch to your quizzes."
-shop.description: "You can buy items with the QuizBot currency {0}. \n{0} is earned simply by playing quizzes or having your quizzes played. \nYou currently have {0}`{1}`"  # currency emote, Q$ balance
+shop.description: "You can buy items with the QuizBot currency {0}. \n{0} is earned simply by playing quizzes or having your quizzes played. \nYou currently have {0}`{1}`"  
 shop.author: "QuizBot Shop"
 shop.footer: "Navigate to a different item category with the emotes below"
 shop.help.title: "This is the help page for the QuizBot item shop."
@@ -93,9 +89,8 @@ shop.help.description: "Here you can find resources on how to buy new items to l
 shop.none: "There are currently no items available in this category."
 shop.none.detail: "Please check back later."
 
-# === COMMANDS REUSABLE ===
 cmdr.invalid-id: "Ungültige ID"
-cmdr.invalid-id.nan: "Bitte spezifizieren Sie eine gültige Nummer. \n Meinen Sie `{}search {}`?"  # {prefix}, {query}
+cmdr.invalid-id.nan: "Bitte spezifizieren Sie eine gültige Nummer. \n Meinen Sie `{}search {}`?"  
 cmdr.invalid-id.no-quiz: "Kein Quiz mit dieser ID konnte gefunden werden."
 cmdr.invalid-id.no-session: ""
 cmdr.perm-denied: "Sie haben keine Befugnisse um dies zu machen."
@@ -105,21 +100,16 @@ cmdr.no-session: "In diesem Kanal lauft momentan keine Session."
 cmdr.update-scheduled: "Ein Bot Update ist geplant. Bitte versuchen Sie es in {} Minuten nochmal."
 cmdr.maintenance-mode: "Der Bot ist momentan in Wartungsmodus."
 
-# === COMMANDS ===
-# FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
 
-# permcheck
 cmd.permcheck.title: ""
 cmd.permcheck.description: ""
 
-# add-question
-cmd.add-question.usage: "Benutzen Sie: `{}`"  # {usage}
-cmd.add-question.invalid-time: "Bitte spezifizieren Sie eine gültige Zeit Dauer in Sekunden: `{}`"  # {usage}
+cmd.add-question.usage: "Benutzen Sie: `{}`"  
+cmd.add-question.invalid-time: "Bitte spezifizieren Sie eine gültige Zeit Dauer in Sekunden: `{}`"  
 cmd.add-question.validation-error: "Interne Validierung gescheitert"
-cmd.add-question.validation-error.detail: "Etwas ist beim Aktualisieren des Quizzes {} schiefgegangen. Keine Änderungen wurden gespeichert. [Kontaktieren Sie einen Administrator um dieses Problem zu beheben.]({})"  # {error}, {support_link}
+cmd.add-question.validation-error.detail: "Etwas ist beim Aktualisieren des Quizzes {} schiefgegangen. Keine Änderungen wurden gespeichert. [Kontaktieren Sie einen Administrator um dieses Problem zu beheben.]({})"  
 cmd.add-question.success: "Frage erfolgreich hinzugefügt."
 
-# convert-spreadsheet
 cmd.spreadsheet.not-attached: "Bitte hängen Sie eine CSV Datei an ihre Nachricht an. \nFür Hilfe, wie Sie diesen Befehl verwenden, benutzen Sie `{}spreadsheet help`."
 cmd.spreadsheet.success: "Quiz erfolgreich mit der ID `{}` gespeichert."
 cmd.spreadsheet.bad-file-format: "Nicht unterstütztes Datei Format. Bitte benutzen Sie eine `.csv` Datei."
@@ -140,23 +130,17 @@ cmd.spreadsheet.help.step-5.detail: "Jetzt da ihr Quiz in der QuizBot Datenbank 
 cmd.spreadsheet.template.title: "Folgen Sie dem Link in dieser Nachricht um die Tabellen Vorlage um Quizze zu kreieren zu sehen. Machen Sie eine Kopie von dieser Datei und beginnen sie ihr Quiz zu bearbeiten!"
 cmd.spreadsheet.template.link: "[Google Sheets Link]({})"
 
-# copy
 cmd.copy.perm-denied: "Dieses Quiz kann nicht kopiert werden weil es nicht öffentlich ist."
 cmd.copy.success: "Quiz erfolgreich kopiert. Die neue ID ist {}."
 
-# create-quiz
 cmd.create-quiz.success: "Das Quiz wurde kreiert! Die ID ist {}."
 
-# delete-quiz
 cmd.delete-quiz.success: "Quiz `{}` erfolgreich gelöscht."
 
-# [2 subcommands omitted.]
 
-# leaderboard
 cmd.leaderboard.message: "Bestenliste"
 cmd.leaderboard.message.detail: "[Sehen Sie sich die öffentliche Bestenliste hier an.]({})"
 
-# play-quiz
 cmd.play-quiz.random.failed: "Wir konnten kein zufälliges Quiz finden. Bitte versuchen Sie es später noch einmal."
 cmd.play-quiz.already-running: "In diesem Kanal lauft bereits ein Quiz. Bitte warten Sie bis es beendet ist und versuchen Sie es dann erneut."
 cmd.play-quiz.cannot-play: "Quiz kann nicht gestartet werden."
@@ -169,20 +153,16 @@ cmd.play-quiz.servers-author-gone: "Der Autor dieses Quizzes ist nicht verfügba
 cmd.play-quiz.no-questions: "Dieses Quiz hat keine Fragen."
 cmd.play-quiz.competitive-denied: "{} Wettbewerbs-Modus ist nur für QuizBot Premium Mitglieder verfügbar. [Mehr Information über QuizBot Premium gibt es hier.]({})"
 
-# premium
 cmd.premium.message: "QuizBot Premium ist jetzt verfügbar!"
 cmd.premium.message.detail: "[Hier]({}) klicken für mehr Information."
 
-# profile
 cmd.profile.title: ""
 cmd.profile.view-online: ""
 cmd.profile.total-points: "Gesamte Punkte: {:,}"
 cmd.profile.monthly-points: "Monatliche Punkte: {:,}"
 
-# remove-question
 cmd.remove-question.not-found: "Frage nicht gefunden."
 
-# settings
 cmd.settings.updated: "Einstellungen aktualisiert."
 cmd.settings.prefix.too-long: "Präfix kann nicht länger als 24 Charakter sein."
 cmd.settings.view.title: "Einstellungen für diesen Server"
@@ -191,21 +171,18 @@ cmd.settings.view.language: "Sprache"
 cmd.settings.language.not-found: "Sprache nicht gefunden"
 cmd.settings.language.not-found.detail: "Unterstützte Sprachen: \n{}"
 
-# stop
 cmd.stop.success: "Quiz Session `{}` angehalten."
 
-# survey
 cmd.survey.message: "Helfen Sie QuizBot zu verbessern"
 cmd.survey.message.detail: "Teilen Sie uns ihre Meinungen in unsere [User Umfrage]({}) mit."
 
-# view
 cmd.view.denied: "Sie haben keine Befugnisse um dieses Quiz anzuzeigen."
 cmd.view.nsfw: "Dieses Quiz ist als nicht jugendfrei markiert. Es kann nur in Kanälen die als NSFW markiert sind angezeigt werden."
 cmd.view.info: "Spiele: {} | Stimmen: {}"
-cmd.view.title: "**{}** von {}"  # {Quiz name, Quiz author}
+cmd.view.title: "**{}** von {}"  
 cmd.view.description: "**Quiz Beschreibung**"
 cmd.view.tags: "Quiz Stichwörter: {}"
-cmd.view.overflow: "NOTIZ: Dieser Befehl wird nur bis zu 25 Fragen anzeigen.\nUm eine speziefische Fragen Auswahl zu sehen, benutzen Sie `{0}view {1} <start>-<ende>` z.B. `{0}view {1} 2-8`"  # {Prefix, Quiz ID}
+cmd.view.overflow: "NOTIZ: Dieser Befehl wird nur bis zu 25 Fragen anzeigen.\nUm eine speziefische Fragen Auswahl zu sehen, benutzen Sie `{0}view {1} <start>-<ende>` z.B. `{0}view {1} 2-8`"  
 cmd.view.play: "**Spiele dieses Quiz mit `{}play {}`**"
 cmd.view.question: "{}) {} | *{} Sekunden* | *{} Punkte*"
 cmd.view.answers: "Antworten: {}"
@@ -322,9 +299,7 @@ cmd.pause.paused: ""
 cmd.pause.resumed: ""
 cmd.pause.bad-state: ""
 
-# [2 commands omitted.]
 
-# === SPREADSHEET CONVERSION ===
 spreadsheet.error: "Ihre Datei konnte nicht in ein Quiz umgewandelt werden. Benutzen Sie die offizielle Google Sheets Vorlage?"
 spreadsheet.error.file-format: "Datei Formatierung"
 spreadsheet.error.bad-character: ""
@@ -345,8 +320,6 @@ spreadsheet.failed.title: "Quiz konnte nicht kreiert werden."
 spreadsheet.failed.detail: "Der folgende Text konnte nicht umgewandelt werden: `{}`"
 spreadsheet.failed.footer: "Error Nachricht: {} | Frage Nummer: {}"
 
-# === SESSIONS ===
-# TODO: Competitive session report needs to be converted.
 session.error: "Etwas ist schiefgegangen, darum wurde die Session beendet. Das Problem wurde gemeldet."
 session.error.message-deleted: ""
 

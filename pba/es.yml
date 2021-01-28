@@ -15,20 +15,17 @@
 # Support: https://www.ihxyz.dev/bots/support
 ################################################################
 
-# === POLL VALIDATION ===
 poll-validation.question-length: "Your question is either too long or too short. It must be between {} and {} characters."
 poll-validation.response-count: "Your poll must have between {} and {} responses."
 poll-validation.response-combined-length: "The combined length of your responses is too long. It must be below {} characters. "
 poll-validation.duration: "Please specify a time duration between {} and {}."
 
-# === POLLS ===
 poll.available-responses: "Available responses"
 poll.footer: "ID: {}"
 poll.timed-footer: "ID: {} | Ends"
 poll.closed: "Poll closed!"
 poll.closed.detail: "Any reactions added or removed here will not affect the result."
 
-# === HELP ===
 help.title: "PollBot Advanced Help"
 help.links: '[Support server]({} "Join our support server for help with the bot.")'
 help.poll: "Creates a simple yes/no poll. Only requires a question."
@@ -44,7 +41,6 @@ help.arguments-hint.detail: "`<>` represents required arguments. `()` represents
 help.footer: "**Enjoy the bot?**"
 help.footer.detail: '[Click here to support it!]({} "Vote for the bot.")'
 
-# === APC ===
 apc.none: "None"
 apc.title: "You are creating a poll with the Advanced Poll Creator."
 apc.description: "**To send this poll, use `{}ap send`.**"
@@ -73,7 +69,6 @@ apc.all-answers: "These are the current answers for this poll."
 apc.all-answers.detail: "To add new answers use the command `{0}ap add-answer <answer>` \nTo remove the last answer use `{0}ap del-answer`"
 apc.all-answers.footer: "You can resend the advanced poll settings embed using '{}ap'"
 
-# === RESULTS ===
 results: "Poll results"
 results.failed: "Failed to get results for the poll. Maybe its message is missing, or the bot cannot access it?"
 results.none: "No results. Nobody voted on the poll."
@@ -85,14 +80,12 @@ results.response-detail: "{} vote ({}%)"
 results.response-detail-plural: "{} votes ({}%)"
 results.close-hint: "Use {}close to close this poll."
 
-# === COMMANDS REUSABLE ===
 cmdr.no-poll: "Could not find poll."
 cmdr.poll.perm-denied: "You do not have permission to access this poll."
 cmdr.poll.invalid-time: "Failed to parse time interval `{}`. For help, run `{}help time`."
 cmdr.user-missing-permissions: "You are missing the following permission(s) in the target channel."
 cmdr.bot-missing-permissions: "The bot is missing the following permission(s) in the target channel."
 
-# === COMMANDS ===
 cmd.advanced-poll.denied: "You can only edit, view or close your own APCs."
 cmd.advanced-poll.no-apc: "There is no APC running in this channel."
 cmd.advanced-poll.bot-perm-error: "The bot requires the `{}` permission in the target channel."

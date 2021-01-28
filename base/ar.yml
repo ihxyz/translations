@@ -1,4 +1,3 @@
-# GENERIC
 generic.failed: "فشل"
 generic.success: "تم بنجاح"
 generic.error: "هناك خطأ"
@@ -13,23 +12,22 @@ generic.duration.hours: ""
 generic.duration.minute: ""
 generic.duration.minutes: ""
 
-# COMMAND MANAGER
 cmdm.prefix: "الاختصار في هذا السيرفر هو `{}`."
-cmdm.permission-denied: "غير مسموح لك بتشغيل هذا الامر `{}`."  # {command}
+cmdm.permission-denied: "غير مسموح لك بتشغيل هذا الامر `{}`."
 cmdm.invalid-usage: "استخدام خاطئ"
-cmdm.invalid-usage-detail: "استخدم: `{} {}`"  # {command}, {usage}
+cmdm.invalid-usage-detail: "استخدم: `{} {}`"
 cmdm.error: "حدث خطأ ما في هذا الامر. تم الأبلاغ عن المشكلة."
 cmdm.maintenance: "لا يمكن تشغيل الامر: البوت في وضع الصيانة."
 
-cmdm.bad-setup: "قد تواجه مشكلة مع `{}` command."  # {command}
+cmdm.bad-setup: "قد تواجه مشكلة مع `{}` command."
 cmdm.bad-setup.detail: "هذا على الأرجح لأن الروبوت يفتقد إذن إرسال الرسائل أو تضمين الروابط في القناة التي تستخدم الأمر فيها. قم بتعيين أذونات الروبوت بشكل صحيح وحاول مرة أخرى."
-cmdm.bad-setup.extra: "اذا كنت بحاجة للمساعدة, انضم الى سيرفر الدعم هنا {}."  # {invite}
+cmdm.bad-setup.extra: "اذا كنت بحاجة للمساعدة, انضم الى سيرفر الدعم هنا {}."
 
 cmdm.perm-error.title: "اذونات غير كافية"
-cmdm.perm-error.detail: "يفتقد الروبوت إلى الإذن التالي في هذه القناة: {}. هذا الاذن المطلوب لتشغيل هذا الامر `{}`."  # {perm}, {command}
-cmdm.perm-error.detail-plural: "يفتقد الروبوت الاذن التالي في هذه القناة: {}. هذا الاذن المطلوب لتشغيل هذا الامر `{}`."  # {perms}, {command}
+cmdm.perm-error.detail: "يفتقد الروبوت إلى الإذن التالي في هذه القناة: {}. هذا الاذن المطلوب لتشغيل هذا الامر `{}`."
+cmdm.perm-error.detail-plural: "يفتقد الروبوت الاذن التالي في هذه القناة: {}. هذا الاذن المطلوب لتشغيل هذا الامر `{}`."
 cmdm.perm-error.support: "هل تحتاج الى مساعدة مع الاذونات؟"
-cmdm.perm-error.support-detail: "[راجع هذه المقالة من دسكورد للحصول على الدعم]({}) او [انضم الى سيرفر الدعم]({})."  # {link1}, {link2}
+cmdm.perm-error.support-detail: "[راجع هذه المقالة من دسكورد للحصول على الدعم]({}) او [انضم الى سيرفر الدعم]({})."
 
 cmdm.sal.disabled: "تم تعطيل هذا الأمر في هذا السيرفر من قبل المسؤول."
 cmdm.sal.permission: "يتطلب مستوى الوصول إلى النقابة للحصول على إذن `{}`."
@@ -43,18 +41,12 @@ cmdm.sal.invalid.detail: "الرجاء التحقق من اعدادات السي
 antispam.blacklisted.title: "نقابتك مدرجة في القائمة السوداء."
 antispam.blacklisted.detail: "بسبب بريد عشوائي, تنفيذ الامر معطل. يجب عليك الانتظار ساعة واحد على الاقل للاستمرار."
 
-# COMMANDS
 
-# add
 cmd.add.message: "قم بدعوة الروبوت من خلال هذا الرابط."
-# vote
 cmd.vote.message: "صوت هنا لدعم الروبوت."
 cmd.vote.unavailable: "التصويت غير متاح لهذا الروبوت."
-# diagnose
 cmd.diagnose.sent: "تم إرسال تقريرك إلى المطورين."
-# version
-cmd.version.message: "{} نسخة `{}` (DPE `{}`, DPY `{}`)"  # {bot_name}, {bot_version}, {dpe_version}, {dpy_version}
-# settings
+cmd.version.message: "{} نسخة `{}` (DPE `{}`, DPY `{}`)"
 cmd.settings.updated: "تم تحديث الاعدادت."
 cmd.settings.prefix.too-long: "الاختصار لا يمكن ان يكون اكثر من 24 حرف."
 cmd.settings.view.title: "اعدادات هذه النقابة"
@@ -63,7 +55,6 @@ cmd.settings.view.language: "لغة"
 cmd.settings.view.footer: "تغيير الاعدادات من خلال استخدام `{}settings <name> <value>`."
 cmd.settings.language.not-found: "اللغة غير موجودة"
 cmd.settings.language.not-found.detail: "اللغات المعتمدة: \n{}"
-# access-level
 cmd.access-level.view.title: "تكوين مستوى وصول للأوامر"
 cmd.access-level.view.description: "هذا الخادم لديه مستويات وصول محددة لـ {} اوامر. \nقم بتعيين مستوى وصول للأوامر باستخدام `{}access-level set` \nإعادة تعيين مستوى وصول للأمر باستخدام `{}access-level reset`"
 cmd.access-level.view.invalid-role: "_[رتبة غير صالحة - يرجى اعادة تكوين]_"

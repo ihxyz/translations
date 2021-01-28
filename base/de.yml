@@ -1,4 +1,3 @@
-# GENERIC
 generic.failed: "Gescheitert"
 generic.success: "Erfolg"
 generic.error: "Fehler"
@@ -13,34 +12,28 @@ generic.duration.hours: ""
 generic.duration.minute: ""
 generic.duration.minutes: ""
 
-# COMMAND MANAGER
 cmdm.prefix: "Der Befehl-Prefix für diesen Server ist `{}`"
-cmdm.permission-denied: "Du hast keine Berechtigungen um den Befehl `{}` ausführen."  # {command}
+cmdm.permission-denied: "Du hast keine Berechtigungen um den Befehl `{}` ausführen."
 cmdm.invalid-usage: "Falsche Benutzung"
-cmdm.invalid-usage-detail: "Benutzen sie: `{} {}`"  # {command}, {usage}
+cmdm.invalid-usage-detail: "Benutzen sie: `{} {}`"
 cmdm.error: "Etwas ist mit dem Befehl schiefgegangen. Dieses Problem wurde gemeldet."
 cmdm.maintenance: "Kann den Befehl nicht ausführen: Der Bot ist im Wartungs-Modus."
 
-cmdm.bad-setup: "Sie haben vielleicht Schwierigkeiten mit dem `{}` Befehl."  # {command}
+cmdm.bad-setup: "Sie haben vielleicht Schwierigkeiten mit dem `{}` Befehl."
 cmdm.bad-setup.detail: "Dies ist wahrscheinlich weil der Bot die 'Nachrichten senden' oder 'Links einbetten' Berechtigungen in dem Kanal wo sie den Befehl benutzen nicht hat.  Stellen sie die Berechtigung von dem Bot korrekt und versuchen sie es nochmal."
-cmdm.bad-setup.extra: "Falls sie mehr Hilfe benötigen, treten sie unserem Hilfs-Server hier bei: {}."  # {invite}
+cmdm.bad-setup.extra: "Falls sie mehr Hilfe benötigen, treten sie unserem Hilfs-Server hier bei: {}."
 
 cmdm.perm-error.title: "Unzureichende Berechtigungen"
-cmdm.perm-error.detail: "Dem Bot fehlt in diesem Kanal die folgende Berechtigung: {}. Diese Berechtigung ist benötigt um den Befehl `{}` auszuführen."  # {perm}, {command}
-cmdm.perm-error.detail-plural: "Dem Bot fehlen in diesem Kanal die folgenden Berechtigungen: {}. Diese Berechtigungen sind benötigt um den Befehl `{}` auszuführen."  # {perms}, {command}
+cmdm.perm-error.detail: "Dem Bot fehlt in diesem Kanal die folgende Berechtigung: {}. Diese Berechtigung ist benötigt um den Befehl `{}` auszuführen."
+cmdm.perm-error.detail-plural: "Dem Bot fehlen in diesem Kanal die folgenden Berechtigungen: {}. Diese Berechtigungen sind benötigt um den Befehl `{}` auszuführen."
 cmdm.perm-error.support: "Brauchen sie Unterstützung mit Berechtigungen?"
-cmdm.perm-error.support-detail: "[Lesen sie diesen Artikel von Discord für Unterstützung]({}) oder [treten sie unserem Hilfs-Server bei]({})."  # {link1}, {link2}
+cmdm.perm-error.support-detail: "[Lesen sie diesen Artikel von Discord für Unterstützung]({}) oder [treten sie unserem Hilfs-Server bei]({})."
 
-# COMMANDS
 
-# add
 cmd.add.message: "Laden sie den Bot in ihren Server ein mit diesem Link."
-# vote
 cmd.vote.message: "Geben sie hier ihre Stimme ab um den Bot zu unterstützen."
 cmd.vote.unavailable: "Es ist nicht möglich für diesen Bot zu stimmen."
-# diagnose
 cmd.diagnose.sent: "Ihr Bericht wurde den Entwicklern geschickt."
-# version
-cmd.version.message: "{} Version `{}` (DPE `{}`, DPY `{}`)"  # {bot_name}, {bot_version}, {dpe_version}, {dpy_version}
+cmd.version.message: "{} Version `{}` (DPE `{}`, DPY `{}`)"
 
 contributors: "Kartchampion05"

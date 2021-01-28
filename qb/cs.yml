@@ -14,15 +14,13 @@
 # Support: https://www.ihxyz.dev/bots/support
 ################################################################
 
-# === GENERIC ===
 premium-only: "QuizBot Premium only feature."
-premium-only.learn-more: "[Learn more about QuizBot Premium here.]({})"  # {premium_link}
+premium-only.learn-more: "[Learn more about QuizBot Premium here.]({})"  
 nan: "Please specify a number."
 quiz.no-description: "*[This quiz has no description]*"
 quiz.editor-web: "Go [here]({}) to edit it."
 user.unavailable: "(user unavailable)"
 
-# === QUIZ EDITOR ===
 qe.standard.title: "Editing quiz: {}"
 qe.standard.web-prompt: "\U0001F517 [You can also edit your quiz on the online interface.]({})"
 qe.standard.author: "QuizEditor"
@@ -61,9 +59,8 @@ qe.question.image.premium: "Want images in all your quizzes? [Get QuizBot Premiu
 qe.question.operations: "Save this question with `{0}qe save`\nDelete this question with `{0}qe delete`\nCancel all changes with `{0}qe cancel`"
 qe.question.not-auto-save: "Changes are not saved automatically."
 
-# === HELP MESSAGE ===
 help.title: "[{}] QuizBot Help"
-help.description: "**New to QuizBot? Get started with the [online tutorial](https://quizbot.xyz/landing/tutorial?ref=help&ha=1).**\n\n[Website]({}) / [Support server]({}) / [Vote]({}) / [{} QuizBot Premium]({})"  # {website}, {support}, {vote}, {premium_emote}, {premium_link}
+help.description: "**New to QuizBot? Get started with the [online tutorial](https://quizbot.xyz/landing/tutorial?ref=help&ha=1).**\n\n[Website]({}) / [Support server]({}) / [Vote]({}) / [{} QuizBot Premium]({})"  
 help.play: "Play a quiz with the specified ID. Use 'random' as the ID to play a random quiz. \nExample: `=play 123456`\nYou can also specify certain session options. Use `=options` for more information."
 help.stop: "Stops the quiz running in the current channel."
 help.create-quiz: "Creates a quiz with the given name and description. \nExample: `=create-quiz QuizBot;This is a quiz.`"
@@ -81,9 +78,8 @@ help.pause: "Pause or resume a quiz session."
 help.access-level: "Modify command access levels for your server."
 help.footer: "Enjoy the bot? Use the vote link at the top of this message to support it!"
 
-# === COMMANDS REUSABLE ===
 cmdr.invalid-id: "Invalid ID"
-cmdr.invalid-id.nan: "Please specify a valid number. \nDid you mean `{}search {}`?"  # {prefix}, {query}
+cmdr.invalid-id.nan: "Please specify a valid number. \nDid you mean `{}search {}`?"  
 cmdr.invalid-id.no-quiz: "No quiz with that ID could be found."
 cmdr.invalid-id.no-session: "No session with that ID could be found."
 cmdr.perm-denied: "You do not have permission to do this."
@@ -93,21 +89,16 @@ cmdr.no-session: "There is no session running in this channel."
 cmdr.update-scheduled: "There is a bot update scheduled. Please try again in {} minutes."
 cmdr.maintenance-mode: "The bot is currently in maintenance mode."
 
-# === COMMANDS ===
-# FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
 
-# permcheck
 cmd.permcheck.title: "Your permission setup in this channel is correct!"
 cmd.permcheck.description: "You should be ready to use all QuizBot commands here."
 
-# add-question
-cmd.add-question.usage: "Usage: `{}`"  # {usage}
-cmd.add-question.invalid-time: "Please specify a valid time in seconds: `{}`"  # {usage}
+cmd.add-question.usage: "Usage: `{}`"  
+cmd.add-question.invalid-time: "Please specify a valid time in seconds: `{}`"  
 cmd.add-question.validation-error: "Internal validation error"
-cmd.add-question.validation-error.detail: "Something went wrong when updating this quiz: {}. No changes have been saved. [Contact an administrator to resolve this issue.]({})"  # {error}, {support_link}
+cmd.add-question.validation-error.detail: "Something went wrong when updating this quiz: {}. No changes have been saved. [Contact an administrator to resolve this issue.]({})"  
 cmd.add-question.success: "Question added successfully."
 
-# convert-spreadsheet
 cmd.spreadsheet.not-attached: "Please attach one CSV file to the message. \nFor help on how to use this command, see `{}spreadsheet help`."
 cmd.spreadsheet.success: "Quiz saved successfully with ID `{}`."
 cmd.spreadsheet.bad-file-format: "Unsupported file format. Please use a `.csv` file."
@@ -128,19 +119,14 @@ cmd.spreadsheet.help.step-5.detail: "Now that your quiz is saved in the QuizBot 
 cmd.spreadsheet.template.title: "Follow the below link to see the spreadsheet template for creating quizzes. Make a copy of the file and start editing."
 cmd.spreadsheet.template.link: "[Google sheets link]({})"
 
-# create-quiz
 cmd.create-quiz.success: "Quiz created! Its ID is {}."
 
-# delete-quiz
 cmd.delete-quiz.success: "Quiz `{}` successfully deleted."
 
-# [2 subcommands omitted.]
 
-# leaderboard
 cmd.leaderboard.message: "Leaderboards"
 cmd.leaderboard.message.detail: "[View the public leaderboards here.]({})"
 
-# play-quiz
 cmd.play-quiz.random.failed: "We were unable to find a random quiz. Please try again later."
 cmd.play-quiz.already-running: "There is already a quiz running in this channel. Please wait for it to end and try again."
 cmd.play-quiz.cannot-play: "Cannot start quiz"
@@ -153,18 +139,14 @@ cmd.play-quiz.servers-author-gone: "This quiz's author is unavailable. Cannot pl
 cmd.play-quiz.no-questions: "This quiz does not have any questions."
 cmd.play-quiz.competitive-denied: "{} Competitive mode is only available to premium members. [Learn more about premium here.]({})"
 
-# premium
 cmd.premium.message: "QuizBot Premium is now available!"
 cmd.premium.message.detail: "Click [here]({}) for more information."
 
-# profile
 cmd.profile.total-points: "Total points: {:,}"
 cmd.profile.monthly-points: "Monthly points: {:,}"
 
-# remove-question
 cmd.remove-question.not-found: "Question not found."
 
-# settings
 cmd.settings.updated: "Settings updated."
 cmd.settings.prefix.too-long: "Prefix cannot be longer than 24 characters."
 cmd.settings.view.title: "Settings for this guild"
@@ -173,21 +155,18 @@ cmd.settings.view.language: "Language"
 cmd.settings.language.not-found: "Language not found"
 cmd.settings.language.not-found.detail: "Supported languages: \n{}"
 
-# stop
 cmd.stop.success: "Quiz session `{}` stopped."
 
-# survey
 cmd.survey.message: "Help improve QuizBot"
 cmd.survey.message.detail: "Give us your opinions in our [user survey]({})."
 
-# view
 cmd.view.denied: "You do not have permission to view this quiz."
 cmd.view.nsfw: "This quiz is marked as NSFW. It can only be viewed in channels marked NSFW."
 cmd.view.info: "Plays: {} | Votes: {}"
-cmd.view.title: "**{}** by {}"  # {Quiz name, Quiz author}
+cmd.view.title: "**{}** by {}"  
 cmd.view.description: "**Quiz description:**"
 cmd.view.tags: "Quiz tags: {}"
-cmd.view.overflow: "NOTE: This command will only show up to 25 questions.\nTo see a specific range of questions use `{0}view {1} <start>-<end>` e.g. `{0}view {1} 2-8`"  # {Prefix, Quiz ID}
+cmd.view.overflow: "NOTE: This command will only show up to 25 questions.\nTo see a specific range of questions use `{0}view {1} <start>-<end>` e.g. `{0}view {1} 2-8`"  
 cmd.view.play: "**Play this quiz using `{}play {}`**"
 cmd.view.question: "{}) {} | *{} seconds* | *{} points*"
 cmd.view.answers: "Answers: {}"
@@ -304,9 +283,7 @@ cmd.pause.paused: "Paused the session. You can resume it with `{}resume`."
 cmd.pause.resumed: "Resumed the session."
 cmd.pause.bad-state: "You cannot pause a session during a question. Wait until the question has ended and try again."
 
-# [2 commands omitted.]
 
-# === SPREADSHEET CONVERSION ===
 spreadsheet.error: "Your file could not be converted into a quiz. Are you using the official Google Sheets template?"
 spreadsheet.error.file-format: "File format"
 spreadsheet.error.bad-character: "The quiz includes characters which cannot be decoded by the bot. \nDid you copy paste any old text with unusual punctuation?"
@@ -327,8 +304,6 @@ spreadsheet.failed.title: "Failed to create quiz"
 spreadsheet.failed.detail: "The following text couldn't be converted: `{}`"
 spreadsheet.failed.footer: "Error message: {} | Question Number: {}"
 
-# === SESSIONS ===
-# TODO: Competitive session report needs to be converted.
 session.error: "Something went wrong, so this session was ended. This issue has been reported."
 session.error.message-deleted: "A question message was deleted. The quiz cannot continue.\nPlease check no other bots are deleting QuizBot's messages."
 

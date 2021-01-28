@@ -1,4 +1,3 @@
-# GENERIC
 generic.failed: "Echec"
 generic.success: "Succés"
 generic.error: "Erreur"
@@ -13,23 +12,22 @@ generic.duration.hours: ""
 generic.duration.minute: ""
 generic.duration.minutes: ""
 
-# COMMAND MANAGER
 cmdm.prefix: "Le préfixe pour ce serveur est `{}`"
-cmdm.permission-denied: "Vous n'avez pas l'autorisation d'exécuter la commande `{}`."  # {command}
+cmdm.permission-denied: "Vous n'avez pas l'autorisation d'exécuter la commande `{}`."
 cmdm.invalid-usage: "Utilisation invalide"
-cmdm.invalid-usage-detail: "Utiliser : `{} {}`"  # {command}, {usage}
+cmdm.invalid-usage-detail: "Utiliser : `{} {}`"
 cmdm.error: "Quelquechose d'est mal passé avec cette commande. Ce problème a été signalé."
 cmdm.maintenance: "Impossible d'exécuter la commande : le bot est en mode maintenance."
 
-cmdm.bad-setup: "Vous pourriez avoir des problèmes avec la commande `{}`."  # {command}
+cmdm.bad-setup: "Vous pourriez avoir des problèmes avec la commande `{}`."
 cmdm.bad-setup.detail: "C'est certainement parce que le bot n'a pas les permissions pour envoyer les messages ou ajouter des liens dans le canal dans lequel la commande est utilisée. Modifiez les permissions du bot et essayez de nouveau."
-cmdm.bad-setup.extra: "Si vous avez besoin d'aide complémentaire, rejoignez le serveur d'assistance à l'adresse {}."  # {invite}
+cmdm.bad-setup.extra: "Si vous avez besoin d'aide complémentaire, rejoignez le serveur d'assistance à l'adresse {}."
 
 cmdm.perm-error.title: "Permissions insuffisantes"
-cmdm.perm-error.detail: "Le bot ne dispose pas de l'autorisation suivante dans ce canal: {}. Cette autorisation est requise pour exécuter la commande `{}`." # {perm}, {command}
-cmdm.perm-error.detail-plural: "Le bot n'a pas les autorisations suivantes dans ce canal: {}. Ces autorisations sont nécessaires pour exécuter la commande `{}`." # {perms}, {command}
+cmdm.perm-error.detail: "Le bot ne dispose pas de l'autorisation suivante dans ce canal: {}. Cette autorisation est requise pour exécuter la commande `{}`."
+cmdm.perm-error.detail-plural: "Le bot n'a pas les autorisations suivantes dans ce canal: {}. Ces autorisations sont nécessaires pour exécuter la commande `{}`."
 cmdm.perm-error.support: "Besoin d'aide avec les autorisations ?"
-cmdm.perm-error.support-detail: "[Consultez cet article de Discord pour obtenir de l'aide] ({}) ou [rejoignez notre serveur d'assistance] ({})." # {Lien 1 Lien 2}
+cmdm.perm-error.support-detail: "[Consultez cet article de Discord pour obtenir de l'aide] ({}) ou [rejoignez notre serveur d'assistance] ({})."
 
 cmdm.sal.disabled: "Cette commande a été désactivée sur ce serveur par un administrateur."
 cmdm.sal.permission: "Le niveau d'accès à la guilde nécessite que vous ayez l'autorisation `{}`."
@@ -46,18 +44,12 @@ antispam.blacklisted.detail: "En raison du spam, l'exécution de la commande est
 antispam.blacklisted.title: "Votre guilde est sur liste noire."
 antispam.blacklisted.detail: "En raison du spam, l'exécution de la commande est désactivée. Vous devez attendre au moins 1 heure pour continuer."
 
-# COMMANDS
 
-# add
 cmd.add.message: "Invitez le bot avec ce lien."
-# vote
 cmd.vote.message: "Votez ici pour soutenir le bot."
 cmd.vote.unavailable: "Le vote n'est pas disponible pour ce bot."
-# diagnose
 cmd.diagnose.sent: "Votre rapport a été envoyé aux développeurs."
-# version
-cmd.version.message: "{} version `{}` (DPE `{}`, DPY `{}`)" # {bot_name}, {bot_version}, {dpe_version}, {dpy_version}
-# settings
+cmd.version.message: "{} version `{}` (DPE `{}`, DPY `{}`)"
 cmd.settings.updated: "Paramètres mis à jour."
 cmd.settings.prefix.too-long: "Le préfixe ne peut pas dépasser 24 caractères."
 cmd.settings.view.title: "Paramètres de cette guilde"
@@ -66,7 +58,6 @@ cmd.settings.view.language: "Langue"
 cmd.settings.view.footer: "Modifier un paramètre avec `{}settings <nom> <valeur>`."
 cmd.settings.language.not-found: "Langue non trouvée"
 cmd.settings.language.not-found.detail: "Langues prises en charge: \n {}"
-# access-level
 cmd.access-level.view.title: "Configuration du niveau d'accès aux commandes"
 cmd.access-level.view.description: "Ce serveur a des niveaux d'accès définis pour {} commandes. \nDéfinissez un niveau d'accès de commande avec `{}access-level set` \nRéinitialisez un niveau d'accès de commande avec `{}access-level reset`"
 cmd.access-level.view.invalid-role: "_ [RÔLE INVALIDE - VEUILLEZ RECONFIGURER] _"

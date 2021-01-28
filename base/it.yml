@@ -1,26 +1,24 @@
-# GENERIC
 generic.failed: "Failed"
 generic.success: "Success"
 generic.error: "Error"
 generic.thank-you: "Thank you"
 
-# COMMAND MANAGER
 cmdm.prefix: "The prefix for this server is `{}`"
-cmdm.permission-denied: "You are not allowed to run the command `{}`."  # {command}
+cmdm.permission-denied: "You are not allowed to run the command `{}`."
 cmdm.invalid-usage: "Invalid usage"
-cmdm.invalid-usage-detail: "Use: `{} {}`"  # {command}, {usage}
+cmdm.invalid-usage-detail: "Use: `{} {}`"
 cmdm.error: "Something went wrong with this command. This issue has been reported."
 cmdm.maintenance: "Cannot run command: bot is in maintenance mode."
 
-cmdm.bad-setup: "You might be having issues with the `{}` command."  # {command}
+cmdm.bad-setup: "You might be having issues with the `{}` command."
 cmdm.bad-setup.detail: "This is most likely because the bot is missing the send messages or embed links permission in the channel you are using the command in. Set the bot's permissions correctly and try again."
-cmdm.bad-setup.extra: "If you need extra help, join the support server at {}."  # {invite}
+cmdm.bad-setup.extra: "If you need extra help, join the support server at {}."
 
 cmdm.perm-error.title: "Insufficient permissions"
-cmdm.perm-error.detail: "The bot is missing the following permission in this channel: {}. This permission is required to run the command `{}`."  # {perm}, {command}
-cmdm.perm-error.detail-plural: "The bot is missing the following permissions in this channel: {}. These permissions are required to run the command `{}`."  # {perms}, {command}
+cmdm.perm-error.detail: "The bot is missing the following permission in this channel: {}. This permission is required to run the command `{}`."
+cmdm.perm-error.detail-plural: "The bot is missing the following permissions in this channel: {}. These permissions are required to run the command `{}`."
 cmdm.perm-error.support: "Need help with permissions?"
-cmdm.perm-error.support-detail: "[See this article from Discord for support]({}) or [join our support server]({})."  # {link1}, {link2}
+cmdm.perm-error.support-detail: "[See this article from Discord for support]({}) or [join our support server]({})."
 
 cmdm.sal.disabled: "This command has been disabled in this server by an administrator."
 cmdm.sal.permission: "Guild access level requires you to have permission `{}`."
@@ -34,18 +32,12 @@ cmdm.sal.invalid.detail: "Please check your server settings."
 antispam.blacklisted.title: "Your guild is blacklisted."
 antispam.blacklisted.detail: "Due to spam, command execution is disabled. You must wait at least 1 hour to continue."
 
-# COMMANDS
 
-# add
 cmd.add.message: "Invite the bot with this link."
-# vote
 cmd.vote.message: "Vote here to support the bot."
 cmd.vote.unavailable: "Voting is not available for this bot."
-# diagnose
 cmd.diagnose.sent: "Your report has been sent to the developers."
-# version
-cmd.version.message: "{} version `{}` (DPE `{}`, DPY `{}`)"  # {bot_name}, {bot_version}, {dpe_version}, {dpy_version}
-# settings
+cmd.version.message: "{} version `{}` (DPE `{}`, DPY `{}`)"
 cmd.settings.updated: "Settings updated."
 cmd.settings.prefix.too-long: "Prefix cannot be longer than 24 characters."
 cmd.settings.view.title: "Settings for this guild"
@@ -54,7 +46,6 @@ cmd.settings.view.language: "Language"
 cmd.settings.view.footer: "Change a setting with `{}settings <name> <value>`."
 cmd.settings.language.not-found: "Language not found"
 cmd.settings.language.not-found.detail: "Supported languages: \n{}"
-# access-level
 cmd.access-level.view.title: "Command access level configuration"
 cmd.access-level.view.description: "This server has access levels set for {} commands. \nSet a command access level with `{}access-level set` \nReset a command access level with `{}access-level reset`"
 cmd.access-level.view.invalid-role: "_[INVALID ROLE - PLEASE RECONFIGURE]_"
