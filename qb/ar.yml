@@ -158,6 +158,8 @@ cmd.premium.message: "QuizBot Premium متوفر الان!"
 cmd.premium.message.detail: "اضغط [هنا] للمزيد من المعلومات."
 
 # profile
+cmd.profile.title: ""
+cmd.profile.view-online: ""
 cmd.profile.total-points: "اجمالي النقاط: {:,}"
 cmd.profile.monthly-points: "النقاط الشهرية: {:,}"
 

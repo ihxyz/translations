@@ -71,6 +71,7 @@ help.delete-quiz: "Löscht ein Quiz. Sie können nur ihre eigenen Quizze lösche
 help.settings: "Sehen oder ändern Sie Einstellungen für Ihren Server. Sie können die folgenden Einstellungen ändern: `language`, `prefix`."
 help.search: "Durchsucht die Quiz-Datenbank nach Quizzen bezüglich ihrer Such-Begriffen.\nBeispiel: `=search Allgemein wissen`"
 help.view: "Zeigt alle Information über ein Quiz mit der gegebenen ID. Bei deinen eigenen Quizzen kannst du `correct` nach dem Befehl angeben um die korrekten Antowrten zu zeigen. \nBeispiel: `=view 123456`"
+help.copy: "Kopiere ein Quiz mit der angegebenen ID um es zu verändern oder es als Vorlage zu verwenden. \nBeispiel: `=copy 123456`"
 help.spreadsheet: "Verwandeln Sie eine Tabelle in ein Quiz! Benutzen Sie `=spreadsheet help` für mehr Information, oder schauen sie unser [offizelles YouTube Video](https://youtu.be/4bcpmbIlrPw). Für die Tabellen vorlage benutzen sie `=spreadsheet template`."
 help.schedule: "Kreiere ein Zeitplan für Quizze um sie automatisch an bestimmten Zeiten zu starten. Achtung: Dieses Feature ist momentan noch experimentel. Für mehr Information, checken sie unseren Offiziellen Support Server."
 help.profile: "Zeigt ihr Profil an. Sie können nur ihr eigenes Profil anzeigen."
@@ -80,6 +81,17 @@ help.qe: "Bearbeiten Sie ein Quiz mit der gegebenen ID. Du kannst Fragen, Name, 
 help.pause: "Pausieren oder fahren sie mit einem Quiz fort."
 help.access-level: "Ändere die Befehl-Berechtigungen für deinen Server."
 help.footer: "Gefällt ihnen der Bot? Benutzen Sie den Abstimmungs-Link am Anfang dieser Nachricht um den Bot unterstützen!"
+
+# === SHOP ===
+shop.disabled: "The shop is currently disabled."
+shop.title: "Welcome to the QuizBot Item Shop. Here you can find items which level up your profile or add a unique touch to your quizzes."
+shop.description: "You can buy items with the QuizBot currency {0}. \n{0} is earned simply by playing quizzes or having your quizzes played. \nYou currently have {0}`{1}`"  # currency emote, Q$ balance
+shop.author: "QuizBot Shop"
+shop.footer: "Navigate to a different item category with the emotes below"
+shop.help.title: "This is the help page for the QuizBot item shop."
+shop.help.description: "Here you can find resources on how to buy new items to level up your QuizBot experience."
+shop.none: "There are currently no items available in this category."
+shop.none.detail: "Please check back later."
 
 # === COMMANDS REUSABLE ===
 cmdr.invalid-id: "Ungültige ID"
@@ -128,6 +140,10 @@ cmd.spreadsheet.help.step-5.detail: "Jetzt da ihr Quiz in der QuizBot Datenbank 
 cmd.spreadsheet.template.title: "Folgen Sie dem Link in dieser Nachricht um die Tabellen Vorlage um Quizze zu kreieren zu sehen. Machen Sie eine Kopie von dieser Datei und beginnen sie ihr Quiz zu bearbeiten!"
 cmd.spreadsheet.template.link: "[Google Sheets Link]({})"
 
+# copy
+cmd.copy.perm-denied: "Dieses Quiz kann nicht kopiert werden weil es nicht öffentlich ist."
+cmd.copy.success: "Quiz erfolgreich kopiert. Die neue ID ist {}."
+
 # create-quiz
 cmd.create-quiz.success: "Das Quiz wurde kreiert! Die ID ist {}."
 
@@ -144,6 +160,7 @@ cmd.leaderboard.message.detail: "[Sehen Sie sich die öffentliche Bestenliste hi
 cmd.play-quiz.random.failed: "Wir konnten kein zufälliges Quiz finden. Bitte versuchen Sie es später noch einmal."
 cmd.play-quiz.already-running: "In diesem Kanal lauft bereits ein Quiz. Bitte warten Sie bis es beendet ist und versuchen Sie es dann erneut."
 cmd.play-quiz.cannot-play: "Quiz kann nicht gestartet werden."
+cmd.play-quiz.maintenance: "Der Bot ist momentan im Wartungs-Modus"
 cmd.play-quiz.unplayable.detail: "Quiz validierung gescheitert. Fehler Melding: `{}`. \n\n[Kontaktieren Sie einen Administrator mit der Quiz ID und Feher Meldung um dieses Problem zu beheben.]({})"
 cmd.play-quiz.nsfw: "Dieses Quiz ist als Nicht jugendfrei markiert. Es kann nur in Kanälen die als NSFW markiert sind gespielt werden."
 cmd.play-quiz.private: "Dieses Quiz ist Privat. Nur der Quiz Autor kann drauf zugreifen."
@@ -157,6 +174,8 @@ cmd.premium.message: "QuizBot Premium ist jetzt verfügbar!"
 cmd.premium.message.detail: "[Hier]({}) klicken für mehr Information."
 
 # profile
+cmd.profile.title: ""
+cmd.profile.view-online: ""
 cmd.profile.total-points: "Gesamte Punkte: {:,}"
 cmd.profile.monthly-points: "Monatliche Punkte: {:,}"
 

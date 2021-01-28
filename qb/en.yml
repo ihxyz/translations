@@ -71,6 +71,8 @@ help.delete-quiz: "Deletes a quiz. You can only delete your own quizzes. \nExamp
 help.settings: "View or change settings for your server. You can change the following settings: `language`, `prefix`."
 help.search: "Searches the quiz database for quizzes relating to your search term. \nExample: `=search Trivia`"
 help.view: "View all the information about a quiz with the given ID. On your own quizzes you can add `correct` after the command to show which answers are correct. \nExample: `=view 123456`"
+help.leaderboard: "Create a leaderboard to keep track of the best players in your server! You can get a quick leaderboard of your best all-time players or set up automatically updating leaderboards for certain time periods."
+help.copy: "Copy a quiz with the given ID to alter it or work from it as a template. \nExample: `=copy 123456`"
 help.spreadsheet: "Convert a spreadsheet to a quiz! See `=spreadsheet help` for more information, or watch our [official YouTube tutorial](https://youtu.be/4bcpmbIlrPw). For the spreadsheet template see `=spreadsheet template`."
 help.schedule: "Schedule quizzes to run regularly at certain intervals. Please note that this is currently in experimental release. For more information check our official support server."
 help.profile: "View your profile. You can only view your own profile."
@@ -80,6 +82,57 @@ help.qe: "Edit a quiz with the given ID. You can edit questions, name, descripti
 help.pause: "Pause or resume a quiz session."
 help.access-level: "Modify command access levels for your server."
 help.footer: "Enjoy the bot? Use the vote link at the top of this message to support it!"
+
+# === SHOP ===
+shop.disabled: "The shop is currently disabled."
+shop.title: "Welcome to the QuizBot Item Shop. Here you can find items which level up your profile or add a unique touch to your quizzes."
+shop.description: "You can buy items with the QuizBot currency {0}. \n{0} is earned by playing quizzes or having your quizzes played. \nYou currently have {1}"  # currency emote, Q$ balance
+shop.author: "QuizBot Shop"
+shop.footer.main: "Navigate to a different item category with the emotes below"
+shop.footer.items: "Cycle through the items in this category with the arrow emotes below"
+shop.home.categories: "Below are the available item categories"
+shop.home.categories.detail: "React with the corresponding emote to see the items in a category."
+shop.help.title: "This is the help page for the QuizBot item shop."
+shop.help.description: "Here you can find resources on how to buy new items to level up your QuizBot experience."
+shop.help.homepage: "{} Shop Homepage"
+shop.help.homepage.detail: "The homepage shows you how much currency or {} you have, as well as a list of all the different categories, their corresponding emotes and a brief description. You can return to the homepage at any time with the homepage emote."
+shop.help.categories: "Item Categories"
+shop.help.categories.detail: "All QuizBot items in the item shop are split into different categories. Each category has it's own page which can be accessed with the corresponding emotes below."
+shop.help.items: "Cycling through items"
+shop.help.items.detail: "Once you're on a category page you can use the arrow emotes {} {} to cycle through the items in the category."
+shop.help.restrictions: "Item Restrictions"
+shop.help.restrictions.detail: "Some items have certain restrictions which you need to meet to be able to purchase them. Examples of this include: Minimum XP level, owning other items, etc."
+shop.help.buy: "Buying items"
+shop.help.buy.detail: "Once you have found an item that you like the look of, use the buy emote {} to add the item to your inventory."
+shop.help.equipping: "Equipping Items"
+shop.help.equipping.detail: "Once you have bought all the items you want, use `=inventory` to see all your items and equip your favourite ones for each of the item types."
+shop.available-items: "There are {} items available in this category."
+shop.available-items.detail: "Check back later for new items!"  # {item_count}
+shop.available-items.none: "There are currently no items available in this category."
+shop.available-items.none.detail: "Please check back later."
+shop.items.owned: "You already own this item."
+shop.items.redeems: "This item can only be redeemed a limit amount of times in total."
+shop.items.redeems.detail: "There are only __**{}**__ redeems left before this item disappears forever. Get it before it's gone!"
+shop.items.expiry: "This item is only available for a limited amount of time!"
+shop.items.expiry.detail: "It will disappear in {}."
+shop.items.restrictions: "{} You do not meet all the restrictions for this item."  # {error_emote}
+shop.items.restrictions.access-level: "You need a higher permission level."
+shop.items.restrictions.min-xp: "You need to be at least XP level {}."
+shop.items.restrictions.other-items: "You need to also own these other items to purchase this item: \n{}."
+shop.items.low-currency: "You don't have enough {} to purchase this item."
+shop.items.cant-purchase: "You cannot purchase this item. You do not meet all the requirements."
+shop.items.purchased: "{} Item successfully purchased! Go to your inventory to equip it with `{}inventory`."  # {checkmark emote}, {prefix}
+shop.items.expiry.months: "{} month(s), "
+shop.items.expiry.days: "{} day(s), "
+shop.items.expiry.hours: "{} hour(s) and "
+shop.items.expiry.minutes: "{} minutes(s)"
+
+# === LEADERBOARD ===
+leaderboard.none: "No entries found for this time period.\n"
+leaderboard.start: "Start: {} | "
+leaderboard.end: "End: {} | "
+leaderboard.finished: "FINISHED"
+leaderboard.deleted: "DELETED"
 
 # === COMMANDS REUSABLE ===
 cmdr.invalid-id: "Invalid ID"
@@ -95,6 +148,12 @@ cmdr.maintenance-mode: "The bot is currently in maintenance mode."
 
 # === COMMANDS ===
 # FORMAT: cmd.<name>.(subcommand).<key>: "<value>"
+
+# equip
+cmd.equip.item-not-found: "Could not find that item."
+cmd.equip.item-not-found.detail: "Please check you've specified a valid item type and number."
+cmd.equip.success: "Set your {} to _{}_."
+cmd.equip.success-unequip: "Removed the item from the _{}_ slot."
 
 # permcheck
 cmd.permcheck.title: "Your permission setup in this channel is correct!"
@@ -128,6 +187,10 @@ cmd.spreadsheet.help.step-5.detail: "Now that your quiz is saved in the QuizBot 
 cmd.spreadsheet.template.title: "Follow the below link to see the spreadsheet template for creating quizzes. Make a copy of the file and start editing."
 cmd.spreadsheet.template.link: "[Google sheets link]({})"
 
+# copy
+cmd.copy.perm-denied: "This quiz cannot be copied as it is not public."
+cmd.copy.success: "Quiz copied successfully. Its new ID is {}."
+
 # create-quiz
 cmd.create-quiz.success: "Quiz created! Its ID is {}."
 
@@ -136,15 +199,15 @@ cmd.delete-quiz.success: "Quiz `{}` successfully deleted."
 
 # [2 subcommands omitted.]
 
-# leaderboard
-cmd.leaderboard.message: "Leaderboards"
-cmd.leaderboard.message.detail: "[View the public leaderboards here.]({})"
+# public-leaderboard
+cmd.public-leaderboard.message: "Leaderboards"
+cmd.public-leaderboard.message.detail: "[View the public leaderboards here.]({})"
 
 # play-quiz
 cmd.play-quiz.random.failed: "We were unable to find a random quiz. Please try again later."
 cmd.play-quiz.already-running: "There is already a quiz running in this channel. Please wait for it to end and try again."
 cmd.play-quiz.cannot-play: "Cannot start quiz"
-cmd.play-quiz.maintenance: "The "
+cmd.play-quiz.maintenance: "The bot is currently in maintenance mode."
 cmd.play-quiz.unplayable.detail: "Quiz validation failed. Error detail: `{}`. \n\n[Contact an administrator with the quiz ID and error message to resolve this issue.]({})"
 cmd.play-quiz.nsfw: "This quiz is marked as NSFW. It can only be started in channels marked NSFW."
 cmd.play-quiz.private: "This quiz is private. It can only be accessed by its author."
@@ -158,8 +221,10 @@ cmd.premium.message: "QuizBot Premium is now available!"
 cmd.premium.message.detail: "Click [here]({}) for more information."
 
 # profile
-cmd.profile.total-points: "Total points: {:,}"
-cmd.profile.monthly-points: "Monthly points: {:,}"
+cmd.profile.title: "{}'s Profile"
+cmd.profile.view-online: "[View online]({})"
+cmd.profile.level: "Level {}"
+cmd.profile.no-data: "There is no data stored for that user."
 
 # remove-question
 cmd.remove-question.not-found: "Question not found."
@@ -192,6 +257,7 @@ cmd.view.play: "**Play this quiz using `{}play {}`**"
 cmd.view.question: "{}) {} | *{} seconds* | *{} points*"
 cmd.view.answers: "Answers: {}"
 
+# quizeditor
 cmd.qe.no-active: "There is no active QuizEditor in this channel."
 cmd.qe.question-only-sc: "This subcommand is only enabled when editing a question."
 cmd.qe.quiz-only-sc: "This subcommand is disabled when editing questions. Please save or delete this question first."
@@ -253,6 +319,31 @@ cmd.qe.save.no-correct: "Please set a correct answer."
 cmd.qe.save.success: "Question saved successfully."
 cmd.qe.cancel.success: "Changes discarded."
 
+# leaderboard
+cmd.leaderboard.premium: "{} [QuizBot Premium Feature]({})\n"
+cmd.leaderboard.title: "QuizBot Server Leaderboards"
+cmd.leaderboard.description: "__**What are leaderboards?**__\nYou can create leaderboards in your server to track who has scored the most total points during certain durations. You can have up to {} automatically updating leaderboards per server. You can create the leaderboards by running the command in the `Code block`. Take a look at the leaderboard types below:"
+cmd.leaderboard.simple: "Simple Leaderboards"
+cmd.leaderboard.simple.info: "Generate a leaderboard showing everyone's all time points across your server. Does not automatically update. `=leaderboard simple`"
+cmd.leaderboard.standard: "Weekly, Monthly & All Time Leaderboards"
+cmd.leaderboard.standard.info: "Leaderboards which show who has scored the most points in your server in the past week, month or in total. Automatically updates after every quiz and resets at the end of the time period! `=leaderboard new weekly/monthly/all-time`"
+cmd.leaderboard.custom: "Custom Leaderboards"
+cmd.leaderboard.custom.info: "A leaderboard which can be set to start and optionally end at any given date. Automatically updates after every quiz. `=leaderboard new custom ...` (You must provide a `start` and optionally an `end` time, see below)"
+cmd.leaderboard.advanced: "Providing advanced settings"
+cmd.leaderboard.advanced.info: "You can control exactly how you want your leaderboard to look by setting up advanced settings. Please note that this is only available for the QuizBot Premium leaderboard types. You can specify these by giving the setting followed by a colon `:` and then the value. If you want to specify multiple different settings, separate each setting with a semicolon `;`. For multiple values (where applicable) separate the values by commas `,`. The available settings are `start`, `end` (only for custom leaderboard), `user` (only sessions started by these users are counted) and `channel` (only sessions in these channels are counted) Example:\n`=leaderboard new custom start: 2021-09-30; channels: #general, #quiz`"
+cmd.leaderboard.new.premium: "Automatic leaderboards require QuizBot Premium."
+cmd.leaderboard.new.premium.detail: "Find out more about premium [here]({}).\nWith an active premium subscription you can create up to {} leaderboards per server, across up to {} different servers."
+cmd.leaderboard.new.lb-limit: "This server has reached the maximum amount of automatic leaderboards. Please delete a leaderboard before creating a new one."
+cmd.leaderboard.new.server-limit: "You can only create automatic leaderboards in 2 different servers."
+cmd.leaderboard.new.no-limits: "You need to specify a valid leaderboard type or provide a start/end date for the leaderboard in the form `start:YYYY-MM-DD`."
+cmd.leaderboard.new.invalid-time: "Invalid start or end date format. Please make sure to give the date in the form `YYYY-MM-DD`"
+cmd.leaderboard.new.no-user: "Couldn't find user `{}`"
+cmd.leaderboard.new.no-user.detail: "Make sure to mention the user, e.g. <@558996910581612545>"
+cmd.leaderboard.new.no-channel: "Couldn't find channel `{}`"
+cmd.leaderboard.delete.none: "Couldn't find leaderboard."
+cmd.leaderboard.delete.success: "Successfully deleted leaderboard."
+
+# featured
 cmd.featured.categories.title: "Featured Quizzes"
 cmd.featured.categories.description: "Featured quizzes are popular, high-quality public quizzes that are perfect for casual games or learning more about a topic."
 cmd.featured.categories.hint: "Run `{}featured {}` for a list."
@@ -267,6 +358,7 @@ cmd.featured.results: "We found 1 quiz relating to your search!"
 cmd.featured.results-plural: "We found {} quizzes relating to your search!"
 cmd.featured.requested-by: "Requested by {}. Page {}/{}."
 
+# options
 cmd.options.title: "Quiz session options"
 cmd.options.description: "To use an option when playing a quiz, type it after the quiz ID.\nE.g. `=play 123456 delete`"
 cmd.options.delete: "The bot will delete all session messages after the quiz is complete."
@@ -277,6 +369,7 @@ cmd.options.shuffle: "The order of questions will be shuffled."
 cmd.options.shuffle-answers: "The order of the answers for questions will be shuffled."
 cmd.options.competitive: "See [this page]({}) for more information on competitive mode."
 
+# schedule
 cmd.schedule.create.reached-limit: "Non-premium members cannot have more than {} schedules."
 cmd.schedule.already-editing: "There is already a quiz schedule being edited in this channel."
 cmd.schedule.create.reached-limit.detail: "For more schedules, try [QuizBot Premium]({})."
@@ -300,6 +393,7 @@ cmd.schedule.notification.not-found: "Could not find that role. Please try again
 cmd.schedule.delete.success: "Schedule deleted."
 cmd.schedule.save.success: "Schedule saved and updated. It will next run `{}`."
 
+# pause
 cmd.pause.paused: "Paused the session. You can resume it with `{}resume`."
 cmd.pause.resumed: "Resumed the session."
 cmd.pause.bad-state: "You cannot pause a session during a question. Wait until the question has ended and try again."
@@ -360,5 +454,12 @@ session.question.time-allowed: "Time allowed: {} seconds"
 session.question.points: "The correct answer awards {} points"
 session.question.time-up: "Time's up!"
 session.question.awaiting-reactions: "Answers will be revealed once all reactions are ready!"
+
+session.inactive: "The quiz session was stopped as there were no players."
+
+inventory.no-items: "_You haven't purchased any items of this type!\nRun `{}shop` to find some items._\n"
+inventory.selected: "**{} (SELECTED)**"
+inventory.equip-hint: "\n**Equip an item with `{0}equip {1} <number>`.**\nUnequip an item with `{0}equip {1} none`."
+inventory.nav-hint: "Use the arrows to navigate between the different item types."
 
 contributors: "ihxyz"
