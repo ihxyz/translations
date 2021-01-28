@@ -138,8 +138,8 @@ cmd.create-quiz.success: "Das Quiz wurde kreiert! Die ID ist {}."
 cmd.delete-quiz.success: "Quiz `{}` erfolgreich gelöscht."
 
 
-cmd.leaderboard.message: "Bestenliste"
-cmd.leaderboard.message.detail: "[Sehen Sie sich die öffentliche Bestenliste hier an.]({})"
+cmd.public-leaderboard.message: "Bestenliste"
+cmd.public-leaderboard.message.detail: "[Sehen Sie sich die öffentliche Bestenliste hier an.]({})"
 
 cmd.play-quiz.random.failed: "Wir konnten kein zufälliges Quiz finden. Bitte versuchen Sie es später noch einmal."
 cmd.play-quiz.already-running: "In diesem Kanal lauft bereits ein Quiz. Bitte warten Sie bis es beendet ist und versuchen Sie es dann erneut."

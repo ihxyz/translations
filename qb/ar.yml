@@ -124,8 +124,8 @@ cmd.create-quiz.success: "تم إنشاء الاختبار!  المعرف الخ
 cmd.delete-quiz.success: "اختبار `{}` تم مسح بنجاح."
 
 
-cmd.leaderboard.message: "المتصدرين"
-cmd.leaderboard.message.detail: "[عرض لوحات الصدارة العامة هنا.]({})"
+cmd.public-leaderboard.message: "المتصدرين"
+cmd.public-leaderboard.message.detail: "[عرض لوحات الصدارة العامة هنا.]({})"
 
 cmd.play-quiz.random.failed: "لم نتمكن من إيجاد اختبار عشوائي.  الرجاء معاودة المحاولة في وقت لاحق."
 cmd.play-quiz.already-running: "يوجد بالفعل اختبار قيد التشغيل في هذه القناة.  يرجى الانتظار حتى ينتهي وحاول مرة أخرى."

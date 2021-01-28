@@ -122,8 +122,8 @@ cmd.create-quiz.success: "Quiz créé ! Son ID est {}."
 
 cmd.delete-quiz.success: "Quiz `{}` supprimé avec succès."
 
-cmd.leaderboard.message: "Classements"
-cmd.leaderboard.message.detail: "[Voir les classements publics ici.]({})"
+cmd.public-leaderboard.message: "Classements"
+cmd.public-leaderboard.message.detail: "[Voir les classements publics ici.]({})"
 
 cmd.play-quiz.random.failed: "Nous n'avons pas pu trouver de quiz aléatoire. Veuillez réessayer plus tard."
 cmd.play-quiz.already-running: "Un quiz est déjà en cours d'exécution dans cette chaîne. Veuillez attendre qu'il se termine et réessayer."
