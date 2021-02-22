@@ -48,17 +48,17 @@ cmd.settings.view.title: "Settings for this guild"
 cmd.version.message: "{} version `{}` (DPE `{}`, DPY `{}`)"
 cmd.vote.message: "Vote here to support the bot."
 cmd.vote.unavailable: "Voting is not available for this bot."
-contributors:
-generic.duration.day:
-generic.duration.days:
-generic.duration.hour:
-generic.duration.hours:
-generic.duration.minute:
-generic.duration.minutes:
-generic.duration.month:
-generic.duration.months:
-generic.duration.second:
-generic.duration.seconds:
+contributors: ""
+generic.duration.day: ""
+generic.duration.days: ""
+generic.duration.hour: ""
+generic.duration.hours: ""
+generic.duration.minute: ""
+generic.duration.minutes: ""
+generic.duration.month: ""
+generic.duration.months: ""
+generic.duration.second: ""
+generic.duration.seconds: ""
 generic.error: "Error"
 generic.failed: "Failed"
 generic.success: "Success"

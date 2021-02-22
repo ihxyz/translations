@@ -49,16 +49,16 @@ cmd.version.message: "{} نسخة `{}` (DPE `{}`, DPY `{}`)"
 cmd.vote.message: "صوت هنا لدعم الروبوت."
 cmd.vote.unavailable: "التصويت غير متاح لهذا الروبوت."
 contributors: "im0x"
-generic.duration.day:
-generic.duration.days:
-generic.duration.hour:
-generic.duration.hours:
-generic.duration.minute:
-generic.duration.minutes:
-generic.duration.month:
-generic.duration.months:
-generic.duration.second:
-generic.duration.seconds:
+generic.duration.day: ""
+generic.duration.days: ""
+generic.duration.hour: ""
+generic.duration.hours: ""
+generic.duration.minute: ""
+generic.duration.minutes: ""
+generic.duration.month: ""
+generic.duration.months: ""
+generic.duration.second: ""
+generic.duration.seconds: ""
 generic.error: "هناك خطأ"
 generic.failed: "فشل"
 generic.success: "تم بنجاح"

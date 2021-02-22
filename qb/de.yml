@@ -7,44 +7,44 @@ cmd.copy.perm-denied: "Dieses Quiz kann nicht kopiert werden weil es nicht öffe
 cmd.copy.success: "Quiz erfolgreich kopiert. Die neue ID ist {}."
 cmd.create-quiz.success: "Das Quiz wurde kreiert! Die ID ist {}."
 cmd.delete-quiz.success: "Quiz `{}` erfolgreich gelöscht."
-cmd.equip.item-not-found:
-cmd.equip.item-not-found.detail:
-cmd.equip.success:
-cmd.equip.success-unequip:
-cmd.featured.categories.description:
-cmd.featured.categories.hint:
+cmd.equip.item-not-found: ""
+cmd.equip.item-not-found.detail: ""
+cmd.equip.success: ""
+cmd.equip.success-unequip: ""
+cmd.featured.categories.description: ""
+cmd.featured.categories.hint: ""
 cmd.featured.categories.title: "Ausgewählte Quizze"
-cmd.featured.category.browse:
-cmd.featured.category.empty:
-cmd.featured.category.title:
-cmd.featured.category.truncated:
+cmd.featured.category.browse: ""
+cmd.featured.category.empty: ""
+cmd.featured.category.title: ""
+cmd.featured.category.truncated: ""
 cmd.featured.no-results: "Leider konnten wir keine Quizze betreffend ihrer Such-Begriffe finden."
-cmd.featured.play-quiz:
+cmd.featured.play-quiz: ""
 cmd.featured.requested-by: "Angefordert von {}."
 cmd.featured.results: "Wir konnten 1 Quiz betreffend ihrer Such-Begriffe finden!"
 cmd.featured.results-plural: "Wir konnten {} Quizze betreffend ihrer Such-Begriffe finden!"
-cmd.leaderboard.advanced:
-cmd.leaderboard.advanced.info:
-cmd.leaderboard.custom:
-cmd.leaderboard.custom.info:
-cmd.leaderboard.delete.none:
-cmd.leaderboard.delete.success:
-cmd.leaderboard.description:
-cmd.leaderboard.new.invalid-time:
-cmd.leaderboard.new.lb-limit:
-cmd.leaderboard.new.no-channel:
-cmd.leaderboard.new.no-limits:
-cmd.leaderboard.new.no-user:
-cmd.leaderboard.new.no-user.detail:
-cmd.leaderboard.new.premium:
-cmd.leaderboard.new.premium.detail:
-cmd.leaderboard.new.server-limit:
-cmd.leaderboard.premium:
-cmd.leaderboard.simple:
-cmd.leaderboard.simple.info:
-cmd.leaderboard.standard:
-cmd.leaderboard.standard.info:
-cmd.leaderboard.title:
+cmd.leaderboard.advanced: ""
+cmd.leaderboard.advanced.info: ""
+cmd.leaderboard.custom: ""
+cmd.leaderboard.custom.info: ""
+cmd.leaderboard.delete.none: ""
+cmd.leaderboard.delete.success: ""
+cmd.leaderboard.description: ""
+cmd.leaderboard.new.invalid-time: ""
+cmd.leaderboard.new.lb-limit: ""
+cmd.leaderboard.new.no-channel: ""
+cmd.leaderboard.new.no-limits: ""
+cmd.leaderboard.new.no-user: ""
+cmd.leaderboard.new.no-user.detail: ""
+cmd.leaderboard.new.premium: ""
+cmd.leaderboard.new.premium.detail: ""
+cmd.leaderboard.new.server-limit: ""
+cmd.leaderboard.premium: ""
+cmd.leaderboard.simple: ""
+cmd.leaderboard.simple.info: ""
+cmd.leaderboard.standard: ""
+cmd.leaderboard.standard.info: ""
+cmd.leaderboard.title: ""
 cmd.options.competitive: "Siehe [diese Seite]({}) für mehr Information über Wettbewerbs-modus."
 cmd.options.delete: "Der Bot wird alle Session Nachrichten löschen nachdem dass Quiz beendet ist."
 cmd.options.description: "Um eine Option für ein Quiz zu activieren, schreib die Option nach der Quiz ID. \nz.B. `=play 123456 delete`"
@@ -54,11 +54,11 @@ cmd.options.shuffle: "Die reinfolge der Fragen wird gemischt."
 cmd.options.shuffle-answers: "Die reinfolge der Antworten für Fragen wird gemischt."
 cmd.options.simple-scoring: "Bestenlisten werden basierent auf der anzahl korrekter Antworten generiert; z.B. 1 korrekte Antwort = 1 Punkt."
 cmd.options.title: "Quiz Session Optionen"
-cmd.pause.bad-state:
-cmd.pause.paused:
-cmd.pause.resumed:
-cmd.permcheck.description:
-cmd.permcheck.title:
+cmd.pause.bad-state: ""
+cmd.pause.paused: ""
+cmd.pause.resumed: ""
+cmd.permcheck.description: ""
+cmd.permcheck.title: ""
 cmd.play-quiz.already-running: "In diesem Kanal lauft bereits ein Quiz. Bitte warten Sie bis es beendet ist und versuchen Sie es dann erneut."
 cmd.play-quiz.cannot-play: "Quiz kann nicht gestartet werden."
 cmd.play-quiz.competitive-denied: "{} Wettbewerbs-Modus ist nur für QuizBot Premium Mitglieder verfügbar. [Mehr Information über QuizBot Premium gibt es hier.]({})"
@@ -72,12 +72,12 @@ cmd.play-quiz.servers-author-gone: "Der Autor dieses Quizzes ist nicht verfügba
 cmd.play-quiz.unplayable.detail: "Quiz validierung gescheitert. Fehler Melding: `{}`. \n\n[Kontaktieren Sie einen Administrator mit der Quiz ID und Feher Meldung um dieses Problem zu beheben.]({})"
 cmd.premium.message: "QuizBot Premium ist jetzt verfügbar!"
 cmd.premium.message.detail: "[Hier]({}) klicken für mehr Information."
-cmd.profile.level:
+cmd.profile.level: ""
 cmd.profile.monthly-points: "Monatliche Punkte: {:,}"
-cmd.profile.no-data:
-cmd.profile.title:
+cmd.profile.no-data: ""
+cmd.profile.title: ""
 cmd.profile.total-points: "Gesamte Punkte: {:,}"
-cmd.profile.view-online:
+cmd.profile.view-online: ""
 cmd.public-leaderboard.message: "Bestenliste"
 cmd.public-leaderboard.message.detail: "[Sehen Sie sich die öffentliche Bestenliste hier an.]({})"
 cmd.qe.add-answers.invalid-count: "Fragen können maximal {} Antworten haben."
@@ -144,7 +144,7 @@ cmd.remove-question.not-found: "Frage nicht gefunden."
 cmdr.invalid-id: "Ungültige ID"
 cmdr.invalid-id.nan: "Bitte spezifizieren Sie eine gültige Nummer. \n Meinen Sie `{}search {}`?"
 cmdr.invalid-id.no-quiz: "Kein Quiz mit dieser ID konnte gefunden werden."
-cmdr.invalid-id.no-session:
+cmdr.invalid-id.no-session: ""
 cmdr.maintenance-mode: "Der Bot ist momentan in Wartungsmodus."
 cmdr.no-session: "In diesem Kanal lauft momentan keine Session."
 cmdr.nsfw: "Dieser Command kann nicht in NSFW Kanälen verwendet werden."
@@ -219,7 +219,7 @@ help.delete-quiz: "Löscht ein Quiz. Sie können nur ihre eigenen Quizze lösche
 help.description: "[Webseite]({}) / [Hilfs-Server]({}) / [Abstimmen]({}) / [{} QuizBot Premium (NEU)]({})"
 help.featured: "Sehen Sie eine Liste von ausgewälten Quizzen."
 help.footer: "Gefällt ihnen der Bot? Benutzen Sie den Abstimmungs-Link am Anfang dieser Nachricht um den Bot unterstützen!"
-help.leaderboard:
+help.leaderboard: ""
 help.pause: "Pausieren oder fahren sie mit einem Quiz fort."
 help.play: "Spielen Sie ein Quiz mit der gegebenen ID. Benutzen Sie 'random' als die ID, um ein zufälliges Quiz zu spielen.\nBeispiel: `=play 123456`"
 help.profile: "Zeigt ihr Profil an. Sie können nur ihr eigenes Profil anzeigen."
@@ -231,15 +231,15 @@ help.spreadsheet: "Verwandeln Sie eine Tabelle in ein Quiz! Benutzen Sie `=sprea
 help.stop: "Stoppt das Quiz, das im aktuellen Kanal gespielt wird."
 help.title: "[{}] QuizBot Hilfe"
 help.view: "Zeigt alle Information über ein Quiz mit der gegebenen ID. Bei deinen eigenen Quizzen kannst du `correct` nach dem Befehl angeben um die korrekten Antowrten zu zeigen. \nBeispiel: `=view 123456`"
-inventory.equip-hint:
-inventory.nav-hint:
-inventory.no-items:
-inventory.selected:
-leaderboard.deleted:
-leaderboard.end:
-leaderboard.finished:
-leaderboard.none:
-leaderboard.start:
+inventory.equip-hint: ""
+inventory.nav-hint: ""
+inventory.no-items: ""
+inventory.selected: ""
+leaderboard.deleted: ""
+leaderboard.end: ""
+leaderboard.finished: ""
+leaderboard.none: ""
+leaderboard.start: ""
 nan: "Bitte geben Sie eine Nummer an."
 premium-only: "QuizBot Premium exklusiv Feature."
 premium-only.learn-more: "[Erfahren Sie hier mehr über QuizBot Premium.]({})"
@@ -292,8 +292,8 @@ session.conclusion.vote-bot: "Gefällt ihnen der Bot?"
 session.conclusion.vote-bot.detail: "[Stimmen Sie für den Bot]({}) | [{} QuizBot Premium]({})"
 session.conclusion.vote-quiz: "Gefällt ihnen dieses Quiz? Stimmen Sie dafür mit den Reaktionen! | Quiz ID: {}"
 session.error: "Etwas ist schiefgegangen, darum wurde die Session beendet. Das Problem wurde gemeldet."
-session.error.message-deleted:
-session.inactive:
+session.error.message-deleted: ""
+session.inactive: ""
 session.intro.description: "Beschreibung"
 session.intro.footer: "Session ID: {} | Quiz ID: {}"
 session.intro.notification: "Geplantes Quiz startet jetzt!"
@@ -309,53 +309,53 @@ session.question.pos: "Frage {}"
 session.question.time-allowed: "Erlaubte Zeit: {} Sekunden"
 session.question.time-up: "Zeit vorbei!"
 shop.author: "QuizBot Shop"
-shop.available-items:
-shop.available-items.detail:
-shop.available-items.none:
-shop.available-items.none.detail:
+shop.available-items: ""
+shop.available-items.detail: ""
+shop.available-items.none: ""
+shop.available-items.none.detail: ""
 shop.description: "You can buy items with the QuizBot currency {0}. \n{0} is earned simply by playing quizzes or having your quizzes played. \nYou currently have {0}`{1}`"
 shop.disabled: "The shop is currently disabled."
 shop.footer: "Navigate to a different item category with the emotes below"
-shop.footer.items:
-shop.footer.main:
-shop.help.buy:
-shop.help.buy.detail:
-shop.help.categories:
-shop.help.categories.detail:
+shop.footer.items: ""
+shop.footer.main: ""
+shop.help.buy: ""
+shop.help.buy.detail: ""
+shop.help.categories: ""
+shop.help.categories.detail: ""
 shop.help.description: "Here you can find resources on how to buy new items to level up your QuizBot experience."
-shop.help.equipping:
-shop.help.equipping.detail:
-shop.help.homepage:
-shop.help.homepage.detail:
-shop.help.items:
-shop.help.items.detail:
-shop.help.restrictions:
-shop.help.restrictions.detail:
+shop.help.equipping: ""
+shop.help.equipping.detail: ""
+shop.help.homepage: ""
+shop.help.homepage.detail: ""
+shop.help.items: ""
+shop.help.items.detail: ""
+shop.help.restrictions: ""
+shop.help.restrictions.detail: ""
 shop.help.title: "This is the help page for the QuizBot item shop."
-shop.home.categories:
-shop.home.categories.detail:
-shop.items.cant-purchase:
-shop.items.expiry:
-shop.items.expiry.days:
-shop.items.expiry.detail:
-shop.items.expiry.hours:
-shop.items.expiry.minutes:
-shop.items.expiry.months:
-shop.items.low-currency:
-shop.items.owned:
-shop.items.purchased:
-shop.items.redeems:
-shop.items.redeems.detail:
-shop.items.restrictions:
-shop.items.restrictions.access-level:
-shop.items.restrictions.min-xp:
-shop.items.restrictions.other-items:
+shop.home.categories: ""
+shop.home.categories.detail: ""
+shop.items.cant-purchase: ""
+shop.items.expiry: ""
+shop.items.expiry.days: ""
+shop.items.expiry.detail: ""
+shop.items.expiry.hours: ""
+shop.items.expiry.minutes: ""
+shop.items.expiry.months: ""
+shop.items.low-currency: ""
+shop.items.owned: ""
+shop.items.purchased: ""
+shop.items.redeems: ""
+shop.items.redeems.detail: ""
+shop.items.restrictions: ""
+shop.items.restrictions.access-level: ""
+shop.items.restrictions.min-xp: ""
+shop.items.restrictions.other-items: ""
 shop.none: "There are currently no items available in this category."
 shop.none.detail: "Please check back later."
 shop.title: "Welcome to the QuizBot Item Shop. Here you can find items which level up your profile or add a unique touch to your quizzes."
 spreadsheet.error: "Ihre Datei konnte nicht in ein Quiz umgewandelt werden. Benutzen Sie die offizielle Google Sheets Vorlage?"
 spreadsheet.error.answer-len: "Frage {}, Antwort {} ist zu kurz oder zu lang."
-spreadsheet.error.bad-character:
+spreadsheet.error.bad-character: ""
 spreadsheet.error.correct-answer: "Der korrekte Antworten-Index für Frage {} ist ungültig. Bitte spezifizieren Sie eine Nummer."
 spreadsheet.error.domain: "Die URL für das Bild von Frage {} ist ungültig. Die Domain muss eine der folgenden sein: {}."
 spreadsheet.error.file-format: "Datei Formatierung"

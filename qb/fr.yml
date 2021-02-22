@@ -3,14 +3,14 @@ cmd.add-question.success: "Question ajoutée avec succès."
 cmd.add-question.usage: "Usage : `{}`"
 cmd.add-question.validation-error: "Erreur de validation interne"
 cmd.add-question.validation-error.detail: "Une erreur s'est produite lors de la mise à jour de ce quiz: {}. Aucune modification n'a été enregistrée. [Contactez un administrateur pour résoudre ce problème.]({})"
-cmd.copy.perm-denied:
-cmd.copy.success:
+cmd.copy.perm-denied: ""
+cmd.copy.success: ""
 cmd.create-quiz.success: "Quiz créé ! Son ID est {}."
 cmd.delete-quiz.success: "Quiz `{}` supprimé avec succès."
-cmd.equip.item-not-found:
-cmd.equip.item-not-found.detail:
-cmd.equip.success:
-cmd.equip.success-unequip:
+cmd.equip.item-not-found: ""
+cmd.equip.item-not-found.detail: ""
+cmd.equip.success: ""
+cmd.equip.success-unequip: ""
 cmd.featured.categories.description: "Les quiz présentés sont des quiz publics populaires de haute qualité, parfaits pour les jeux occasionnels ou pour en savoir plus sur un sujet."
 cmd.featured.categories.hint: "Exécutez `{}featured {}` pour une liste."
 cmd.featured.categories.title: "Quiz en vedette"
@@ -23,28 +23,28 @@ cmd.featured.play-quiz: "Utiliser `{}play <id>` pour exécuter un quiz."
 cmd.featured.requested-by: "Demandé par {}. Page {}/{}."
 cmd.featured.results: "Nous avons trouvé 1 quiz relatif à votre recherche!"
 cmd.featured.results-plural: "Nous avons trouvé {} quiz relatifs à votre recherche!"
-cmd.leaderboard.advanced:
-cmd.leaderboard.advanced.info:
-cmd.leaderboard.custom:
-cmd.leaderboard.custom.info:
-cmd.leaderboard.delete.none:
-cmd.leaderboard.delete.success:
-cmd.leaderboard.description:
-cmd.leaderboard.new.invalid-time:
-cmd.leaderboard.new.lb-limit:
-cmd.leaderboard.new.no-channel:
-cmd.leaderboard.new.no-limits:
-cmd.leaderboard.new.no-user:
-cmd.leaderboard.new.no-user.detail:
-cmd.leaderboard.new.premium:
-cmd.leaderboard.new.premium.detail:
-cmd.leaderboard.new.server-limit:
-cmd.leaderboard.premium:
-cmd.leaderboard.simple:
-cmd.leaderboard.simple.info:
-cmd.leaderboard.standard:
-cmd.leaderboard.standard.info:
-cmd.leaderboard.title:
+cmd.leaderboard.advanced: ""
+cmd.leaderboard.advanced.info: ""
+cmd.leaderboard.custom: ""
+cmd.leaderboard.custom.info: ""
+cmd.leaderboard.delete.none: ""
+cmd.leaderboard.delete.success: ""
+cmd.leaderboard.description: ""
+cmd.leaderboard.new.invalid-time: ""
+cmd.leaderboard.new.lb-limit: ""
+cmd.leaderboard.new.no-channel: ""
+cmd.leaderboard.new.no-limits: ""
+cmd.leaderboard.new.no-user: ""
+cmd.leaderboard.new.no-user.detail: ""
+cmd.leaderboard.new.premium: ""
+cmd.leaderboard.new.premium.detail: ""
+cmd.leaderboard.new.server-limit: ""
+cmd.leaderboard.premium: ""
+cmd.leaderboard.simple: ""
+cmd.leaderboard.simple.info: ""
+cmd.leaderboard.standard: ""
+cmd.leaderboard.standard.info: ""
+cmd.leaderboard.title: ""
 cmd.options.competitive: "Voir [cette page]({}) pour plus d'informations sur le mode compétitif."
 cmd.options.delete: "Le bot supprimera tous les messages de session une fois le quiz terminé."
 cmd.options.description: "Pour utiliser une option lors de la lecture d'un quiz, saisissez-la après l'ID du quiz. \nEx. `=play 123456 delete`"
@@ -72,12 +72,12 @@ cmd.play-quiz.servers-author-gone: "L'auteur de ce quiz n'est pas disponible. Im
 cmd.play-quiz.unplayable.detail: "La validation du quiz a échoué. Détail de l'erreur: `{}`. \n\n [Contactez un administrateur avec l'ID du quiz et le message d'erreur pour résoudre ce problème.]({})"
 cmd.premium.message: "QuizBot Premium est maintenant disponible !"
 cmd.premium.message.detail: "Cliquer [ici]({}) pour plus d'informations."
-cmd.profile.level:
+cmd.profile.level: ""
 cmd.profile.monthly-points: "Points du mois : {:,}"
-cmd.profile.no-data:
-cmd.profile.title:
+cmd.profile.no-data: ""
+cmd.profile.title: ""
 cmd.profile.total-points: "Total des points : {:,}"
-cmd.profile.view-online:
+cmd.profile.view-online: ""
 cmd.public-leaderboard.message: "Classements"
 cmd.public-leaderboard.message.detail: "[Voir les classements publics ici.]({})"
 cmd.qe.add-answers.invalid-count: "Les questions ne peuvent avoir plus de {} réponses."
@@ -213,13 +213,13 @@ cmd.view.title: "**{}** par {}"
 contributors: "ihxyz"
 help.access-level: "Modifiez les niveaux d'accès aux commandes pour votre serveur."
 help.changelog: "Afficher les mises à jour récentes du bot."
-help.copy:
+help.copy: ""
 help.create-quiz: "Crée un quiz avec le nom et la description donnés. \nExemple : `=create-quiz QuizBot;Ceci est un quiz.`"
 help.delete-quiz: "Supprime un quiz. Vous ne pouvez supprimer que vos propres quiz. \nExemple : `= delete-quiz 123456`"
 help.description: "**Nouveau sur QuizBot ? Commencez avec le [tutoriel en ligne](https://quizbot.xyz/landing/tutorial?ref=help&ha=1).** \n\n [Site Web]({}) / [Serveur d'assistance]({}) / [Vote]({}) / [{} QuizBot Premium]({})"
 help.featured: "Afficher une liste des quiz présentés au public."
 help.footer: "Vous appréciez le bot ? Utilisez le lien de vote en haut de ce message pour le soutenir!"
-help.leaderboard:
+help.leaderboard: ""
 help.pause: "Mettre en pause ou reprendre une session de quiz."
 help.play: "Lancez un quiz avec l'ID spécifié. Utilisez 'random' comme ID pour jouer un quiz aléatoire. \nExemple : `=play 123456` \nVous pouvez également spécifier certaines options de session. Utilisez `=options` pour plus d'informations."
 help.profile: "Afficher votre profil. Vous ne pouvez afficher que votre propre profil."
@@ -231,15 +231,15 @@ help.spreadsheet: "Convertissez une feuille de calcul en quiz! Consultez `=sprea
 help.stop: "Arrête l'exécution du quiz dans la chaîne actuelle."
 help.title: "[{}] Aide QuizBot"
 help.view: "Afficher toutes les informations sur un quiz avec l'ID donné. Sur vos propres quiz, vous pouvez ajouter `correct` après la commande pour montrer quelles réponses sont correctes. \nExemple: `=view 123456`"
-inventory.equip-hint:
-inventory.nav-hint:
-inventory.no-items:
-inventory.selected:
-leaderboard.deleted:
-leaderboard.end:
-leaderboard.finished:
-leaderboard.none:
-leaderboard.start:
+inventory.equip-hint: ""
+inventory.nav-hint: ""
+inventory.no-items: ""
+inventory.selected: ""
+leaderboard.deleted: ""
+leaderboard.end: ""
+leaderboard.finished: ""
+leaderboard.none: ""
+leaderboard.start: ""
 nan: "Veuillez préciser un nombre."
 premium-only: "Fonctionnalité réservée aux adhérents du programme QuizBot Premium."
 premium-only.learn-more: "[Cliquez ici pour en apprendre davantage sur le programme QuizBot Premium.]({})"
@@ -293,7 +293,7 @@ session.conclusion.vote-bot.detail: "[Votez pour le bot]({}) | [{} QuizBot Premi
 session.conclusion.vote-quiz: "Vous avez apprécié ce quiz ? Votez pour lui avec les réactions ! | ID du Quiz : {}"
 session.error: "Une erreur est survenue, la session s'est terminée. Le problème a été signalé."
 session.error.message-deleted: "Une question a été supprimée. Le quiz ne peut pas se poursuivre.\nVérifiez que d'autres bots ne suppriment pas les messages de QuizBot."
-session.inactive:
+session.inactive: ""
 session.intro.description: "Description"
 session.intro.footer: "ID de la Session : {} | ID du Quiz : {}"
 session.intro.notification: "Le quiz démarre maintenant !"
@@ -308,48 +308,48 @@ session.question.points: "La bonne réponse rapporte {} points"
 session.question.pos: "Question {}"
 session.question.time-allowed: "Durée de la question : {} secondes"
 session.question.time-up: "Temps écoulé !"
-shop.author:
-shop.available-items:
-shop.available-items.detail:
-shop.available-items.none:
-shop.available-items.none.detail:
-shop.description:
-shop.disabled:
-shop.footer.items:
-shop.footer.main:
-shop.help.buy:
-shop.help.buy.detail:
-shop.help.categories:
-shop.help.categories.detail:
-shop.help.description:
-shop.help.equipping:
-shop.help.equipping.detail:
-shop.help.homepage:
-shop.help.homepage.detail:
-shop.help.items:
-shop.help.items.detail:
-shop.help.restrictions:
-shop.help.restrictions.detail:
-shop.help.title:
-shop.home.categories:
-shop.home.categories.detail:
-shop.items.cant-purchase:
-shop.items.expiry:
-shop.items.expiry.days:
-shop.items.expiry.detail:
-shop.items.expiry.hours:
-shop.items.expiry.minutes:
-shop.items.expiry.months:
-shop.items.low-currency:
-shop.items.owned:
-shop.items.purchased:
-shop.items.redeems:
-shop.items.redeems.detail:
-shop.items.restrictions:
-shop.items.restrictions.access-level:
-shop.items.restrictions.min-xp:
-shop.items.restrictions.other-items:
-shop.title:
+shop.author: ""
+shop.available-items: ""
+shop.available-items.detail: ""
+shop.available-items.none: ""
+shop.available-items.none.detail: ""
+shop.description: ""
+shop.disabled: ""
+shop.footer.items: ""
+shop.footer.main: ""
+shop.help.buy: ""
+shop.help.buy.detail: ""
+shop.help.categories: ""
+shop.help.categories.detail: ""
+shop.help.description: ""
+shop.help.equipping: ""
+shop.help.equipping.detail: ""
+shop.help.homepage: ""
+shop.help.homepage.detail: ""
+shop.help.items: ""
+shop.help.items.detail: ""
+shop.help.restrictions: ""
+shop.help.restrictions.detail: ""
+shop.help.title: ""
+shop.home.categories: ""
+shop.home.categories.detail: ""
+shop.items.cant-purchase: ""
+shop.items.expiry: ""
+shop.items.expiry.days: ""
+shop.items.expiry.detail: ""
+shop.items.expiry.hours: ""
+shop.items.expiry.minutes: ""
+shop.items.expiry.months: ""
+shop.items.low-currency: ""
+shop.items.owned: ""
+shop.items.purchased: ""
+shop.items.redeems: ""
+shop.items.redeems.detail: ""
+shop.items.restrictions: ""
+shop.items.restrictions.access-level: ""
+shop.items.restrictions.min-xp: ""
+shop.items.restrictions.other-items: ""
+shop.title: ""
 spreadsheet.error: "Votre fichier n'a pas pu être converti en quiz. Utilisez-vous le template Google Sheets officiel ?"
 spreadsheet.error.answer-len: "Question {}, la réponse {} est trop courte ou trop longue."
 spreadsheet.error.bad-character: "Certains caractères de votre fichier ne peuvent pas être décodés par le robot. \nDid you copy paste any old text with unusual punctuation?"

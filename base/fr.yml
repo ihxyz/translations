@@ -49,16 +49,16 @@ cmd.version.message: "{} version `{}` (DPE `{}`, DPY `{}`)"
 cmd.vote.message: "Votez ici pour soutenir le bot."
 cmd.vote.unavailable: "Le vote n'est pas disponible pour ce bot."
 contributors: "ihxyz"
-generic.duration.day:
-generic.duration.days:
-generic.duration.hour:
-generic.duration.hours:
-generic.duration.minute:
-generic.duration.minutes:
-generic.duration.month:
-generic.duration.months:
-generic.duration.second:
-generic.duration.seconds:
+generic.duration.day: ""
+generic.duration.days: ""
+generic.duration.hour: ""
+generic.duration.hours: ""
+generic.duration.minute: ""
+generic.duration.minutes: ""
+generic.duration.month: ""
+generic.duration.months: ""
+generic.duration.second: ""
+generic.duration.seconds: ""
 generic.error: "Erreur"
 generic.failed: "Echec"
 generic.success: "Succés"
