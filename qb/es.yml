@@ -3,14 +3,14 @@ cmd.add-question.success: "Question added successfully."
 cmd.add-question.usage: "Usage: `{}`"
 cmd.add-question.validation-error: "Internal validation error"
 cmd.add-question.validation-error.detail: "Something went wrong when updating this quiz: {}. No changes have been saved. [Contact an administrator to resolve this issue.]({})"
-cmd.copy.perm-denied: ""
-cmd.copy.success: ""
+cmd.copy.perm-denied:
+cmd.copy.success:
 cmd.create-quiz.success: "Quiz created! Its ID is {}."
 cmd.delete-quiz.success: "Quiz `{}` successfully deleted."
-cmd.equip.item-not-found: ""
-cmd.equip.item-not-found.detail: ""
-cmd.equip.success: ""
-cmd.equip.success-unequip: ""
+cmd.equip.item-not-found:
+cmd.equip.item-not-found.detail:
+cmd.equip.success:
+cmd.equip.success-unequip:
 cmd.featured.categories.description: "Featured quizzes are popular, high-quality public quizzes that are perfect for casual games or learning more about a topic."
 cmd.featured.categories.hint: "Run `{}featured {}` for a list."
 cmd.featured.categories.title: "Featured Quizzes"
@@ -23,28 +23,29 @@ cmd.featured.play-quiz: "Use `{}play <id>` to play a quiz."
 cmd.featured.requested-by: "Requested by {}. Page {}/{}."
 cmd.featured.results: "We found 1 quiz relating to your search!"
 cmd.featured.results-plural: "We found {} quizzes relating to your search!"
-cmd.leaderboard.advanced: ""
-cmd.leaderboard.advanced.info: ""
-cmd.leaderboard.custom: ""
-cmd.leaderboard.custom.info: ""
-cmd.leaderboard.delete.none: ""
-cmd.leaderboard.delete.success: ""
-cmd.leaderboard.description: ""
-cmd.leaderboard.new.invalid-time: ""
-cmd.leaderboard.new.lb-limit: ""
-cmd.leaderboard.new.no-channel: ""
-cmd.leaderboard.new.no-limits: ""
-cmd.leaderboard.new.no-user: ""
-cmd.leaderboard.new.no-user.detail: ""
-cmd.leaderboard.new.premium: ""
-cmd.leaderboard.new.premium.detail: ""
-cmd.leaderboard.new.server-limit: ""
-cmd.leaderboard.premium: ""
-cmd.leaderboard.simple: ""
-cmd.leaderboard.simple.info: ""
-cmd.leaderboard.standard: ""
-cmd.leaderboard.standard.info: ""
-cmd.leaderboard.title: ""
+cmd.leaderboard.advanced:
+cmd.leaderboard.custom:
+cmd.leaderboard.custom.info:
+cmd.leaderboard.delete.none:
+cmd.leaderboard.delete.success:
+cmd.leaderboard.description:
+cmd.leaderboard.new.invalid-time:
+cmd.leaderboard.new.lb-limit:
+cmd.leaderboard.new.no-channel:
+cmd.leaderboard.new.no-limits:
+cmd.leaderboard.new.no-user:
+cmd.leaderboard.new.no-user.detail:
+cmd.leaderboard.new.premium:
+cmd.leaderboard.new.premium.detail:
+cmd.leaderboard.new.server-limit:
+cmd.leaderboard.premium:
+cmd.leaderboard.settings.info:
+cmd.leaderboard.settings.title:
+cmd.leaderboard.simple:
+cmd.leaderboard.simple.info:
+cmd.leaderboard.standard:
+cmd.leaderboard.standard.info:
+cmd.leaderboard.title:
 cmd.options.competitive: "See [this page]({}) for more information on competitive mode."
 cmd.options.delete: "The bot will delete all session messages after the quiz is complete."
 cmd.options.description: "To use an option when playing a quiz, type it after the quiz ID.\nE.g. `=play 123456 delete`"
@@ -57,8 +58,8 @@ cmd.options.title: "Quiz session options"
 cmd.pause.bad-state: "You cannot pause a session during a question. Wait until the question has ended and try again."
 cmd.pause.paused: "Paused the session. You can resume it with `{}resume`."
 cmd.pause.resumed: "Resumed the session."
-cmd.permcheck.description: ""
-cmd.permcheck.title: ""
+cmd.permcheck.description:
+cmd.permcheck.title:
 cmd.play-quiz.already-running: "There is already a quiz running in this channel. Please wait for it to end and try again."
 cmd.play-quiz.cannot-play: "Cannot start quiz"
 cmd.play-quiz.competitive-denied: "{} Competitive mode is only available to premium members. [Learn more about premium here.]({})"
@@ -72,12 +73,12 @@ cmd.play-quiz.servers-author-gone: "This quiz's author is unavailable. Cannot pl
 cmd.play-quiz.unplayable.detail: "Quiz validation failed. Error detail: `{}`. \n\n[Contact an administrator with the quiz ID and error message to resolve this issue.]({})"
 cmd.premium.message: "QuizBot Premium is now available!"
 cmd.premium.message.detail: "Click [here]({}) for more information."
-cmd.profile.level: ""
+cmd.profile.level:
 cmd.profile.monthly-points: "Monthly points: {:,}"
-cmd.profile.no-data: ""
-cmd.profile.title: ""
+cmd.profile.no-data:
+cmd.profile.title:
 cmd.profile.total-points: "Total points: {:,}"
-cmd.profile.view-online: ""
+cmd.profile.view-online:
 cmd.public-leaderboard.message: "Leaderboards"
 cmd.public-leaderboard.message.detail: "[View the public leaderboards here.]({})"
 cmd.qe.add-answers.invalid-count: "Questions can have no more than {} answers."
@@ -210,16 +211,16 @@ cmd.view.play: "**Play this quiz using `{}play {}`**"
 cmd.view.question: "{}) {} | *{} seconds* | *{} points*"
 cmd.view.tags: "Quiz tags: {}"
 cmd.view.title: "**{}** by {}"
-contributors: ""
+contributors:
 help.access-level: "Modify command access levels for your server."
 help.changelog: "View recent updates to the bot."
-help.copy: ""
+help.copy:
 help.create-quiz: "Creates a quiz with the given name and description. \nExample: `=create-quiz QuizBot;This is a quiz.`"
 help.delete-quiz: "Deletes a quiz. You can only delete your own quizzes. \nExample: `=delete-quiz 123456`"
 help.description: "[Website]({}) / [Support server]({}) / [Vote]({}) / [{} QuizBot Premium (NEW)]({})"
 help.featured: "View a list of public featured quizzes."
 help.footer: "Enjoy the bot? Use the vote link at the top of this message to support it!"
-help.leaderboard: ""
+help.leaderboard:
 help.pause: "Pause or resume a quiz session."
 help.play: "Play a quiz with the specified ID. Use 'random' as the ID to play a random quiz. \nExample: `=play 123456`\nYou can also specify certain session options. Use `=options` for more information."
 help.profile: "View your profile. You can only view your own profile."
@@ -231,15 +232,15 @@ help.spreadsheet: "Convert a spreadsheet to a quiz! See `=spreadsheet help` for 
 help.stop: "Stops the quiz running in the current channel."
 help.title: "[{}] QuizBot Help"
 help.view: "View all the information about a quiz with the given ID. On your own quizzes you can add `correct` after the command to show which answers are correct. \nExample: `=view 123456`"
-inventory.equip-hint: ""
-inventory.nav-hint: ""
-inventory.no-items: ""
-inventory.selected: ""
-leaderboard.deleted: ""
-leaderboard.end: ""
-leaderboard.finished: ""
-leaderboard.none: ""
-leaderboard.start: ""
+inventory.equip-hint:
+inventory.nav-hint:
+inventory.no-items:
+inventory.selected:
+leaderboard.deleted:
+leaderboard.end:
+leaderboard.finished:
+leaderboard.none:
+leaderboard.start:
 nan: "Please specify a number."
 premium-only: "QuizBot Premium only feature."
 premium-only.learn-more: "[Learn more about QuizBot Premium here.]({})"
@@ -292,8 +293,8 @@ session.conclusion.vote-bot: "Enjoying the bot?"
 session.conclusion.vote-bot.detail: "[Vote for the bot]({}) | [{} QuizBot Premium]({})"
 session.conclusion.vote-quiz: "Enjoy this quiz? Vote for it with the reactions! | Quiz ID: {}"
 session.error: "Something went wrong, so this session was ended. This issue has been reported."
-session.error.message-deleted: ""
-session.inactive: ""
+session.error.message-deleted:
+session.inactive:
 session.intro.description: "Description"
 session.intro.footer: "Session ID: {} | Quiz ID: {}"
 session.intro.notification: "Scheduled quiz starting now!"
@@ -308,51 +309,51 @@ session.question.points: "The correct answer awards {} points"
 session.question.pos: "Question {}"
 session.question.time-allowed: "Time allowed: {} seconds"
 session.question.time-up: "Time's up!"
-shop.author: ""
-shop.available-items: ""
-shop.available-items.detail: ""
-shop.available-items.none: ""
-shop.available-items.none.detail: ""
-shop.description: ""
-shop.disabled: ""
-shop.footer.items: ""
-shop.footer.main: ""
-shop.help.buy: ""
-shop.help.buy.detail: ""
-shop.help.categories: ""
-shop.help.categories.detail: ""
-shop.help.description: ""
-shop.help.equipping: ""
-shop.help.equipping.detail: ""
-shop.help.homepage: ""
-shop.help.homepage.detail: ""
-shop.help.items: ""
-shop.help.items.detail: ""
-shop.help.restrictions: ""
-shop.help.restrictions.detail: ""
-shop.help.title: ""
-shop.home.categories: ""
-shop.home.categories.detail: ""
-shop.items.cant-purchase: ""
-shop.items.expiry: ""
-shop.items.expiry.days: ""
-shop.items.expiry.detail: ""
-shop.items.expiry.hours: ""
-shop.items.expiry.minutes: ""
-shop.items.expiry.months: ""
-shop.items.low-currency: ""
-shop.items.owned: ""
-shop.items.purchased: ""
-shop.items.redeems: ""
-shop.items.redeems.detail: ""
-shop.items.restrictions: ""
-shop.items.restrictions.access-level: ""
-shop.items.restrictions.min-xp: ""
-shop.items.restrictions.other-items: ""
-shop.title: ""
+shop.author:
+shop.available-items:
+shop.available-items.detail:
+shop.available-items.none:
+shop.available-items.none.detail:
+shop.description:
+shop.disabled:
+shop.footer.items:
+shop.footer.main:
+shop.help.buy:
+shop.help.buy.detail:
+shop.help.categories:
+shop.help.categories.detail:
+shop.help.description:
+shop.help.equipping:
+shop.help.equipping.detail:
+shop.help.homepage:
+shop.help.homepage.detail:
+shop.help.items:
+shop.help.items.detail:
+shop.help.restrictions:
+shop.help.restrictions.detail:
+shop.help.title:
+shop.home.categories:
+shop.home.categories.detail:
+shop.items.cant-purchase:
+shop.items.expiry:
+shop.items.expiry.days:
+shop.items.expiry.detail:
+shop.items.expiry.hours:
+shop.items.expiry.minutes:
+shop.items.expiry.months:
+shop.items.low-currency:
+shop.items.owned:
+shop.items.purchased:
+shop.items.redeems:
+shop.items.redeems.detail:
+shop.items.restrictions:
+shop.items.restrictions.access-level:
+shop.items.restrictions.min-xp:
+shop.items.restrictions.other-items:
+shop.title:
 spreadsheet.error: "Your file could not be converted into a quiz. Are you using the official Google Sheets template?"
 spreadsheet.error.answer-len: "Question {}, answer {} is too short or too long."
-spreadsheet.error.bad-character: ""
+spreadsheet.error.bad-character:
 spreadsheet.error.correct-answer: "The correct answer index for question {} is not valid. Please specify a number."
 spreadsheet.error.domain: "The image URL for question {} is invalid. The domain must be one of the following: {}."
 spreadsheet.error.file-format: "File format"

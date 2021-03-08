@@ -3,14 +3,14 @@ cmd.add-question.success: "تم اضافة سؤال بنجاح."
 cmd.add-question.usage: "إستعمال: `{}`"
 cmd.add-question.validation-error: "خطأ في التحقق من الصحة"
 cmd.add-question.validation-error.detail: "حدث خطأ ما عند تحديث هذا الاختبار: {}. لم يتم حفظ أي تغييرات. [تكلم مع المسؤول لحل هذه المشكلة.]({})"
-cmd.copy.perm-denied: ""
-cmd.copy.success: ""
+cmd.copy.perm-denied:
+cmd.copy.success:
 cmd.create-quiz.success: "تم إنشاء الاختبار!  المعرف الخاص به هو {}."
 cmd.delete-quiz.success: "اختبار `{}` تم مسح بنجاح."
-cmd.equip.item-not-found: ""
-cmd.equip.item-not-found.detail: ""
-cmd.equip.success: ""
-cmd.equip.success-unequip: ""
+cmd.equip.item-not-found:
+cmd.equip.item-not-found.detail:
+cmd.equip.success:
+cmd.equip.success-unequip:
 cmd.featured.categories.description: "الاختبارات القصيرة المميزة هي اختبارات عامة شائعة وعالية الجودة ومثالية للألعاب غير الرسمية أو لمعرفة المزيد عن موضوع ما."
 cmd.featured.categories.hint: "اعمل `{}featured {}` للحصول على قائمة."
 cmd.featured.categories.title: "الاختبارات المميزة"
@@ -23,28 +23,29 @@ cmd.featured.play-quiz: "استعمل `{}play <id>` لعمل الاختبار."
 cmd.featured.requested-by: "بتوصية من {}.  الصفحة {}/{}."
 cmd.featured.results: "وجدنا اختبارًا واحدًا يتعلق ببحثك!"
 cmd.featured.results-plural: "وجدنا {} من الاختبارات المتعلقة ببحثك!"
-cmd.leaderboard.advanced: ""
-cmd.leaderboard.advanced.info: ""
-cmd.leaderboard.custom: ""
-cmd.leaderboard.custom.info: ""
-cmd.leaderboard.delete.none: ""
-cmd.leaderboard.delete.success: ""
-cmd.leaderboard.description: ""
-cmd.leaderboard.new.invalid-time: ""
-cmd.leaderboard.new.lb-limit: ""
-cmd.leaderboard.new.no-channel: ""
-cmd.leaderboard.new.no-limits: ""
-cmd.leaderboard.new.no-user: ""
-cmd.leaderboard.new.no-user.detail: ""
-cmd.leaderboard.new.premium: ""
-cmd.leaderboard.new.premium.detail: ""
-cmd.leaderboard.new.server-limit: ""
-cmd.leaderboard.premium: ""
-cmd.leaderboard.simple: ""
-cmd.leaderboard.simple.info: ""
-cmd.leaderboard.standard: ""
-cmd.leaderboard.standard.info: ""
-cmd.leaderboard.title: ""
+cmd.leaderboard.advanced:
+cmd.leaderboard.custom:
+cmd.leaderboard.custom.info:
+cmd.leaderboard.delete.none:
+cmd.leaderboard.delete.success:
+cmd.leaderboard.description:
+cmd.leaderboard.new.invalid-time:
+cmd.leaderboard.new.lb-limit:
+cmd.leaderboard.new.no-channel:
+cmd.leaderboard.new.no-limits:
+cmd.leaderboard.new.no-user:
+cmd.leaderboard.new.no-user.detail:
+cmd.leaderboard.new.premium:
+cmd.leaderboard.new.premium.detail:
+cmd.leaderboard.new.server-limit:
+cmd.leaderboard.premium:
+cmd.leaderboard.settings.info:
+cmd.leaderboard.settings.title:
+cmd.leaderboard.simple:
+cmd.leaderboard.simple.info:
+cmd.leaderboard.standard:
+cmd.leaderboard.standard.info:
+cmd.leaderboard.title:
 cmd.options.competitive: "اذهب [لهذا الموقع]({}) لمزيد من المعلومات حول الوضع التنافسي."
 cmd.options.delete: "سيحذف الروبوت جميع رسائل الجلسة بعد اكتمال الاختبار."
 cmd.options.description: "لاستخدام أحد الخيارات عند تشغيل اختبار ، اكتبه بعد معرف الاختبار\nE.g. `=play 123456 delete`"
@@ -57,8 +58,8 @@ cmd.options.title: "خيارات جلسة الاختبار"
 cmd.pause.bad-state: "لا يمكنك إيقاف الجلسة مؤقتًا أثناء السؤال.  انتظر حتى ينتهي السؤال وحاول مرة أخرى."
 cmd.pause.paused: "تم إيقاف الجلسة مؤقتًا.  يمكنك استئنافها مع `{}resume`."
 cmd.pause.resumed: "استئناف الجلسة."
-cmd.permcheck.description: ""
-cmd.permcheck.title: ""
+cmd.permcheck.description:
+cmd.permcheck.title:
 cmd.play-quiz.already-running: "يوجد بالفعل اختبار قيد التشغيل في هذه القناة.  يرجى الانتظار حتى ينتهي وحاول مرة أخرى."
 cmd.play-quiz.cannot-play: "لا يمكن بدء الاختبار"
 cmd.play-quiz.competitive-denied: "{} الوضع التنافسي متاح فقط للأعضاء البريميوم. [تعلم المزيد عن البريميوم هنا.]({})"
@@ -72,12 +73,12 @@ cmd.play-quiz.servers-author-gone: "مؤلف هذا الاختبار غير مت
 cmd.play-quiz.unplayable.detail: "فشل التحقق من صحة الاختبار.  تفاصيل الخطأ: `{}`. \n\n[تكلم مع المسؤول باستخدام معرف الاختبار ورسالة الخطأ لحل هذه المشكلة.]({})"
 cmd.premium.message: "QuizBot Premium متوفر الان!"
 cmd.premium.message.detail: "اضغط [هنا] للمزيد من المعلومات."
-cmd.profile.level: ""
+cmd.profile.level:
 cmd.profile.monthly-points: "النقاط الشهرية: {:,}"
-cmd.profile.no-data: ""
-cmd.profile.title: ""
+cmd.profile.no-data:
+cmd.profile.title:
 cmd.profile.total-points: "اجمالي النقاط: {:,}"
-cmd.profile.view-online: ""
+cmd.profile.view-online:
 cmd.public-leaderboard.message: "المتصدرين"
 cmd.public-leaderboard.message.detail: "[عرض لوحات الصدارة العامة هنا.]({})"
 cmd.qe.add-answers.invalid-count: "لا يمكن أن تحتوي الأسئلة على أكثر من {} إجابة."
@@ -213,13 +214,13 @@ cmd.view.title: "**{}** من قبل {}"
 contributors: "im0x"
 help.access-level: "قم بتعديل مستويات وصول الأوامر لسيرفرك."
 help.changelog: "عرض آخر التحديثات إلى الروبوت."
-help.copy: ""
+help.copy:
 help.create-quiz: "ينشئ اختبارًا بالاسم والوصف المحددين. \nمثل: `=create-quiz QuizBot;This is a quiz.`"
 help.delete-quiz: "حذف الاختبار. تستطيع مسح اختبارات فقط. \nمثل: `=delete-quiz 123456`"
 help.description: "[موقع]({}) / [سيرفر الدعم]({}) / [تصويت]({}) / [{} QuizBot Premium (جديد)]({})"
 help.featured: "عرض قائمة من الاختبارات القصيرة المميزة العامة."
 help.footer: "هل تستمع مع الروبوت؟ استخدم رابط التصويت في الجزء العلوي من هذه الرسالة لدعمها!"
-help.leaderboard: ""
+help.leaderboard:
 help.pause: "وقفة أو استئناف جلسة الاختبار."
 help.play: "قم بتشغيل اختبار بالمعرف المحدد. استخدم 'random' كمعرف لتشغيل اختبار عشوائي. \nمثل: `=play 123456`\nيمكنك أيضًا تحديد خيارات جلسة معينة. استخدم `=options` لمعلومات اكثر."
 help.profile: "عرض ملف التعريف الخاص بك.  يمكنك فقط عرض ملف التعريف الخاص بك."
@@ -231,15 +232,15 @@ help.spreadsheet: "تحويل جدول البيانات إلى اختبار! ا�
 help.stop: " إيقاف تشغيل الاختبار في القناة الحالية."
 help.title: "[{}] QuizBot مساعدة"
 help.view: "عرض جميع المعلومات حول الاختبار باستخدام المعرف المحدد. في الاختبارات الخاصة بك يمكنك إضافة `correct` بعد الأمر لتوضيح الإجابات الصحيحة. \nEمثل: `=view 123456`"
-inventory.equip-hint: ""
-inventory.nav-hint: ""
-inventory.no-items: ""
-inventory.selected: ""
-leaderboard.deleted: ""
-leaderboard.end: ""
-leaderboard.finished: ""
-leaderboard.none: ""
-leaderboard.start: ""
+inventory.equip-hint:
+inventory.nav-hint:
+inventory.no-items:
+inventory.selected:
+leaderboard.deleted:
+leaderboard.end:
+leaderboard.finished:
+leaderboard.none:
+leaderboard.start:
 nan: "الرجاء تحديد رقم."
 premium-only: " فقط QuizBot Premium ميزة."
 premium-only.learn-more: "[تعلم المزيد عن QuizBot Premium هنا.]({})"
@@ -292,8 +293,8 @@ session.conclusion.vote-bot: "هل استمعت مع بالبوت?"
 session.conclusion.vote-bot.detail: "[صوت للروبوت]({}) | [{} QuizBot Premium]({})"
 session.conclusion.vote-quiz: "استمتع بهذا الاختبار؟  التصويت لها مع ردود الفعل! | معرف الاختبار: {}"
 session.error: "حدث خطأ ما ، لذلك تم إنهاء هذه الجلسة.  تم الإبلاغ عن هذه المشكلة."
-session.error.message-deleted: ""
-session.inactive: ""
+session.error.message-deleted:
+session.inactive:
 session.intro.description: "وصف"
 session.intro.footer: "معرف الجلسة: {} | معرف الاختبار: {}"
 session.intro.notification: "مسابقة مجدولة تبدأ الآن!"
@@ -308,51 +309,51 @@ session.question.points: "جوائز الإجابة الصحيحة {} نقاط"
 session.question.pos: "سؤال {}"
 session.question.time-allowed: "الوقت المسموح: {} ثواني"
 session.question.time-up: "انتهى الوقت!"
-shop.author: ""
-shop.available-items: ""
-shop.available-items.detail: ""
-shop.available-items.none: ""
-shop.available-items.none.detail: ""
-shop.description: ""
-shop.disabled: ""
-shop.footer.items: ""
-shop.footer.main: ""
-shop.help.buy: ""
-shop.help.buy.detail: ""
-shop.help.categories: ""
-shop.help.categories.detail: ""
-shop.help.description: ""
-shop.help.equipping: ""
-shop.help.equipping.detail: ""
-shop.help.homepage: ""
-shop.help.homepage.detail: ""
-shop.help.items: ""
-shop.help.items.detail: ""
-shop.help.restrictions: ""
-shop.help.restrictions.detail: ""
-shop.help.title: ""
-shop.home.categories: ""
-shop.home.categories.detail: ""
-shop.items.cant-purchase: ""
-shop.items.expiry: ""
-shop.items.expiry.days: ""
-shop.items.expiry.detail: ""
-shop.items.expiry.hours: ""
-shop.items.expiry.minutes: ""
-shop.items.expiry.months: ""
-shop.items.low-currency: ""
-shop.items.owned: ""
-shop.items.purchased: ""
-shop.items.redeems: ""
-shop.items.redeems.detail: ""
-shop.items.restrictions: ""
-shop.items.restrictions.access-level: ""
-shop.items.restrictions.min-xp: ""
-shop.items.restrictions.other-items: ""
-shop.title: ""
+shop.author:
+shop.available-items:
+shop.available-items.detail:
+shop.available-items.none:
+shop.available-items.none.detail:
+shop.description:
+shop.disabled:
+shop.footer.items:
+shop.footer.main:
+shop.help.buy:
+shop.help.buy.detail:
+shop.help.categories:
+shop.help.categories.detail:
+shop.help.description:
+shop.help.equipping:
+shop.help.equipping.detail:
+shop.help.homepage:
+shop.help.homepage.detail:
+shop.help.items:
+shop.help.items.detail:
+shop.help.restrictions:
+shop.help.restrictions.detail:
+shop.help.title:
+shop.home.categories:
+shop.home.categories.detail:
+shop.items.cant-purchase:
+shop.items.expiry:
+shop.items.expiry.days:
+shop.items.expiry.detail:
+shop.items.expiry.hours:
+shop.items.expiry.minutes:
+shop.items.expiry.months:
+shop.items.low-currency:
+shop.items.owned:
+shop.items.purchased:
+shop.items.redeems:
+shop.items.redeems.detail:
+shop.items.restrictions:
+shop.items.restrictions.access-level:
+shop.items.restrictions.min-xp:
+shop.items.restrictions.other-items:
+shop.title:
 spreadsheet.error: "تعذر تحويل ملفك إلى اختبار.  هل تستخدم قالب أوراق غوغل الرسمي?"
 spreadsheet.error.answer-len: "سؤال {}, جواب {} قصير جداً او طويل جداً."
-spreadsheet.error.bad-character: ""
+spreadsheet.error.bad-character:
 spreadsheet.error.correct-answer: "فهرس الإجابات الصحيح للسؤال {} غير صالح.  الرجاء تحديد رقم."
 spreadsheet.error.domain: "عنوان الصورة لسؤال {} غير صالح.  يجب أن يكون المجال واحدًا مما يلي: {}."
 spreadsheet.error.file-format: "تنسيق الملف"
