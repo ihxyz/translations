@@ -56,7 +56,6 @@ cmd.leaderboard.simple.info: "Generate a leaderboard showing everyone's all time
 cmd.leaderboard.standard: "Weekly, Monthly & All Time Leaderboards"
 cmd.leaderboard.standard.info: "A leaderboard which shows who has scored the most points in your server in the past week, month or in total. Automatically updates after every quiz and resets at the end of the time period. `{0}leaderboard new weekly/monthly/all-time`"
 cmd.leaderboard.title: "QuizBot Server Leaderboards"
-
 cmd.options.competitive: "See [this page]({}) for more information on competitive mode."
 cmd.options.delete: "The bot will delete all session messages after the quiz is complete."
 cmd.options.description: "To use an option when playing a quiz, type it after the quiz ID.\nE.g. `=play 123456 delete`"
