@@ -9,6 +9,8 @@ cmd.create-quiz.success: "Quiz créé ! Son ID est {}."
 cmd.delete-quiz.success: "Quiz `{}` supprimé avec succès."
 cmd.equip.item-not-found:
 cmd.equip.item-not-found.detail:
+cmd.equip.member-not-found:
+cmd.equip.member-not-found.detail:
 cmd.equip.success:
 cmd.equip.success-unequip:
 cmd.featured.categories.description: "Les quiz présentés sont des quiz publics populaires de haute qualité, parfaits pour les jeux occasionnels ou pour en savoir plus sur un sujet."
@@ -39,7 +41,16 @@ cmd.leaderboard.new.premium:
 cmd.leaderboard.new.premium.detail:
 cmd.leaderboard.new.server-limit:
 cmd.leaderboard.premium:
+cmd.leaderboard.settings.description:
+cmd.leaderboard.settings.example:
+cmd.leaderboard.settings.example-1:
+cmd.leaderboard.settings.example-2:
+cmd.leaderboard.settings.example-3:
 cmd.leaderboard.settings.info:
+cmd.leaderboard.settings.notation:
+cmd.leaderboard.settings.notation.info:
+cmd.leaderboard.settings.options:
+cmd.leaderboard.settings.options.info:
 cmd.leaderboard.settings.title:
 cmd.leaderboard.simple:
 cmd.leaderboard.simple.info:
@@ -344,6 +355,8 @@ shop.items.expiry.months:
 shop.items.low-currency:
 shop.items.owned:
 shop.items.purchased:
+shop.items.purchased.automatic-equip:
+shop.items.purchased.inventory-hint:
 shop.items.redeems:
 shop.items.redeems.detail:
 shop.items.restrictions:
