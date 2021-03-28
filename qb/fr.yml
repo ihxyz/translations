@@ -46,7 +46,6 @@ cmd.leaderboard.settings.example:
 cmd.leaderboard.settings.example-1:
 cmd.leaderboard.settings.example-2:
 cmd.leaderboard.settings.example-3:
-cmd.leaderboard.settings.info:
 cmd.leaderboard.settings.notation:
 cmd.leaderboard.settings.notation.info:
 cmd.leaderboard.settings.options:
@@ -110,7 +109,8 @@ cmd.qe.colour.premium-only: "Cette couleur n'est disponible que pour les membres
 cmd.qe.colour.success: "La couleur du questionnaire a bien été modifiée."
 cmd.qe.correct.invalid-arg: "Veuillez spécifier la position de la réponse que vous souhaitez marquer comme correcte."
 cmd.qe.correct.none: "Cette question n'a pas de réponse #{}."
-cmd.qe.correct.success: "La réponse correcte a été mise à jour en `{}`."
+cmd.qe.correct.success-add:
+cmd.qe.correct.success-remove:
 cmd.qe.del-answer.invalid-arg: "Veuillez spécifier la position de la réponse que vous souhaitez supprimer."
 cmd.qe.del-answer.none: "Cette question n'a pas de réponse #{}."
 cmd.qe.del-answer.success: "Réponse supprimée avec succès."
@@ -149,9 +149,14 @@ cmd.qe.save.bad-answers: "Veuillez spécifier au moins {} réponses."
 cmd.qe.save.no-correct: "Veuillez définir une réponse correcte."
 cmd.qe.save.no-question: "Veuillez spécifier une question."
 cmd.qe.save.success: "Question enregistrée avec succès."
+cmd.qe.text.out-of-range:
+cmd.qe.text.success:
 cmd.qe.time.invalid: "Veuillez spécifier une heure valide en secondes."
 cmd.qe.time.out-of-range: "Le temps ne peut pas être supérieur à {} ou inférieur à {} secondes."
 cmd.qe.time.success: "Temps autorisé mis à jour à {} secondes."
+cmd.qe.wait.invalid:
+cmd.qe.wait.out-of-range:
+cmd.qe.wait.success:
 cmd.remove-question.not-found: "Question non trouvée."
 cmdr.invalid-id: "ID invalide"
 cmdr.invalid-id.nan: "Veuillez préciser un nombre valide. \nVouliez-vous dire `{}search {}`?"
@@ -270,9 +275,13 @@ qe.question.not-auto-save: "Les modifications ne sont pas enregistrées automati
 qe.question.operations: "Enregistrez cette question avec `{0}qe save` \nSupprimez cette question avec `{0}qe delete` \nAnnulez toutes les modifications avec `{0}qe cancel`"
 qe.question.question: "❓ **Question** | Changer avec `{}qe question <question>`"
 qe.question.question.not-set: "*[Non défini]*"
+qe.question.text:
+qe.question.text.none:
 qe.question.time: "⏱ **Durée autorisée :** {} secondes"
 qe.question.time.detail: "Changer avec `{}qe time <temps autorisé>`"
 qe.question.title: "Modification du quiz: {} | Question n ° {}"
+qe.question.wait:
+qe.question.wait.detail:
 qe.standard.answers: "__Réponses:__ {}"
 qe.standard.author: "Éditeur de quiz"
 qe.standard.auto-save: "Les modifications sont automatiques enregistrées."
@@ -316,10 +325,12 @@ session.intro.starting-time: "Le quiz va démarrer dans {} secondes."
 session.leaderboard: "Classement"
 session.leaderboard.page: "Classement page {} / {}"
 session.question.awaiting-reactions: "Les choix de réponses seront révélés une fois les réactions prêtes !"
+session.question.explanation:
 session.question.points: "La bonne réponse rapporte {} points"
 session.question.pos: "Question {}"
 session.question.time-allowed: "Durée de la question : {} secondes"
 session.question.time-up: "Temps écoulé !"
+session.question.wait-time:
 shop.author:
 shop.available-items:
 shop.available-items.detail:

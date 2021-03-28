@@ -46,7 +46,6 @@ cmd.leaderboard.settings.example:
 cmd.leaderboard.settings.example-1:
 cmd.leaderboard.settings.example-2:
 cmd.leaderboard.settings.example-3:
-cmd.leaderboard.settings.info:
 cmd.leaderboard.settings.notation:
 cmd.leaderboard.settings.notation.info:
 cmd.leaderboard.settings.options:
@@ -110,7 +109,8 @@ cmd.qe.colour.premium-only: "Diese Farbe ist nur für QuizBot Premium Nutzer ver
 cmd.qe.colour.success: "Quiz Farbe erfolgreich geändert."
 cmd.qe.correct.invalid-arg: "Bitte spezifizieren Sie die Position der Antwort, die Sie als korrekt markieren wollen."
 cmd.qe.correct.none: "Diese Frage hat keine Antwort #{}"
-cmd.qe.correct.success: "Korrekte Antwort zu `{}` geändert."
+cmd.qe.correct.success-add:
+cmd.qe.correct.success-remove:
 cmd.qe.del-answer.invalid-arg: "Bitte spezifizieren Sie die Position der Antwort Möglichkeit die Sie löschen wollen."
 cmd.qe.del-answer.none: "Diese Frage hat keine Antwort Möglichkeit #{}."
 cmd.qe.del-answer.success: "Antwort Möglichkeit erfolgreich entfernt."
@@ -149,9 +149,14 @@ cmd.qe.save.bad-answers: "Bitte spezifizieren Sie mindestens {} Antworten."
 cmd.qe.save.no-correct: "Bitte spezifizieren Sie eine korrekte Antwort."
 cmd.qe.save.no-question: "Bitte spezifizieren Sie eine Frage."
 cmd.qe.save.success: "Frage erfolgreich gespeichert."
+cmd.qe.text.out-of-range:
+cmd.qe.text.success:
 cmd.qe.time.invalid: "Bitte spezifizieren Sie eine gültige zeit in Sekunden."
 cmd.qe.time.out-of-range: "Zeit kann nicht mehr als {} oder weniger als {} Sekunden sein."
 cmd.qe.time.success: "Zeit erlaubt zu {} Sekunden geändert."
+cmd.qe.wait.invalid:
+cmd.qe.wait.out-of-range:
+cmd.qe.wait.success:
 cmd.remove-question.not-found: "Frage nicht gefunden."
 cmdr.invalid-id: "Ungültige ID"
 cmdr.invalid-id.nan: "Bitte spezifizieren Sie eine gültige Nummer. \n Meinen Sie `{}search {}`?"
@@ -270,9 +275,13 @@ qe.question.not-auto-save: "Änderungen werden nicht automatisch gespeichert."
 qe.question.operations: "Speichere diese Frage mit `{0}qe save`\nLösche diese Frage mit `{0}qe delete`\nVerwerfe alle änderungen mit `{0}qe cancel`"
 qe.question.question: "❓ **Frage** | Ändere die Frage mit `{}qe question <Frage>`"
 qe.question.question.not-set: "*[Nicht vorhanden]*"
+qe.question.text:
+qe.question.text.none:
 qe.question.time: "⏱ **Zeit Erlaubt:** {} Sekunden"
 qe.question.time.detail: "Ändere die erlaubte Zeit mit `{}qe time <erlaubte Zeit>`"
 qe.question.title: "Quiz {} wird bearbeitet | Frage: #{}"
+qe.question.wait:
+qe.question.wait.detail:
 qe.standard.answers: "__Antwort Möglichkeiten:__ {}"
 qe.standard.author: "QuizEditor"
 qe.standard.auto-save: "Veränderungen werden automatisch gespeichert"
@@ -316,10 +325,12 @@ session.intro.starting-time: "Das Quiz wird in {} Sekunden beginnen."
 session.leaderboard: "Bestenliste"
 session.leaderboard.page: "Bestenliste Seite {} / {}"
 session.question.awaiting-reactions: "Antworten werden gezeigt sobald alle Reaktionen bereit sind!"
+session.question.explanation:
 session.question.points: "Die korrekte Antwort verleiht {} Punkte"
 session.question.pos: "Frage {}"
 session.question.time-allowed: "Erlaubte Zeit: {} Sekunden"
 session.question.time-up: "Zeit vorbei!"
+session.question.wait-time:
 shop.author: "QuizBot Shop"
 shop.available-items:
 shop.available-items.detail:
@@ -327,7 +338,6 @@ shop.available-items.none:
 shop.available-items.none.detail:
 shop.description: "You can buy items with the QuizBot currency {0}. \n{0} is earned simply by playing quizzes or having your quizzes played. \nYou currently have {0}`{1}`"
 shop.disabled: "The shop is currently disabled."
-shop.footer: "Navigate to a different item category with the emotes below"
 shop.footer.items:
 shop.footer.main:
 shop.help.buy:
@@ -364,8 +374,6 @@ shop.items.restrictions:
 shop.items.restrictions.access-level:
 shop.items.restrictions.min-xp:
 shop.items.restrictions.other-items:
-shop.none: "There are currently no items available in this category."
-shop.none.detail: "Please check back later."
 shop.title: "Welcome to the QuizBot Item Shop. Here you can find items which level up your profile or add a unique touch to your quizzes."
 spreadsheet.error: "Ihre Datei konnte nicht in ein Quiz umgewandelt werden. Benutzen Sie die offizielle Google Sheets Vorlage?"
 spreadsheet.error.answer-len: "Frage {}, Antwort {} ist zu kurz oder zu lang."

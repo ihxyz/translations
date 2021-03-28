@@ -46,7 +46,6 @@ cmd.leaderboard.settings.example:
 cmd.leaderboard.settings.example-1:
 cmd.leaderboard.settings.example-2:
 cmd.leaderboard.settings.example-3:
-cmd.leaderboard.settings.info:
 cmd.leaderboard.settings.notation:
 cmd.leaderboard.settings.notation.info:
 cmd.leaderboard.settings.options:
@@ -110,7 +109,8 @@ cmd.qe.colour.premium-only: "That colour is only available to QuizBot Premium me
 cmd.qe.colour.success: "Quiz colour successfully changed."
 cmd.qe.correct.invalid-arg: "Please specify the position of the answer you want to mark as correct."
 cmd.qe.correct.none: "This question does not have an answer #{}."
-cmd.qe.correct.success: "Correct answer updated to `{}`."
+cmd.qe.correct.success-add:
+cmd.qe.correct.success-remove:
 cmd.qe.del-answer.invalid-arg: "Please specify the position of the answer you want to delete."
 cmd.qe.del-answer.none: "This question does not have an answer #{}."
 cmd.qe.del-answer.success: "Answer successfully removed."
@@ -149,9 +149,14 @@ cmd.qe.save.bad-answers: "Please specify at least {} answers."
 cmd.qe.save.no-correct: "Please set a correct answer."
 cmd.qe.save.no-question: "Please specify a question."
 cmd.qe.save.success: "Question saved successfully."
+cmd.qe.text.out-of-range:
+cmd.qe.text.success:
 cmd.qe.time.invalid: "Please specify a valid time in seconds."
 cmd.qe.time.out-of-range: "Time cannot be more than {} or less than {} seconds."
 cmd.qe.time.success: "Time allowed updated to {} seconds."
+cmd.qe.wait.invalid:
+cmd.qe.wait.out-of-range:
+cmd.qe.wait.success:
 cmd.remove-question.not-found: "Question not found."
 cmdr.invalid-id: "Invalid ID"
 cmdr.invalid-id.nan: "Please specify a valid number. \nDid you mean `{}search {}`?"
@@ -270,9 +275,13 @@ qe.question.not-auto-save: "Changes are not saved automatically."
 qe.question.operations: "Save this question with `{0}qe save`\nDelete this question with `{0}qe delete`\nCancel all changes with `{0}qe cancel`"
 qe.question.question: "❓ **Question** | Change with `{}qe question <question>`"
 qe.question.question.not-set: "*[Not set]*"
+qe.question.text:
+qe.question.text.none:
 qe.question.time: "⏱ **Time allowed:** {} seconds"
 qe.question.time.detail: "Change with `{}qe time <time allowed>`"
 qe.question.title: "Editing quiz: {} | Question #{}"
+qe.question.wait:
+qe.question.wait.detail:
 qe.standard.answers: "__Answers:__ {}"
 qe.standard.author: "QuizEditor"
 qe.standard.auto-save: "Changes are saved automatically."
@@ -316,10 +325,12 @@ session.intro.starting-time: "The quiz will start in {} seconds."
 session.leaderboard: "Leaderboard"
 session.leaderboard.page: "Leaderboard page {} / {}"
 session.question.awaiting-reactions: "Answers will be revealed once all reactions are ready!"
+session.question.explanation:
 session.question.points: "The correct answer awards {} points"
 session.question.pos: "Question {}"
 session.question.time-allowed: "Time allowed: {} seconds"
 session.question.time-up: "Time's up!"
+session.question.wait-time:
 shop.author:
 shop.available-items:
 shop.available-items.detail:

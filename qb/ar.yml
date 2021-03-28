@@ -46,7 +46,6 @@ cmd.leaderboard.settings.example:
 cmd.leaderboard.settings.example-1:
 cmd.leaderboard.settings.example-2:
 cmd.leaderboard.settings.example-3:
-cmd.leaderboard.settings.info:
 cmd.leaderboard.settings.notation:
 cmd.leaderboard.settings.notation.info:
 cmd.leaderboard.settings.options:
@@ -110,7 +109,8 @@ cmd.qe.colour.premium-only: "هذا اللون متاح فقط لـ أعضاء Q
 cmd.qe.colour.success: "تم تغيير لون الاختبار."
 cmd.qe.correct.invalid-arg: "الرجاء تحديد موضع الإجابة التي تريد تحديدها على أنها صحيحة."
 cmd.qe.correct.none: "هذا السؤال ليس له إجابة #{}."
-cmd.qe.correct.success: "تم تحديث الإجابة الصحيحة إلى `{}`."
+cmd.qe.correct.success-add:
+cmd.qe.correct.success-remove:
 cmd.qe.del-answer.invalid-arg: "الرجاء تحديد موضع الإجابة التي تريد حذفها."
 cmd.qe.del-answer.none: "هذا السؤال ليس له إجابة #{}."
 cmd.qe.del-answer.success: "تم حذف الجواب بنجاح."
@@ -149,9 +149,14 @@ cmd.qe.save.bad-answers: "يرجى تحديد {} إجابة على الأقل."
 cmd.qe.save.no-correct: "يرجى تحديد الإجابة الصحيحة."
 cmd.qe.save.no-question: "الرجاء تحديد سؤال."
 cmd.qe.save.success: "تم حفظ السؤال بنجاح."
+cmd.qe.text.out-of-range:
+cmd.qe.text.success:
 cmd.qe.time.invalid: "الرجاء تحديد وقت صالح بالثواني."
 cmd.qe.time.out-of-range: "لا يمكن أن يكون الوقت أكثر من {} أو أقل من {} ثانية."
 cmd.qe.time.success: "تم تحديث الوقت المسموح به إلى {} ثانية."
+cmd.qe.wait.invalid:
+cmd.qe.wait.out-of-range:
+cmd.qe.wait.success:
 cmd.remove-question.not-found: "لم يتم العثور على السؤال."
 cmdr.invalid-id: "رقم التعريف غير صالح"
 cmdr.invalid-id.nan: "الرجاء تحديد رقم صحيح. \nهل تقصد `{}search {}`?"
@@ -270,9 +275,13 @@ qe.question.not-auto-save: "التغييرات لم تحفظ تلقائيا."
 qe.question.operations: "احفظ السؤال مع `{0}qe save`\nامسح السؤال مع `{0}qe delete`\nالغي جميع التغييرات مع `{0}qe cancel`"
 qe.question.question: "❓ **سؤال** | تغيير مع `{}qe سؤال <question>`"
 qe.question.question.not-set: "*[غير مضبوط]*"
+qe.question.text:
+qe.question.text.none:
 qe.question.time: "⏱ **الوقت المسموح:** {} ثواني"
 qe.question.time.detail: "تغيير مع `{}qe time <time allowed>`"
 qe.question.title: "تحرير الاختبار: {} | سؤال #{}"
+qe.question.wait:
+qe.question.wait.detail:
 qe.standard.answers: "__اجابات__ {}"
 qe.standard.author: "محرر الاختبار"
 qe.standard.auto-save: "تم حفظ التغييرات تلقائياً."
@@ -316,10 +325,12 @@ session.intro.starting-time: "سيبدأ الاختبار في غضون {} ثا�
 session.leaderboard: "قائمة"
 session.leaderboard.page: "صفحة القائمة {} / {}"
 session.question.awaiting-reactions: "سيتم الكشف عن الإجابات بمجرد أن تصبح جميع ردود الفعل جاهزة!"
+session.question.explanation:
 session.question.points: "جوائز الإجابة الصحيحة {} نقاط"
 session.question.pos: "سؤال {}"
 session.question.time-allowed: "الوقت المسموح: {} ثواني"
 session.question.time-up: "انتهى الوقت!"
+session.question.wait-time:
 shop.author:
 shop.available-items:
 shop.available-items.detail:
