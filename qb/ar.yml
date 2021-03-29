@@ -1,203 +1,395 @@
-cmd.add-question.invalid-time: "الرجاء تحديد وقت صالح بالثواني: `{}`"
-cmd.add-question.success: "تم اضافة سؤال بنجاح."
+################################################################
+# BEFORE TRANSLATING: Make sure you have read and understand the information on the "Contributing" page and the notes below.
+# IMPORTANT NOTES:
+#  - Ensure all translations are surrounded by quotation marks (") as they currently are.
+#    If you are including a quotation mark in a message, type \ before it.
+#  - Do not edit the text before the ":". This is required for the bot to identify the messages.
+#  - Do not remove any "{}" in the messages. These are placeholders for values that the bot will insert.
+#    For example, the message "Quiz ID: {}" may become "Quiz ID: 123456" when it's displayed by the bot.
+#  - Do not remove or edit lines starting with "#". These do not need to be translated.
+#  - \n means new line. Please try to keep the newlines in the same place as they currently are to ensure messages are readable.
+#  - We use Discord's formatting codes in the messages. Please keep these as they are.
+#  - Do not translate command names in messages.
+#  - Do not translate any of the following text: "QuizBot", "QuizBot Premium", "ihxyz".
+# Support: https://www.ihxyz.dev/bots/support
+################################################################
+
+# === GENERIC ===
+premium-only: " فقط QuizBot Premium ميزة."
+premium-only.learn-more: "[تعلم المزيد عن QuizBot Premium هنا.]({})"
+nan: "الرجاء تحديد رقم."
+quiz.no-description: "*[هذا الاختبار ليس له وصف]*"
+quiz.editor-web: "اذهب [هنا]({}) للتعديل عليها."
+user.unavailable: "(المستخدم غير متوفر)"
+
+# === QUIZ EDITOR ===
+qe.standard.title: "تحرير الاختبار: {}"
+qe.standard.web-prompt: "\U0001F517 [يمكنك أيضًا تعديل الاختبار الخاص بك على الواجهة عبر الإنترنت.]({})"
+qe.standard.author: "محرر الاختبار"
+qe.standard.name: "\U0001F3AE **اسم** | تغيير مع `{}qe name <new name>`"
+qe.standard.description: "\U0001F4DD **الوصف** | تغيير مع `{0}qe description <new description>`\nمسح الوصف بـ `{0}qe description remove`"
+qe.standard.questions: "\U0001F3B2 **اسئلة:** {}/{}"
+qe.standard.questions.detail: "اضافة سؤال بـ `{0}qe add-question`\nتحرير السؤال بـ `{0}qe edit-question <question number>`\nمسح السؤال بـ `{0}qe del-question <question number>`"
+qe.standard.questions.detail-maxed: "يمكن لـ محرر الاختبار عرض ما يصل إلى 18 سؤالاً فقط. نقترح تحرير هذا الاختبار في [واجهة الموقع]({})."
+qe.standard.answers: "__اجابات__ {}"
+qe.standard.hex: "[كود هيكس مخصص]({})"
+qe.standard.extra-colours: "[احصل على المزيد من الألوان باستخدام QuizBot Premium]({})"
+qe.standard.colour: "\U0001F3A8 **Colour:** {} | Change with `{}qe colour <new colour>`"
+qe.standard.colour.detail: "__Available colours:__ {}"
+qe.standard.tags: "\U0001F3F7 **العلامات** | اضافة او مسح علامات بـ `{0}qe add-tag <new tag>` او `{0}qe del-tag <tag>`"
+qe.standard.no-tags: "*[هذا الاختبار لا يملك علامات]*"
+qe.standard.finish: "✅ انهاء التعديل بـ `{}qe finish`\nهذه الرسالة سوف تمسح بعد 5 دقايق من بدء عملها."
+qe.standard.auto-save: "تم حفظ التغييرات تلقائياً."
+qe.standard.footer: "تم انشاء الاختبار في: {} | تصويتات المؤيدة: {} | تشغيل: {}"
+
+qe.question.title: "تحرير الاختبار: {} | سؤال #{}"
+qe.question.question: "❓ **سؤال** | تغيير مع `{}qe سؤال <question>`"
+qe.question.question.not-set: "*[غير مضبوط]*"
+qe.question.answers: "\U0001F4CA **اجوبة:** {}/{}\nاضافة سؤال جديد مع `{}qe add-answer <answer1;answer2...>`\nمسح جواب مع `{}qe del-answer <answer number>`"
+qe.question.correct: "✅ يتم عرض الإجابة الصحيحة بتنسيق **بلخط العريض**."
+qe.question.correct.detail: "تغيير مع `{}qe correct <answer number>`"
+qe.question.min: "**الحد الأدنى من النقاط الممنوحة:** {}"
+qe.question.min.detail: "تغيير مع `{}qe min <points>`"
+qe.question.max: "**الحد الأعلى من النقاط الممنوحة:** {}"
+qe.question.max.detail: "تغيير مع `{}qe max <points>`"
+qe.question.time: "⏱ **الوقت المسموح:** {} ثواني"
+qe.question.time.detail: "تغيير مع `{}qe time <time allowed>`"
+qe.question.text:
+qe.question.text.none:
+qe.question.wait:
+qe.question.wait.detail:
+qe.question.image: "**رابط الصورة:** {}"
+qe.question.no-image: "*[بدون صورة]*"
+qe.question.image.detail: "تحديث مع `{}qe image <image URL>`\nاستخدم `remove` كعنوان موقع لإزالة الصورة\nالمجالات المدعومة: `{}`"
+qe.question.image.premium: "هل تريد الصور في جميع اختباراتك? [احصل على QuizBot Premium]({})"
+qe.question.operations: "احفظ السؤال مع `{0}qe save`\nامسح السؤال مع `{0}qe delete`\nالغي جميع التغييرات مع `{0}qe cancel`"
+qe.question.not-auto-save: "التغييرات لم تحفظ تلقائيا."
+
+# === HELP MESSAGE ===
+help.title: "[{}] QuizBot مساعدة"
+help.description: "[موقع]({}) / [سيرفر الدعم]({}) / [تصويت]({}) / [{} QuizBot Premium (جديد)]({})"
+help.play: "قم بتشغيل اختبار بالمعرف المحدد. استخدم 'random' كمعرف لتشغيل اختبار عشوائي. \nمثل: `play 123456`\n=يمكنك أيضًا تحديد خيارات جلسة معينة. استخدم `options=` لمعلومات اكثر."
+help.stop: " إيقاف تشغيل الاختبار في القناة الحالية."
+help.create-quiz: "ينشئ اختبارًا بالاسم والوصف المحددين. \nمثل: `create-quiz QuizBot;This is a quiz=`"
+help.delete-quiz: "حذف الاختبار. تستطيع مسح اختبارات فقط. \nمثل: `delete-quiz 123456=`"
+help.settings: "عرض أو تغيير إعدادات السيرفر الخاص بك. يمكنك تغيير الإعدادات التالية: `language`, `prefix`."
+help.search: "يبحث في قاعدة بيانات الاختبار عن الاختبارات المتعلقة بمصطلح البحث. \nمثل: `search Trivia=`"
+help.view: "عرض جميع المعلومات حول الاختبار باستخدام المعرف المحدد. في الاختبارات الخاصة بك يمكنك إضافة `correct` بعد الأمر لتوضيح الإجابات الصحيحة. \nEمثل: `view 123456=`"
+help.leaderboard:
+help.copy:
+help.spreadsheet: "تحويل جدول البيانات إلى اختبار! استعمل `spreadsheet help=` لمعلومات اكثر, او انظر الى [يوتيوب تعليمي رسمي](https://youtu.be/4bcpmbIlrPw). لقالب جدول البيانات انظر `spreadsheet template=`."
+help.schedule: "حدد موعدًا لإجراء الاختبارات بشكل منتظم على فترات زمنية معينة.  يرجى ملاحظة أن هذا هو حاليا في الإصدار التجريبي.  لمزيد من المعلومات تحقق من سيرفر الدعم الرسمي الخاص بنا."
+help.profile: "عرض ملف التعريف الخاص بك.  يمكنك فقط عرض ملف التعريف الخاص بك."
+help.changelog: "عرض آخر التحديثات إلى الروبوت."
+help.featured: "عرض قائمة من الاختبارات القصيرة المميزة العامة."
+help.qe: "قم بتحرير اختبار باستخدام المعرف المحدد.  يمكنك تحرير الأسئلة والاسم والوصف واللون والعلامات."
+help.pause: "وقفة أو استئناف جلسة الاختبار."
+help.access-level: "قم بتعديل مستويات وصول الأوامر لسيرفرك."
+help.footer: "هل تستمع مع الروبوت؟ استخدم رابط التصويت في الجزء العلوي من هذه الرسالة لدعمها!"
+
+# === SHOP ===
+shop.disabled:
+shop.title:
+shop.description:
+shop.author:
+shop.footer.main:
+shop.footer.items:
+shop.home.categories:
+shop.home.categories.detail:
+
+shop.help.title:
+shop.help.description:
+shop.help.homepage:
+shop.help.homepage.detail:
+shop.help.categories:
+shop.help.categories.detail:
+shop.help.items:
+shop.help.items.detail:
+shop.help.restrictions:
+shop.help.restrictions.detail:
+shop.help.buy:
+shop.help.buy.detail:
+shop.help.equipping:
+shop.help.equipping.detail:
+
+shop.available-items:
+shop.available-items.detail:
+shop.available-items.none:
+shop.available-items.none.detail:
+shop.items.owned:
+shop.items.redeems:
+shop.items.redeems.detail:
+shop.items.expiry:
+shop.items.expiry.detail:
+shop.items.expiry.minutes:
+shop.items.expiry.hours:
+shop.items.expiry.days:
+shop.items.expiry.months:
+shop.items.restrictions:
+shop.items.restrictions.access-level:
+shop.items.restrictions.min-xp:
+shop.items.restrictions.other-items:
+shop.items.low-currency:
+shop.items.cant-purchase:
+shop.items.purchased:
+shop.items.purchased.inventory-hint:
+shop.items.purchased.automatic-equip:
+
+# === LEADERBOARD ===
+leaderboard.none:
+leaderboard.start:
+leaderboard.end:
+leaderboard.finished:
+leaderboard.deleted:
+
+# === COMMANDS REUSABLE ===
+cmdr.invalid-id: "رقم التعريف غير صالح"
+cmdr.invalid-id.nan: "الرجاء تحديد رقم صحيح. \nهل تقصد `{}search {}`?"
+cmdr.invalid-id.no-quiz: "لا يمكن العثور على اختبار بهذا المعرف."
+cmdr.invalid-id.no-session: "لم يتم العثور على جلسة بهذا المعرف."
+cmdr.perm-denied: "انت لا تملك اذنا لتعمل هذا."
+cmdr.nsfw: "لا يمكن استخدام هذا الأمر في قنوات NSFW."
+cmdr.nsfw.detail: "لا يسمح روبوت الاختبار بإجراء اختبارات NSFW."
+cmdr.no-session: "لا توجد جلسة قيد التشغيل في هذه القناة."
+cmdr.update-scheduled: "هناك تحديث بوت مجدول.  يرجى المحاولة مرة أخرى في {} دقائق."
+cmdr.maintenance-mode: "الروبوت حاليا في وضع الصيانة."
+
+# === COMMANDS ===
+
+# add-question
 cmd.add-question.usage: "إستعمال: `{}`"
+cmd.add-question.invalid-time: "الرجاء تحديد وقت صالح بالثواني: `{}`"
 cmd.add-question.validation-error: "خطأ في التحقق من الصحة"
 cmd.add-question.validation-error.detail: "حدث خطأ ما عند تحديث هذا الاختبار: {}. لم يتم حفظ أي تغييرات. [تكلم مع المسؤول لحل هذه المشكلة.]({})"
+cmd.add-question.success: "تم اضافة سؤال بنجاح."
+
+# copy
 cmd.copy.perm-denied:
 cmd.copy.success:
+
+# create-quiz
 cmd.create-quiz.success: "تم إنشاء الاختبار!  المعرف الخاص به هو {}."
+
+# delete-quiz
 cmd.delete-quiz.success: "اختبار `{}` تم مسح بنجاح."
+
+# equip
 cmd.equip.item-not-found:
 cmd.equip.item-not-found.detail:
 cmd.equip.member-not-found:
 cmd.equip.member-not-found.detail:
 cmd.equip.success:
 cmd.equip.success-unequip:
+
+# featured
+cmd.featured.categories.title: "الاختبارات المميزة"
 cmd.featured.categories.description: "الاختبارات القصيرة المميزة هي اختبارات عامة شائعة وعالية الجودة ومثالية للألعاب غير الرسمية أو لمعرفة المزيد عن موضوع ما."
 cmd.featured.categories.hint: "اعمل `{}featured {}` للحصول على قائمة."
-cmd.featured.categories.title: "الاختبارات المميزة"
-cmd.featured.category.browse: "تصفح جميع الاختبارات المميزة مع `{}featured`!"
-cmd.featured.category.empty: "**لا توجد اختبارات في هذه الفئة حتى الآن! ** تحقق مرة أخرى لاحقًا..."
 cmd.featured.category.title: "{} اسئلة"
+cmd.featured.category.browse: "تصفح جميع الاختبارات المميزة مع `{}featured`!"
 cmd.featured.category.truncated: "يتم عرض {} اختبارات فقط في كل مرة!  استخدم ردود الفعل أدناه لرؤية الصفحة التالية."
-cmd.featured.no-results: "آسف!  لم نتمكن من العثور على أي اختبارات مطابقة لبحثك. \nجرب `{}featured` لعرض قائمة بالاختبارات المميزة."
+cmd.featured.category.empty: "**لا توجد اختبارات في هذه الفئة حتى الآن! ** تحقق مرة أخرى لاحقًا..."
+
 cmd.featured.play-quiz: "استعمل `{}play <id>` لعمل الاختبار."
-cmd.featured.requested-by: "بتوصية من {}.  الصفحة {}/{}."
+cmd.featured.no-results: "آسف!  لم نتمكن من العثور على أي اختبارات مطابقة لبحثك. \nجرب `{}featured` لعرض قائمة بالاختبارات المميزة."
 cmd.featured.results: "وجدنا اختبارًا واحدًا يتعلق ببحثك!"
 cmd.featured.results-plural: "وجدنا {} من الاختبارات المتعلقة ببحثك!"
-cmd.leaderboard.advanced:
-cmd.leaderboard.custom:
-cmd.leaderboard.custom.info:
-cmd.leaderboard.delete.none:
-cmd.leaderboard.delete.success:
-cmd.leaderboard.description:
-cmd.leaderboard.new.invalid-time:
-cmd.leaderboard.new.lb-limit:
-cmd.leaderboard.new.no-channel:
-cmd.leaderboard.new.no-limits:
-cmd.leaderboard.new.no-user:
-cmd.leaderboard.new.no-user.detail:
-cmd.leaderboard.new.premium:
-cmd.leaderboard.new.premium.detail:
-cmd.leaderboard.new.server-limit:
+cmd.featured.requested-by: "بتوصية من {}.  الصفحة {}/{}."
+
+# leaderboard
 cmd.leaderboard.premium:
-cmd.leaderboard.settings.description:
-cmd.leaderboard.settings.example:
-cmd.leaderboard.settings.example-1:
-cmd.leaderboard.settings.example-2:
-cmd.leaderboard.settings.example-3:
-cmd.leaderboard.settings.notation:
-cmd.leaderboard.settings.notation.info:
-cmd.leaderboard.settings.options:
-cmd.leaderboard.settings.options.info:
-cmd.leaderboard.settings.title:
+cmd.leaderboard.title:
+cmd.leaderboard.description:
 cmd.leaderboard.simple:
 cmd.leaderboard.simple.info:
 cmd.leaderboard.standard:
 cmd.leaderboard.standard.info:
-cmd.leaderboard.title:
-cmd.options.competitive: "اذهب [لهذا الموقع]({}) لمزيد من المعلومات حول الوضع التنافسي."
-cmd.options.delete: "سيحذف الروبوت جميع رسائل الجلسة بعد اكتمال الاختبار."
+cmd.leaderboard.custom:
+cmd.leaderboard.custom.info:
+cmd.leaderboard.advanced:
+cmd.leaderboard.settings.title:
+cmd.leaderboard.settings.description:
+cmd.leaderboard.settings.notation:
+cmd.leaderboard.settings.notation.info:
+cmd.leaderboard.settings.options:
+cmd.leaderboard.settings.options.info:
+cmd.leaderboard.settings.example:
+cmd.leaderboard.settings.example-1:
+cmd.leaderboard.settings.example-2:
+cmd.leaderboard.settings.example-3:
+cmd.leaderboard.new.premium:
+cmd.leaderboard.new.premium.detail:
+cmd.leaderboard.new.lb-limit:
+cmd.leaderboard.new.server-limit:
+cmd.leaderboard.new.no-limits:
+cmd.leaderboard.new.invalid-time:
+cmd.leaderboard.new.no-user:
+cmd.leaderboard.new.no-user.detail:
+cmd.leaderboard.new.no-channel:
+cmd.leaderboard.delete.none:
+cmd.leaderboard.delete.success:
+
+# options
+cmd.options.title: "خيارات جلسة الاختبار"
 cmd.options.description: "لاستخدام أحد الخيارات عند تشغيل اختبار ، اكتبه بعد معرف الاختبار\nE.g. `=play 123456 delete`"
-cmd.options.no-answers: "لن يُظهر الروبوت الإجابة الصحيحة بعد انتهاء كل سؤال."
+cmd.options.delete: "سيحذف الروبوت جميع رسائل الجلسة بعد اكتمال الاختبار."
 cmd.options.no-leaderboards: "لن يُظهر الروبوت لوحات الصدارة بعد كل سؤال ، فقط في النهاية."
+cmd.options.no-answers: "لن يُظهر الروبوت الإجابة الصحيحة بعد انتهاء كل سؤال."
+cmd.options.simple-scoring: "سيتم إنشاء قوائم المتصدرين بناءً على الإجابات الصحيحة; i.e. 1 صحيح = 1 نقطة."
 cmd.options.shuffle: "سيتم ترتيب الأسئلة عشوائيًا."
 cmd.options.shuffle-answers: "سيتم تبديل ترتيب إجابات الأسئلة عشوائيًا."
-cmd.options.simple-scoring: "سيتم إنشاء قوائم المتصدرين بناءً على الإجابات الصحيحة; i.e. 1 صحيح = 1 نقطة."
-cmd.options.title: "خيارات جلسة الاختبار"
-cmd.pause.bad-state: "لا يمكنك إيقاف الجلسة مؤقتًا أثناء السؤال.  انتظر حتى ينتهي السؤال وحاول مرة أخرى."
+cmd.options.competitive: "اذهب [لهذا الموقع]({}) لمزيد من المعلومات حول الوضع التنافسي."
+
+# pause
 cmd.pause.paused: "تم إيقاف الجلسة مؤقتًا.  يمكنك استئنافها مع `{}resume`."
 cmd.pause.resumed: "استئناف الجلسة."
-cmd.permcheck.description:
+cmd.pause.bad-state: "لا يمكنك إيقاف الجلسة مؤقتًا أثناء السؤال.  انتظر حتى ينتهي السؤال وحاول مرة أخرى."
+
+# permcheck
 cmd.permcheck.title:
+cmd.permcheck.description:
+
+# play-quiz
+cmd.play-quiz.random.failed: "لم نتمكن من إيجاد اختبار عشوائي.  الرجاء معاودة المحاولة في وقت لاحق."
 cmd.play-quiz.already-running: "يوجد بالفعل اختبار قيد التشغيل في هذه القناة.  يرجى الانتظار حتى ينتهي وحاول مرة أخرى."
 cmd.play-quiz.cannot-play: "لا يمكن بدء الاختبار"
-cmd.play-quiz.competitive-denied: "{} الوضع التنافسي متاح فقط للأعضاء البريميوم. [تعلم المزيد عن البريميوم هنا.]({})"
 cmd.play-quiz.maintenance: "الـ "
-cmd.play-quiz.no-questions: "هذا الاختبار ليس لديه أي أسئلة."
+cmd.play-quiz.unplayable.detail: "فشل التحقق من صحة الاختبار.  تفاصيل الخطأ: `{}`. \n\n[تكلم مع المسؤول باستخدام معرف الاختبار ورسالة الخطأ لحل هذه المشكلة.]({})"
 cmd.play-quiz.nsfw: "تم وضع علامة على هذا الاختبار على أنه NSFW.  يمكن تشغيله فقط في القنوات التي تحمل علامة NSFW."
 cmd.play-quiz.private: "هذا الاختبار خاص.  لا يمكن الوصول إليه إلا من قبل مؤلفه."
-cmd.play-quiz.random.failed: "لم نتمكن من إيجاد اختبار عشوائي.  الرجاء معاودة المحاولة في وقت لاحق."
 cmd.play-quiz.servers: "لا يمكن تشغيل هذا الاختبار إلا في نفس السيرفر التي يوجد بها مؤلفها."
 cmd.play-quiz.servers-author-gone: "مؤلف هذا الاختبار غير متوفر.  لا يمكن تشغيل الاختبار."
-cmd.play-quiz.unplayable.detail: "فشل التحقق من صحة الاختبار.  تفاصيل الخطأ: `{}`. \n\n[تكلم مع المسؤول باستخدام معرف الاختبار ورسالة الخطأ لحل هذه المشكلة.]({})"
+cmd.play-quiz.no-questions: "هذا الاختبار ليس لديه أي أسئلة."
+cmd.play-quiz.competitive-denied: "{} الوضع التنافسي متاح فقط للأعضاء البريميوم. [تعلم المزيد عن البريميوم هنا.]({})"
+
+# premium
 cmd.premium.message: "QuizBot Premium متوفر الان!"
 cmd.premium.message.detail: "اضغط [هنا] للمزيد من المعلومات."
-cmd.profile.level:
-cmd.profile.monthly-points: "النقاط الشهرية: {:,}"
-cmd.profile.no-data:
+
+# profile
 cmd.profile.title:
-cmd.profile.total-points: "اجمالي النقاط: {:,}"
 cmd.profile.view-online:
+cmd.profile.level:
+cmd.profile.no-data:
+cmd.profile.monthly-points: "النقاط الشهرية: {:,}"
+cmd.profile.total-points: "اجمالي النقاط: {:,}"
+
+# public-leaderboard
 cmd.public-leaderboard.message: "المتصدرين"
 cmd.public-leaderboard.message.detail: "[عرض لوحات الصدارة العامة هنا.]({})"
-cmd.qe.add-answers.invalid-count: "لا يمكن أن تحتوي الأسئلة على أكثر من {} إجابة."
-cmd.qe.add-answers.max: "يمكن أن تتكون الإجابات على الأكثر {} حرف."
-cmd.qe.add-answers.min: "يجب أن تتكون الإجابات من {} حرف (أحرف) على الأقل."
-cmd.qe.add-answers.success: "تمت إضافة الإجابة (الإجابات) بنجاح."
-cmd.qe.add-question.too-many: "لا يمكن أن تحتوي الاختبارات على أكثر من {} سؤال."
-cmd.qe.add-question.too-many.premium: "يمكن للمستخدمين البريميوم طرح ما يصل إلى {} من الأسئلة لكل اختبار."
-cmd.qe.add-tag.already-added: "تمت إضافة العلامة `{}` إلى هذا الاختبار بالفعل."
-cmd.qe.add-tag.no-spaces: "لا يمكن أن تحتوي العلامات على مسافات."
-cmd.qe.add-tag.success: "علامة `{}` تم اضافتها بنجاح."
-cmd.qe.add-tag.too-many: "لا يمكن أن تحتوي الاختبارات على أكثر من {} علامة."
+
+# quizeditor
+cmd.qe.no-active: "لا يوجد محرر اختبار نشط في هذه القناة."
+cmd.qe.question-only-sc: "يتم تمكين هذا الأمر فقط عند تحرير سؤال."
+cmd.qe.quiz-only-sc: "يتم تعطيل هذا الأمر عند تحرير الأسئلة.  يرجى حفظ أو حذف هذا السؤال أولا."
 cmd.qe.already-editing-channel: "يوجد بالفعل اختبار يتم تحريره في هذه القناة."
 cmd.qe.already-editing-quiz: "يتم بالفعل تحرير هذا الاختبار في قناة أخرى."
-cmd.qe.cancel.success: "تم تجاهل التغييرات."
-cmd.qe.colour.not-found: "لا يمكن العثور على اللون `{}`."
+cmd.qe.invalid-id: "يرجى تحديد معرّف اختبار يتكون من أرقام فقط."
+cmd.qe.not-found: "تعذر العثور على اختبار بهذا المعرف.  حاول مرة اخرى."
+cmd.qe.permission-denied: "يمكنك فقط تحرير الاختبارات الخاصة بك."
+cmd.qe.nsfw: "تم وضع علامة على هذا الاختبار على أنه NSFW.  يمكن تحريره فقط في قنوات NSFW."
+cmd.qe.no-id: "الرجاء تحديد معرف الاختبار."
+cmd.qe.name.invalid-len: "اسم الاختبار طويل جدًا أو قصير جدًا.  يجب أن يكون ما بين {} و {} حرف."
+cmd.qe.name.success: "تم تغيير اسم الاختبار الى `{}`."
+cmd.qe.description.invalid-len: "وصف الاختبار طويل جدًا.  يجب ألا يتجاوز عدد الأحرف {}."
+cmd.qe.description.success: "تم تغيير وصف الاختبار بنجاح."
 cmd.qe.colour.premium-only: "هذا اللون متاح فقط لـ أعضاء QuizBot Premium ."
+cmd.qe.colour.not-found: "لا يمكن العثور على اللون `{}`."
 cmd.qe.colour.success: "تم تغيير لون الاختبار."
+cmd.qe.add-tag.no-spaces: "لا يمكن أن تحتوي العلامات على مسافات."
+cmd.qe.add-tag.too-many: "لا يمكن أن تحتوي الاختبارات على أكثر من {} علامة."
+cmd.qe.add-tag.already-added: "تمت إضافة العلامة `{}` إلى هذا الاختبار بالفعل."
+cmd.qe.add-tag.success: "علامة `{}` تم اضافتها بنجاح."
+cmd.qe.del-tag.success: "علامة `{}` تم المسح بنجاح."
+cmd.qe.del-tag.not-added: "لم يتم تعيين العلامة `{}` لهذا الاختبار."
+cmd.qe.finish.success: "انتهى محرر الاختبار.  يمكنك تشغيل هذا الاختبار عن طريق  `{}play {}`."
+cmd.qe.add-question.too-many: "لا يمكن أن تحتوي الاختبارات على أكثر من {} سؤال."
+cmd.qe.add-question.too-many.premium: "يمكن للمستخدمين البريميوم طرح ما يصل إلى {} من الأسئلة لكل اختبار."
+cmd.qe.edit-question.invalid-arg: "الرجاء تحديد موضع السؤال الذي تريد تحريره."
+cmd.qe.edit-question.none: "This هذا الاختبار ليس لديه سؤال #{}."
+cmd.qe.del-question.invalid-arg: "الرجاء تحديد موضع السؤال الذي تريد حذفه."
+cmd.qe.del-question.none: "هذا الاختبار ليس لديه سؤال #{}."
+cmd.qe.del-question.success: "تمت إزالة السؤال بنجاح"
+cmd.qe.question.invalid-len: "الرجاء تحديد سؤال بحد أقصى {} حرف."
+cmd.qe.question.success: "تم تغيير السؤال بنجاح."
+
+cmd.qe.add-answers.invalid-count: "لا يمكن أن تحتوي الأسئلة على أكثر من {} إجابة."
+cmd.qe.add-answers.min: "يجب أن تتكون الإجابات من {} حرف (أحرف) على الأقل."
+cmd.qe.add-answers.max: "يمكن أن تتكون الإجابات على الأكثر {} حرف."
+cmd.qe.add-answers.success: "تمت إضافة الإجابة (الإجابات) بنجاح."
+cmd.qe.del-answer.invalid-arg: "الرجاء تحديد موضع الإجابة التي تريد حذفها."
+cmd.qe.del-answer.none: "هذا السؤال ليس له إجابة #{}."
+cmd.qe.del-answer.success: "تم حذف الجواب بنجاح."
 cmd.qe.correct.invalid-arg: "الرجاء تحديد موضع الإجابة التي تريد تحديدها على أنها صحيحة."
 cmd.qe.correct.none: "هذا السؤال ليس له إجابة #{}."
 cmd.qe.correct.success-add:
 cmd.qe.correct.success-remove:
-cmd.qe.del-answer.invalid-arg: "الرجاء تحديد موضع الإجابة التي تريد حذفها."
-cmd.qe.del-answer.none: "هذا السؤال ليس له إجابة #{}."
-cmd.qe.del-answer.success: "تم حذف الجواب بنجاح."
-cmd.qe.delete.success: "تم مسح السؤال بنجاح."
-cmd.qe.del-question.invalid-arg: "الرجاء تحديد موضع السؤال الذي تريد حذفه."
-cmd.qe.del-question.none: "هذا الاختبار ليس لديه سؤال #{}."
-cmd.qe.del-question.success: "تمت إزالة السؤال بنجاح"
-cmd.qe.del-tag.not-added: "لم يتم تعيين العلامة `{}` لهذا الاختبار."
-cmd.qe.del-tag.success: "علامة `{}` تم المسح بنجاح."
-cmd.qe.description.invalid-len: "وصف الاختبار طويل جدًا.  يجب ألا يتجاوز عدد الأحرف {}."
-cmd.qe.description.success: "تم تغيير وصف الاختبار بنجاح."
-cmd.qe.edit-question.invalid-arg: "الرجاء تحديد موضع السؤال الذي تريد تحريره."
-cmd.qe.edit-question.none: "This هذا الاختبار ليس لديه سؤال #{}."
-cmd.qe.finish.success: "انتهى محرر الاختبار.  يمكنك تشغيل هذا الاختبار عن طريق  `{}play {}`."
-cmd.qe.image.bad-domain: "مجال غير معروف.  يجب أن يكون المجال واحدًا مما يلي:`{}`."
-cmd.qe.image.removed: "تم مسح الصورة بنجاح."
-cmd.qe.image.success: "تم تحديث عنوان الصورة بنجاح."
-cmd.qe.invalid-id: "يرجى تحديد معرّف اختبار يتكون من أرقام فقط."
-cmd.qe.max.too-small: "يجب أن تكون الدرجة الاعلى أكبر من أو تساوي الحد الأدنى من النقاط"
-cmd.qe.min.too-large: "يجب أن يكون الحد الأدنى من النقاط أصغر من أو يساوي الحد الأقصى للدرجات"
-cmd.qe.name.invalid-len: "اسم الاختبار طويل جدًا أو قصير جدًا.  يجب أن يكون ما بين {} و {} حرف."
-cmd.qe.name.success: "تم تغيير اسم الاختبار الى `{}`."
-cmd.qe.no-active: "لا يوجد محرر اختبار نشط في هذه القناة."
-cmd.qe.no-id: "الرجاء تحديد معرف الاختبار."
-cmd.qe.not-found: "تعذر العثور على اختبار بهذا المعرف.  حاول مرة اخرى."
-cmd.qe.nsfw: "تم وضع علامة على هذا الاختبار على أنه NSFW.  يمكن تحريره فقط في قنوات NSFW."
-cmd.qe.permission-denied: "يمكنك فقط تحرير الاختبارات الخاصة بك."
 cmd.qe.points.invalid: "الرجاء تحديد درجة صالحة."
 cmd.qe.points.out-of-range: "الرجاء تحديد درجة بين {} و {}."
 cmd.qe.points.success: "تم تحديث النقاط بنجاح. \nيتم الآن منح اللاعبين ما بين {} و {} نقطة."
-cmd.qe.question.invalid-len: "الرجاء تحديد سؤال بحد أقصى {} حرف."
-cmd.qe.question-only-sc: "يتم تمكين هذا الأمر فقط عند تحرير سؤال."
-cmd.qe.question.success: "تم تغيير السؤال بنجاح."
-cmd.qe.quiz-only-sc: "يتم تعطيل هذا الأمر عند تحرير الأسئلة.  يرجى حفظ أو حذف هذا السؤال أولا."
-cmd.qe.save.bad-answers: "يرجى تحديد {} إجابة على الأقل."
-cmd.qe.save.no-correct: "يرجى تحديد الإجابة الصحيحة."
-cmd.qe.save.no-question: "الرجاء تحديد سؤال."
-cmd.qe.save.success: "تم حفظ السؤال بنجاح."
-cmd.qe.text.out-of-range:
-cmd.qe.text.success:
+cmd.qe.min.too-large: "يجب أن يكون الحد الأدنى من النقاط أصغر من أو يساوي الحد الأقصى للدرجات"
+cmd.qe.max.too-small: "يجب أن تكون الدرجة الاعلى أكبر من أو تساوي الحد الأدنى من النقاط"
 cmd.qe.time.invalid: "الرجاء تحديد وقت صالح بالثواني."
 cmd.qe.time.out-of-range: "لا يمكن أن يكون الوقت أكثر من {} أو أقل من {} ثانية."
 cmd.qe.time.success: "تم تحديث الوقت المسموح به إلى {} ثانية."
+cmd.qe.text.out-of-range:
+cmd.qe.text.success:
 cmd.qe.wait.invalid:
 cmd.qe.wait.out-of-range:
 cmd.qe.wait.success:
+cmd.qe.image.removed: "تم مسح الصورة بنجاح."
+cmd.qe.image.bad-domain: "مجال غير معروف.  يجب أن يكون المجال واحدًا مما يلي:`{}`."
+cmd.qe.image.success: "تم تحديث عنوان الصورة بنجاح."
+cmd.qe.delete.success: "تم مسح السؤال بنجاح."
+cmd.qe.save.no-question: "الرجاء تحديد سؤال."
+cmd.qe.save.bad-answers: "يرجى تحديد {} إجابة على الأقل."
+cmd.qe.save.no-correct: "يرجى تحديد الإجابة الصحيحة."
+cmd.qe.save.success: "تم حفظ السؤال بنجاح."
+cmd.qe.cancel.success: "تم تجاهل التغييرات."
+
+# remove-question
 cmd.remove-question.not-found: "لم يتم العثور على السؤال."
-cmdr.invalid-id: "رقم التعريف غير صالح"
-cmdr.invalid-id.nan: "الرجاء تحديد رقم صحيح. \nهل تقصد `{}search {}`?"
-cmdr.invalid-id.no-quiz: "لا يمكن العثور على اختبار بهذا المعرف."
-cmdr.invalid-id.no-session: "لم يتم العثور على جلسة بهذا المعرف."
-cmdr.maintenance-mode: "الروبوت حاليا في وضع الصيانة."
-cmdr.no-session: "لا توجد جلسة قيد التشغيل في هذه القناة."
-cmdr.nsfw: "لا يمكن استخدام هذا الأمر في قنوات NSFW."
-cmdr.nsfw.detail: "لا يسمح روبوت الاختبار بإجراء اختبارات NSFW."
-cmdr.perm-denied: "انت لا تملك اذنا لتعمل هذا."
-cmdr.update-scheduled: "هناك تحديث بوت مجدول.  يرجى المحاولة مرة أخرى في {} دقائق."
-cmd.schedule.add.denied: "ليس لديك إذن للوصول إلى هذا الاختبار."
-cmd.schedule.add.max: "يمكنك إجراء {} اختبار في جدول واحد فقط."
-cmd.schedule.add.not-found: "لم يتم العثور على اختبار."
+
+# schedule
 cmd.schedule.already-editing: "يوجد بالفعل جدول اختبار يتم تعديله في هذه القناة."
-cmd.schedule.channel.invalid: "قناة غير صالحة."
 cmd.schedule.create.reached-limit: "أعضاء غير البريميوم لا يمكن أن يمتلكو على أكثر من {} من الجداول."
 cmd.schedule.create.reached-limit.detail: "لمزيد من الجداول ، جرب [QuizBot Premium]({})."
-cmd.schedule.delete.success: "تم حذف الجدول."
 cmd.schedule.edit.not-found: "لك يتم العثور على جدول."
-cmd.schedule.interval.invalid: "الفاصل الزمني غير صالح.  للحصول على المساعدة ، قم بتشغيل `{}help time`."
-cmd.schedule.interval.out-of-range: "يجب أن يكون الفاصل الزمني للجدول بين `{}` و  `{}`."
-cmd.schedule.mode.invalid: "الوضع غير صالح.  يجب أن يكون أحد `{}`."
 cmd.schedule.not-editing: "أنت لا تقوم بتحرير جدول."
-cmd.schedule.notification.not-found: "لا يمكن العثور على هذه رتبة.  حاول مرة اخرى."
-cmd.schedule.option.invalid: "خيار الجلسة غير صالح."
+cmd.schedule.interval.out-of-range: "يجب أن يكون الفاصل الزمني للجدول بين `{}` و  `{}`."
+cmd.schedule.interval.invalid: "الفاصل الزمني غير صالح.  للحصول على المساعدة ، قم بتشغيل `{}help time`."
+cmd.schedule.channel.invalid: "قناة غير صالحة."
+cmd.schedule.mode.invalid: "الوضع غير صالح.  يجب أن يكون أحد `{}`."
+cmd.schedule.add.not-found: "لم يتم العثور على اختبار."
+cmd.schedule.add.denied: "ليس لديك إذن للوصول إلى هذا الاختبار."
+cmd.schedule.add.max: "يمكنك إجراء {} اختبار في جدول واحد فقط."
 cmd.schedule.remove.not-added: "لم يتم إضافة هذا الاختبار إلى الجدول."
-cmd.schedule.repeats.invalid: "فشل تحليل القيمة `{}` لعدد مرات التكرار."
+cmd.schedule.option.invalid: "خيار الجلسة غير صالح."
+cmd.schedule.start.bad-format: "يجب أن يكون وقت البدء بالتنسيق التالي."
 cmd.schedule.repeats.max: "لا يمكن أن تتكرر الجداول أكثر من {} مرة."
 cmd.schedule.repeats.min: "يجب أن تعمل الجداول مرة واحدة على الأقل."
 cmd.schedule.repeats.premium-only: "الجداول التي تعمل إلى الأبد تقتصر على اعضاء QuizBot Premium ."
+cmd.schedule.repeats.invalid: "فشل تحليل القيمة `{}` لعدد مرات التكرار."
+cmd.schedule.notification.not-found: "لا يمكن العثور على هذه رتبة.  حاول مرة اخرى."
+cmd.schedule.delete.success: "تم حذف الجدول."
 cmd.schedule.save.success: "الجدول الزمني المحفوظة والمحدثة.  سيتم تشغيله في المرة القادمة `{}`."
-cmd.schedule.start.bad-format: "يجب أن يكون وقت البدء بالتنسيق التالي."
+
+# settigns
+cmd.settings.updated: "تم تحديث الاعدادات."
+cmd.settings.prefix.too-long: " لا يمكن أن يكون الاختصار أطول من 24 حرف."
+cmd.settings.view.title: "إعدادات هذه النقابة"
+cmd.settings.view.prefix: "اختصار"
+cmd.settings.view.language: "لغة"
 cmd.settings.language.not-found: "لم يتم العثور على اللغة"
 cmd.settings.language.not-found.detail: "اللغات المدعومة: \n{}"
-cmd.settings.prefix.too-long: " لا يمكن أن يكون الاختصار أطول من 24 حرف."
-cmd.settings.updated: "تم تحديث الاعدادات."
-cmd.settings.view.language: "لغة"
-cmd.settings.view.prefix: "اختصار"
-cmd.settings.view.title: "إعدادات هذه النقابة"
+
+# spreadsheet
+cmd.spreadsheet.not-attached: "يرجى اضافة ملف CSV  واحد للرساله. \nللحصول على تعليمات حول كيفية استخدام هذا الأمر ، راجع `{}spreadsheet help`."
+cmd.spreadsheet.success: "تم حفظ الاختبار بنجاح بالمعرف `{}`."
 cmd.spreadsheet.bad-file-format: "تنسيق ملف غير معتمد.  الرجاء استخدام ملف`.csv` ."
+
+cmd.spreadsheet.help.title: "تحويل جداول البيانات إلى اختبارات QuizBot"
+cmd.spreadsheet.help.tutorial: "شاهد [فيديو يوتيوب الرسمي](https://youtu.be/4bcpmbIlrPw) للحصول على إرشادات مفصلة خطوة بخطوة حول كيفية إنشاء الاختبارات باستخدام جداول البيانات.  بدلاً من ذلك ، يمكنك قراءة واتباع الإرشادات الموضحة أدناه."
 cmd.spreadsheet.help.step-1: "1) انسخ القالب"
 cmd.spreadsheet.help.step-1.detail: "[قم بتحميل ملف جداول بيانات كوكل هذا]({}), بعدها أذهب الى `File -> Make a copy`."
 cmd.spreadsheet.help.step-2: "2) اصنع اختبارك الخاص"
@@ -208,189 +400,92 @@ cmd.spreadsheet.help.step-4: "4) تحويل جدول البيانات"
 cmd.spreadsheet.help.step-4.detail: "لإنهاء ملف CSV الخاص بك في اختبار ، انتقل إلى أي قناة دسكورد يستطيع روبوت الاختبار الوصول إليها وقم بتحميل ملف CSV الذي قمت بحفظه مسبقًا. **مهم: ادخل الامر `{}spreadsheet` في قسم التعليقات عند تحميل الملف.**"
 cmd.spreadsheet.help.step-5: "5) بعد التحويل"
 cmd.spreadsheet.help.step-5.detail: "الآن بعد أن تم حفظ الاختبار الخاص بك في قاعدة بيانات روبوت الاختبار ، يمكنك تحرير الاختبار وتشغيله بنفس الطريقة التي تريدها مع أي اختبار آخر. "
-cmd.spreadsheet.help.title: "تحويل جداول البيانات إلى اختبارات QuizBot"
-cmd.spreadsheet.help.tutorial: "شاهد [فيديو يوتيوب الرسمي](https://youtu.be/4bcpmbIlrPw) للحصول على إرشادات مفصلة خطوة بخطوة حول كيفية إنشاء الاختبارات باستخدام جداول البيانات.  بدلاً من ذلك ، يمكنك قراءة واتباع الإرشادات الموضحة أدناه."
-cmd.spreadsheet.not-attached: "يرجى اضافة ملف CSV  واحد للرساله. \nللحصول على تعليمات حول كيفية استخدام هذا الأمر ، راجع `{}spreadsheet help`."
-cmd.spreadsheet.success: "تم حفظ الاختبار بنجاح بالمعرف `{}`."
-cmd.spreadsheet.template.link: "[رابط أوراق جوجل]({})"
+
 cmd.spreadsheet.template.title: "اتبع الرابط أدناه لمشاهدة نموذج جدول البيانات لإنشاء الاختبارات.  قم بعمل نسخة من الملف وابدأ التحرير."
+cmd.spreadsheet.template.link: "[رابط أوراق جوجل]({})"
+
+# stop
 cmd.stop.success: "جلسة اختبار `{}` توقفت."
+
+# survey
 cmd.survey.message: "ساعد على تحسين QuizBot"
 cmd.survey.message.detail: "أعطنا آرائك في موقعنا [مسح المستخدم]({})."
-cmd.view.answers: "اجوبة: {}"
+
+# view
 cmd.view.denied: "ليس لديك إذن لمشاهدة هذا الاختبار ."
-cmd.view.description: "**وصف الاختبار:**"
-cmd.view.info: "تشغيلات: {} | تصويتات: {}"
 cmd.view.nsfw: "تم وضع علامة على هذا الاختبار على أنه NSFW. يمكن عرضها فقط في القنوات التي تحمل علامة NSFW."
+cmd.view.info: "تشغيلات: {} | تصويتات: {}"
+cmd.view.title: "**{}** من قبل {}"
+cmd.view.description: "**وصف الاختبار:**"
+cmd.view.tags: "علامات الاختبار: {}"
 cmd.view.overflow: "ملاحظة: سيظهر هذا الأمر حتى 25 سؤالاً فقط.\nلرؤية مجموعة محددة من الأسئلة استخدم `{0}view {1} <start>-<end>` e.g. `{0}view {1} 2-8`"
 cmd.view.play: "**تشغيل هذا الاختبار باستخدام `{}play {}`**"
 cmd.view.question: "{}) {} | *{} ثواني* | *{} نقاط*"
-cmd.view.tags: "علامات الاختبار: {}"
-cmd.view.title: "**{}** من قبل {}"
-contributors: "im0x"
-help.access-level: "قم بتعديل مستويات وصول الأوامر لسيرفرك."
-help.changelog: "عرض آخر التحديثات إلى الروبوت."
-help.copy:
-help.create-quiz: "ينشئ اختبارًا بالاسم والوصف المحددين. \nمثل: `=create-quiz QuizBot;This is a quiz.`"
-help.delete-quiz: "حذف الاختبار. تستطيع مسح اختبارات فقط. \nمثل: `=delete-quiz 123456`"
-help.description: "[موقع]({}) / [سيرفر الدعم]({}) / [تصويت]({}) / [{} QuizBot Premium (جديد)]({})"
-help.featured: "عرض قائمة من الاختبارات القصيرة المميزة العامة."
-help.footer: "هل تستمع مع الروبوت؟ استخدم رابط التصويت في الجزء العلوي من هذه الرسالة لدعمها!"
-help.leaderboard:
-help.pause: "وقفة أو استئناف جلسة الاختبار."
-help.play: "قم بتشغيل اختبار بالمعرف المحدد. استخدم 'random' كمعرف لتشغيل اختبار عشوائي. \nمثل: `=play 123456`\nيمكنك أيضًا تحديد خيارات جلسة معينة. استخدم `=options` لمعلومات اكثر."
-help.profile: "عرض ملف التعريف الخاص بك.  يمكنك فقط عرض ملف التعريف الخاص بك."
-help.qe: "قم بتحرير اختبار باستخدام المعرف المحدد.  يمكنك تحرير الأسئلة والاسم والوصف واللون والعلامات."
-help.schedule: "حدد موعدًا لإجراء الاختبارات بشكل منتظم على فترات زمنية معينة.  يرجى ملاحظة أن هذا هو حاليا في الإصدار التجريبي.  لمزيد من المعلومات تحقق من سيرفر الدعم الرسمي الخاص بنا."
-help.search: "يبحث في قاعدة بيانات الاختبار عن الاختبارات المتعلقة بمصطلح البحث. \nمثل: `=search Trivia`"
-help.settings: "عرض أو تغيير إعدادات السيرفر الخاص بك. يمكنك تغيير الإعدادات التالية: `language`, `prefix`."
-help.spreadsheet: "تحويل جدول البيانات إلى اختبار! استعمل `=spreadsheet help` لمعلومات اكثر, او انظر الى [يوتيوب تعليمي رسمي](https://youtu.be/4bcpmbIlrPw). لقالب جدول البيانات انظر `=spreadsheet template`."
-help.stop: " إيقاف تشغيل الاختبار في القناة الحالية."
-help.title: "[{}] QuizBot مساعدة"
-help.view: "عرض جميع المعلومات حول الاختبار باستخدام المعرف المحدد. في الاختبارات الخاصة بك يمكنك إضافة `correct` بعد الأمر لتوضيح الإجابات الصحيحة. \nEمثل: `=view 123456`"
-inventory.equip-hint:
-inventory.nav-hint:
-inventory.no-items:
-inventory.selected:
-leaderboard.deleted:
-leaderboard.end:
-leaderboard.finished:
-leaderboard.none:
-leaderboard.start:
-nan: "الرجاء تحديد رقم."
-premium-only: " فقط QuizBot Premium ميزة."
-premium-only.learn-more: "[تعلم المزيد عن QuizBot Premium هنا.]({})"
-qe.question.answers: "\U0001F4CA **اجوبة:** {}/{}\nاضافة سؤال جديد مع `{}qe add-answer <answer1;answer2...>`\nمسح جواب مع `{}qe del-answer <answer number>`"
-qe.question.correct: "✅ يتم عرض الإجابة الصحيحة بتنسيق **بلخط العريض**."
-qe.question.correct.detail: "تغيير مع `{}qe correct <answer number>`"
-qe.question.image: "**رابط الصورة:** {}"
-qe.question.image.detail: "تحديث مع `{}qe image <image URL>`\nاستخدم `remove` كعنوان موقع لإزالة الصورة\nالمجالات المدعومة: `{}`"
-qe.question.image.premium: "هل تريد الصور في جميع اختباراتك? [احصل على QuizBot Premium]({})"
-qe.question.max: "**الحد الأعلى من النقاط الممنوحة:** {}"
-qe.question.max.detail: "تغيير مع `{}qe max <points>`"
-qe.question.min: "**الحد الأدنى من النقاط الممنوحة:** {}"
-qe.question.min.detail: "تغيير مع `{}qe min <points>`"
-qe.question.no-image: "*[بدون صورة]*"
-qe.question.not-auto-save: "التغييرات لم تحفظ تلقائيا."
-qe.question.operations: "احفظ السؤال مع `{0}qe save`\nامسح السؤال مع `{0}qe delete`\nالغي جميع التغييرات مع `{0}qe cancel`"
-qe.question.question: "❓ **سؤال** | تغيير مع `{}qe سؤال <question>`"
-qe.question.question.not-set: "*[غير مضبوط]*"
-qe.question.text:
-qe.question.text.none:
-qe.question.time: "⏱ **الوقت المسموح:** {} ثواني"
-qe.question.time.detail: "تغيير مع `{}qe time <time allowed>`"
-qe.question.title: "تحرير الاختبار: {} | سؤال #{}"
-qe.question.wait:
-qe.question.wait.detail:
-qe.standard.answers: "__اجابات__ {}"
-qe.standard.author: "محرر الاختبار"
-qe.standard.auto-save: "تم حفظ التغييرات تلقائياً."
-qe.standard.colour: "\U0001F3A8 **Colour:** {} | Change with `{}qe colour <new colour>`"
-qe.standard.colour.detail: "__Available colours:__ {}"
-qe.standard.description: "\U0001F4DD **الوصف** | تغيير مع `{0}qe description <new description>`\nمسح الوصف بـ `{0}qe description remove`"
-qe.standard.extra-colours: "[احصل على المزيد من الألوان باستخدام QuizBot Premium]({})"
-qe.standard.finish: "✅ انهاء التعديل بـ `{}qe finish`\nهذه الرسالة سوف تمسح بعد 5 دقايق من بدء عملها."
-qe.standard.footer: "تم انشاء الاختبار في: {} | تصويتات المؤيدة: {} | تشغيل: {}"
-qe.standard.hex: "[كود هيكس مخصص]({})"
-qe.standard.name: "\U0001F3AE **اسم** | تغيير مع `{}qe name <new name>`"
-qe.standard.no-tags: "*[هذا الاختبار لا يملك علامات]*"
-qe.standard.questions: "\U0001F3B2 **اسئلة:** {}/{}"
-qe.standard.questions.detail: "اضافة سؤال بـ `{0}qe add-question`\nتحرير السؤال بـ `{0}qe edit-question <question number>`\nمسح السؤال بـ `{0}qe del-question <question number>`"
-qe.standard.questions.detail-maxed: "يمكن لـ محرر الاختبار عرض ما يصل إلى 18 سؤالاً فقط. نقترح تحرير هذا الاختبار في [واجهة الموقع]({})."
-qe.standard.tags: "\U0001F3F7 **العلامات** | اضافة او مسح علامات بـ `{0}qe add-tag <new tag>` او `{0}qe del-tag <tag>`"
-qe.standard.title: "تحرير الاختبار: {}"
-qe.standard.web-prompt: "\U0001F517 [يمكنك أيضًا تعديل الاختبار الخاص بك على الواجهة عبر الإنترنت.]({})"
-quiz.editor-web: "اذهب [هنا]({}) للتعديل عليها."
-quiz.no-description: "*[هذا الاختبار ليس له وصف]*"
-session.competitive: "وضع التنافسي"
-session.competitive.answer.invalid: "جواب غير صالح.  حاول مرة اخرى."
-session.competitive.answer.submitted: "تم تقديم إجابتك."
-session.competitive.dm-note: "وضع التنافسي: لإرسال إجابتك ، أرسل رسالة مباشرة إلى الروبوت برقمه."
-session.competitive.joined: "لقد انضممت الى الاختبار `{}` (جلسة `{}`). حظاً موفقاً!"
-session.competitive.join-note: "رد أدناه للانضمام إلى هذا الاختبار.  لا يمكنك الانضمام بعد انتهاء هذه المرحلة."
-session.conclusion.total-players: "اجمالي اللاعبين"
-session.conclusion.vote-bot: "هل استمعت مع بالبوت?"
-session.conclusion.vote-bot.detail: "[صوت للروبوت]({}) | [{} QuizBot Premium]({})"
-session.conclusion.vote-quiz: "استمتع بهذا الاختبار؟  التصويت لها مع ردود الفعل! | معرف الاختبار: {}"
-session.error: "حدث خطأ ما ، لذلك تم إنهاء هذه الجلسة.  تم الإبلاغ عن هذه المشكلة."
-session.error.message-deleted:
-session.inactive:
-session.intro.description: "وصف"
-session.intro.footer: "معرف الجلسة: {} | معرف الاختبار: {}"
-session.intro.notification: "مسابقة مجدولة تبدأ الآن!"
-session.intro.questions: "سؤال"
-session.intro.quiz: "اختبار"
-session.intro.starting: "بدء الاختبار"
-session.intro.starting-time: "سيبدأ الاختبار في غضون {} ثانية."
-session.leaderboard: "قائمة"
-session.leaderboard.page: "صفحة القائمة {} / {}"
-session.question.awaiting-reactions: "سيتم الكشف عن الإجابات بمجرد أن تصبح جميع ردود الفعل جاهزة!"
-session.question.explanation:
-session.question.points: "جوائز الإجابة الصحيحة {} نقاط"
-session.question.pos: "سؤال {}"
-session.question.time-allowed: "الوقت المسموح: {} ثواني"
-session.question.time-up: "انتهى الوقت!"
-session.question.wait-time:
-shop.author:
-shop.available-items:
-shop.available-items.detail:
-shop.available-items.none:
-shop.available-items.none.detail:
-shop.description:
-shop.disabled:
-shop.footer.items:
-shop.footer.main:
-shop.help.buy:
-shop.help.buy.detail:
-shop.help.categories:
-shop.help.categories.detail:
-shop.help.description:
-shop.help.equipping:
-shop.help.equipping.detail:
-shop.help.homepage:
-shop.help.homepage.detail:
-shop.help.items:
-shop.help.items.detail:
-shop.help.restrictions:
-shop.help.restrictions.detail:
-shop.help.title:
-shop.home.categories:
-shop.home.categories.detail:
-shop.items.cant-purchase:
-shop.items.expiry:
-shop.items.expiry.days:
-shop.items.expiry.detail:
-shop.items.expiry.hours:
-shop.items.expiry.minutes:
-shop.items.expiry.months:
-shop.items.low-currency:
-shop.items.owned:
-shop.items.purchased:
-shop.items.purchased.automatic-equip:
-shop.items.purchased.inventory-hint:
-shop.items.redeems:
-shop.items.redeems.detail:
-shop.items.restrictions:
-shop.items.restrictions.access-level:
-shop.items.restrictions.min-xp:
-shop.items.restrictions.other-items:
-shop.title:
+cmd.view.answers: "اجوبة: {}"
+
+# === SPREADSHEET CONVERSION ===
 spreadsheet.error: "تعذر تحويل ملفك إلى اختبار.  هل تستخدم قالب أوراق غوغل الرسمي?"
-spreadsheet.error.answer-len: "سؤال {}, جواب {} قصير جداً او طويل جداً."
+spreadsheet.error.file-format: "تنسيق الملف"
 spreadsheet.error.bad-character:
 spreadsheet.error.correct-answer: "فهرس الإجابات الصحيح للسؤال {} غير صالح.  الرجاء تحديد رقم."
-spreadsheet.error.domain: "عنوان الصورة لسؤال {} غير صالح.  يجب أن يكون المجال واحدًا مما يلي: {}."
-spreadsheet.error.file-format: "تنسيق الملف"
-spreadsheet.error.filename: "لا يمكن استخدام اسم الملف لأنه طويل جدًا أو قصير جدًا."
-spreadsheet.error.no-answers: "سؤال {} بحاجة على اقل لجوابين."
+spreadsheet.error.time-allowed: "الوقت المسموح به للسؤال {} غير صالح.  الرجاء تحديد رقم بين {} و {}."
 spreadsheet.error.points: "النقاط الممنوحة للسؤال {} غير صالحة.  يرجى تحديد رقم بين {} و {} لكل من الحد الأدنى والحد الأقصى للنقاط."
+spreadsheet.error.domain: "عنوان الصورة لسؤال {} غير صالح.  يجب أن يكون المجال واحدًا مما يلي: {}."
 spreadsheet.error.premium: "سؤال {} يستخدم ميزة لا تتوفر إلا لـ اعضاء QuizBot Premium . \nاكتشف المزيد حول بريميوم هنا: {}."
+spreadsheet.error.range: "يجب أن يكون ما بين {} و {} حرف."
+spreadsheet.error.question-len: "سؤال {} قصير جداً او طويل جداً."
+spreadsheet.error.answer-len: "سؤال {}, جواب {} قصير جداً او طويل جداً."
+spreadsheet.error.no-answers: "سؤال {} بحاجة على اقل لجوابين."
 spreadsheet.error.question-count: "يحتوي اختبارك على العديد من الأسئلة. \nالحد الأقصى لعدد الأسئلة المسموح بها هو {}."
 spreadsheet.error.question-count.premium: "يمكنك رفع حد السؤال إلى {} مع QuizBot Premium. \nمزيد من معلومات هنا: {}."
-spreadsheet.error.question-len: "سؤال {} قصير جداً او طويل جداً."
-spreadsheet.error.range: "يجب أن يكون ما بين {} و {} حرف."
-spreadsheet.error.time-allowed: "الوقت المسموح به للسؤال {} غير صالح.  الرجاء تحديد رقم بين {} و {}."
+spreadsheet.error.filename: "لا يمكن استخدام اسم الملف لأنه طويل جدًا أو قصير جدًا."
+
+spreadsheet.failed.title: "فشل في تكوين اختبار"
 spreadsheet.failed.detail: "تعذر تحويل النص التالي: `{}`"
 spreadsheet.failed.footer: "رسالة خطأ: {} | رقم السؤال: {}"
-spreadsheet.failed.title: "فشل في تكوين اختبار"
-user.unavailable: "(المستخدم غير متوفر)"
+
+# === SESSIONS ===
+# TODO: Competitive session report needs to be converted.
+session.error: "حدث خطأ ما ، لذلك تم إنهاء هذه الجلسة.  تم الإبلاغ عن هذه المشكلة."
+session.error.message-deleted:
+
+session.competitive: "وضع التنافسي"
+session.competitive.join-note: "رد أدناه للانضمام إلى هذا الاختبار.  لا يمكنك الانضمام بعد انتهاء هذه المرحلة."
+session.competitive.dm-note: "وضع التنافسي: لإرسال إجابتك ، أرسل رسالة مباشرة إلى الروبوت برقمه."
+session.competitive.joined: "لقد انضممت الى الاختبار `{}` (جلسة `{}`). حظاً موفقاً!"
+session.competitive.answer.submitted: "تم تقديم إجابتك."
+session.competitive.answer.invalid: "جواب غير صالح.  حاول مرة اخرى."
+
+session.leaderboard: "قائمة"
+session.leaderboard.page: "صفحة القائمة {} / {}"
+
+session.intro.notification: "مسابقة مجدولة تبدأ الآن!"
+session.intro.starting: "بدء الاختبار"
+session.intro.starting-time: "سيبدأ الاختبار في غضون {} ثانية."
+session.intro.quiz: "اختبار"
+session.intro.description: "وصف"
+session.intro.questions: "سؤال"
+session.intro.footer: "معرف الجلسة: {} | معرف الاختبار: {}"
+
+session.conclusion.total-players: "اجمالي اللاعبين"
+session.conclusion.vote-quiz: "استمتع بهذا الاختبار؟  التصويت لها مع ردود الفعل! | معرف الاختبار: {}"
+session.conclusion.vote-bot: "هل استمعت مع بالبوت?"
+session.conclusion.vote-bot.detail: "[صوت للروبوت]({}) | [{} QuizBot Premium]({})"
+
+session.question.pos: "سؤال {}"
+session.question.time-allowed: "الوقت المسموح: {} ثواني"
+session.question.points: "جوائز الإجابة الصحيحة {} نقاط"
+session.question.time-up: "انتهى الوقت!"
+session.question.explanation:
+session.question.wait-time:
+session.question.awaiting-reactions: "سيتم الكشف عن الإجابات بمجرد أن تصبح جميع ردود الفعل جاهزة!"
+
+session.inactive:
+
+# === INVENTORY ===
+inventory.no-items:
+inventory.selected:
+inventory.equip-hint:
+inventory.nav-hint:
+
+contributors: "im0x"

@@ -21,7 +21,7 @@ directory = input("Enter the directory to scan: ")
 path += directory + '/'
 files = [f for f in os.listdir(path) if f.endswith(".yml")]
 
-origin = input("Enter the original file to copy from: ")
+origin = input("Enter the original file to sync from: ")
 origin = origin + ".yml" if not origin.endswith(".yml") else origin
 
 raw_target = input("Enter the target file(s) to update, each separated with a space. Use Enter to update all files: ")
